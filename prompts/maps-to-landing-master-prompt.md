@@ -85,7 +85,9 @@ CTAs must match how customers actually act: call, WhatsApp, directions, reserve,
 ### Blueprint-ready structure (this file will later become a full-stack app)
 Build it so a developer can port it cleanly:
 - All design tokens as CSS custom properties in `:root` (colors, fonts, spacing scale, radii, shadows, easings, durations)
-- Every piece of copy lives in the `#site-data` JSON block and is written into the DOM by JS. No visible text hardcoded in the markup — including the business name, address, phone, rating, and review count, which usually appear in three or four places.
+- Every editorial string — headlines, subheads, section intros, CTA labels, card titles, list items, footnotes — lives in the `#site-data` JSON block and is written into the DOM by JS. Give each one a `data-bind` path and resolve them all in a single loop. This includes the business name, address, phone, rating and review count, which usually appear in three or four places.
+- Decorative chrome may stay in the markup: the logo mark, icon glyphs and arrows, numbered step labels (`01 / …`), star rows, quote marks, typographic art, and the copyright year. Binding those gains nothing and tends to strip meaningful whitespace (`© 2026` becomes `©2026`).
+- Repeated roles become arrays (`content.header.links[0..2]`); a heading split by `<br>` becomes `content.<section>.<role>.lines[0..1]`. See `docs/SITE-DATA-CONTRACT.md`.
 - Every section is a clearly commented module with a stable `id` and `data-section` attribute
 - Clear comment banners: TOKENS, BASE, LAYOUT, COMPONENTS, SECTIONS, MOTION, RESPONSIVE, DATA, SCRIPT
 - BEM-style class naming, no inline styles, no magic numbers
@@ -128,7 +130,7 @@ prompt works at all.
 
 - [ ] Every fact traces to research; nothing invented
 - [ ] `#site-data` declares `"$contract": "maps-to-landing/site-data@1"` and passes `tools/check-contract.mjs`
-- [ ] No visible text is hardcoded in the markup — it all comes from `#site-data`; repeated facts use tokens
+- [ ] No editorial copy is typed into the markup — headlines, subheads, CTAs, intros and list items all come from `#site-data` via `data-bind`; repeated facts use tokens; only decorative chrome is left in the HTML
 - [ ] JSON-LD is generated from `#site-data`, never a second hand-written copy of the business details
 - [ ] Looks and feels unlike a generic template; signature idea is visible
 - [ ] Colors, fonts, tone, and layout clearly match this specific business

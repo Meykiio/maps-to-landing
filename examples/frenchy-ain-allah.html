@@ -1095,14 +1095,14 @@
     <header class="site-header" data-section="header" id="top">
       <div class="container header__inner">
         <a class="brand" href="#top" aria-label="FRENCHY Ain Allah, accueil">
-          <span class="brand__name" data-bind="name">FRENCHY</span>
-          <span class="brand__location" data-bind="neighborhood">AIN ALLAH · ALGER</span>
+          <span class="brand__name" data-bind="business.name">FRENCHY</span>
+          <span class="brand__location" data-bind="business.address.short">AIN ALLAH · ALGER</span>
         </a>
 
         <nav class="header__nav" aria-label="Navigation principale" id="main-navigation"></nav>
 
-        <a class="button button--dark header__action" href="#visiter">
-          Nous trouver <span class="icon-arrow" aria-hidden="true">↗</span>
+        <a class="button button--dark header__action" href="#visiter"><span data-bind="content.header.button">
+          Nous trouver </span><span class="icon-arrow" aria-hidden="true">↗</span>
         </a>
       </div>
     </header>
@@ -1117,22 +1117,22 @@
       <section class="hero" data-section="hero" id="accueil">
         <div class="container hero__grid">
           <div class="hero__copy">
-            <span class="eyebrow" data-bind="hero.eyebrow"></span>
+            <span class="eyebrow" data-bind="content.hero.eyebrow"></span>
             <h1 class="hero__title" id="hero-title"></h1>
-            <p class="hero__description" data-bind="hero.description"></p>
+            <p class="hero__description" data-bind="content.hero.description"></p>
 
             <div class="hero__actions">
-              <a class="button button--dark" href="#carte">
-                Découvrir la carte <span class="icon-arrow" aria-hidden="true">↗</span>
+              <a class="button button--dark" href="#carte"><span data-bind="content.hero.actions.0">
+                Découvrir la carte </span><span class="icon-arrow" aria-hidden="true">↗</span>
               </a>
-              <a class="button button--light" id="hero-directions" target="_blank" rel="noopener noreferrer">
+              <a data-bind="content.hero.actions.1" class="button button--light" id="hero-directions" target="_blank" rel="noopener noreferrer">
                 Nous trouver
               </a>
             </div>
 
             <div class="hero__note">
               <span aria-hidden="true">✳</span>
-              <span data-bind="hero.note"></span>
+              <span data-bind="content.hero.note"></span>
             </div>
           </div>
 
@@ -1144,8 +1144,8 @@
               <div class="dessert__sauce"></div>
               <div class="dessert__berry"></div>
             </div>
-            <div class="hero__sticker" data-bind="hero.sticker"></div>
-            <div class="hero__caption" data-bind="hero.caption"></div>
+            <div class="hero__sticker" data-bind="content.hero.sticker"></div>
+            <div class="hero__caption" data-bind="content.hero.caption"></div>
           </div>
         </div>
       </section>
@@ -1154,11 +1154,11 @@
       <section class="intro" data-section="intro" aria-label="Présentation">
         <div class="container intro__inner">
           <div>
-            <div class="intro__label" data-bind="intro.label"></div>
+            <div class="intro__label" data-bind="content.intro.label"></div>
             <p class="intro__text" id="intro-text"></p>
           </div>
-          <a class="intro__link" href="#carte">
-            Explorer les envies <span aria-hidden="true">↘</span>
+          <a class="intro__link" href="#carte"><span data-bind="content.intro.link">
+            Explorer les envies </span><span aria-hidden="true">↘</span>
           </a>
         </div>
       </section>
@@ -1168,14 +1168,14 @@
         <div class="container">
           <div class="section-top reveal">
             <div class="section-top__copy">
-              <span class="eyebrow" data-bind="menu.eyebrow"></span>
+              <span class="eyebrow" data-bind="content.menu.eyebrow"></span>
               <h2 class="section-heading" id="menu-title"></h2>
             </div>
-            <p class="section-intro" data-bind="menu.description"></p>
+            <p class="section-intro" data-bind="content.menu.description"></p>
           </div>
 
           <div class="menu-grid" id="menu-grid"></div>
-          <p class="menu-note" data-bind="menu.note"></p>
+          <p class="menu-note" data-bind="content.menu.note"></p>
         </div>
       </section>
 
@@ -1183,18 +1183,18 @@
       <section class="signature" data-section="signature" id="signature">
         <div class="container signature__grid">
           <div class="signature__copy reveal">
-            <span class="eyebrow" data-bind="signature.eyebrow"></span>
+            <span class="eyebrow" data-bind="content.signature.eyebrow"></span>
             <h2 class="signature__title" id="signature-title"></h2>
-            <p class="signature__description" data-bind="signature.description"></p>
+            <p class="signature__description" data-bind="content.signature.description"></p>
             <a class="button button--dark" href="#visiter">
-              <span data-bind="signature.cta"></span>
+              <span data-bind="content.signature.cta"></span>
               <span class="icon-arrow" aria-hidden="true">↗</span>
             </a>
           </div>
 
           <div class="signature__art" aria-hidden="true">
             <div class="signature__circle">✳</div>
-            <div class="signature__badge" data-bind="signature.badge"></div>
+            <div class="signature__badge" data-bind="content.signature.badge"></div>
           </div>
         </div>
       </section>
@@ -1203,17 +1203,17 @@
       <section class="experience" data-section="experience" id="experience">
         <div class="container experience__grid">
           <div class="experience__copy reveal">
-            <span class="eyebrow" data-bind="experience.eyebrow"></span>
+            <span class="eyebrow" data-bind="content.experience.eyebrow"></span>
             <h2 class="section-heading" id="experience-title"></h2>
-            <p data-bind="experience.description"></p>
-            <a class="button button--light" href="#visiter">
-              Préparer ma visite <span class="icon-arrow" aria-hidden="true">↗</span>
+            <p data-bind="content.experience.description"></p>
+            <a class="button button--light" href="#visiter"><span data-bind="content.experience.button">
+              Préparer ma visite </span><span class="icon-arrow" aria-hidden="true">↗</span>
             </a>
           </div>
 
           <div class="experience__visual" role="img" aria-label="Illustration décorative de pâtisseries">
             <div class="experience__illustration" aria-hidden="true">🍰</div>
-            <div class="experience__label" data-bind="experience.label"></div>
+            <div class="experience__label" data-bind="content.experience.label"></div>
           </div>
         </div>
       </section>
@@ -1221,34 +1221,34 @@
       <!-- SECTIONS: VISIT -->
       <section class="visit" data-section="visit" id="visiter">
         <div class="container">
-          <span class="eyebrow" data-bind="visit.eyebrow"></span>
+          <span class="eyebrow" data-bind="content.visit.eyebrow"></span>
           <h2 class="section-heading visit__heading" id="visit-title"></h2>
 
           <div class="visit__grid">
             <article class="visit-card reveal">
               <div class="visit-card__label">01 / Adresse</div>
-              <h3 class="visit-card__title">On se retrouve où ?</h3>
-              <p data-bind="address.full"></p>
-              <p>Dély Ibrahim, Alger, Algérie</p>
+              <h3 data-bind="content.visit.titles.0" class="visit-card__title">On se retrouve où ?</h3>
+              <p data-bind="business.address.full"></p>
+              <p data-bind="content.visit.p">Dély Ibrahim, Alger, Algérie</p>
 
               <div class="visit__actions">
-                <a class="button button--pink" id="visit-directions" target="_blank" rel="noopener noreferrer">
-                  Itinéraire <span aria-hidden="true">↗</span>
+                <a class="button button--pink" id="visit-directions" target="_blank" rel="noopener noreferrer"><span data-bind="content.visit.actions.0">
+                  Itinéraire </span><span aria-hidden="true">↗</span>
                 </a>
-                <a class="button button--light" id="visit-call">Appeler</a>
+                <a data-bind="content.visit.actions.1" class="button button--light" id="visit-call">Appeler</a>
               </div>
             </article>
 
             <article class="visit-card reveal">
               <div class="visit-card__label">02 / Horaires</div>
-              <h3 class="visit-card__title">Quand passer ?</h3>
-              <p data-bind="visit.hoursIntro"></p>
+              <h3 data-bind="content.visit.titles.1" class="visit-card__title">Quand passer ?</h3>
+              <p data-bind="content.visit.hoursIntro"></p>
               <ul class="hours-list" id="hours-list"></ul>
               <div class="hours-status" id="hours-status" role="status" aria-live="polite">
                 <span class="hours-status__dot" aria-hidden="true"></span>
                 <span id="hours-status-text">Horaires à confirmer</span>
               </div>
-              <p data-bind="visit.hoursDisclaimer"></p>
+              <p data-bind="content.visit.hoursDisclaimer"></p>
             </article>
           </div>
         </div>
@@ -1257,11 +1257,11 @@
       <!-- SECTIONS: FINAL CTA -->
       <section class="final-cta" data-section="final-cta">
         <div class="container final-cta__inner reveal">
-          <span class="eyebrow" data-bind="final.eyebrow"></span>
+          <span class="eyebrow" data-bind="content.final.eyebrow"></span>
           <h2 class="final-cta__title" id="final-title"></h2>
-          <p class="final-cta__text" data-bind="final.description"></p>
+          <p class="final-cta__text" data-bind="content.final.description"></p>
           <a class="button button--dark" id="final-directions" target="_blank" rel="noopener noreferrer">
-            <span data-bind="final.cta"></span>
+            <span data-bind="content.final.cta"></span>
             <span aria-hidden="true">↗</span>
           </a>
         </div>
@@ -1272,8 +1272,8 @@
     <footer class="site-footer" data-section="footer">
       <div class="container footer__inner">
         <div>
-          <div class="footer__brand" data-bind="name"></div>
-          <div class="footer__meta" data-bind="footer.description"></div>
+          <div class="footer__brand" data-bind="business.name"></div>
+          <div class="footer__meta" data-bind="content.footer.description"></div>
         </div>
         <nav class="footer__links" id="footer-links" aria-label="Liens complémentaires"></nav>
       </div>
@@ -1285,20 +1285,20 @@
   <script type="application/json" id="site-data">
   {
     "$contract": "maps-to-landing/site-data@1",
-
     "meta": {
       "generatedAt": "2026-06-12",
       "source": "google-maps",
       "sourceUrl": "https://www.google.com/maps/search/?api=1&query=FRENCHY+Ain+Allah+Alger",
       "language": "fr"
     },
-
     "business": {
       "name": "FRENCHY",
       "branch": "Ain Allah",
       "category": "Dessert café",
       "cuisine": null,
-      "languages": ["fr"],
+      "languages": [
+        "fr"
+      ],
       "phone": {
         "e164": "+213556508142",
         "display": "0556 50 81 42",
@@ -1316,7 +1316,10 @@
         "short": "Ain Allah · Alger",
         "full": "Coopérative El Moustakbel, n° 286, Route Ain Allah, Dély Ibrahim 16302"
       },
-      "coordinates": { "lat": 36.7501648, "lng": 2.9951359 },
+      "coordinates": {
+        "lat": 36.7501648,
+        "lng": 2.9951359
+      },
       "rating": {
         "value": null,
         "reviewCount": null,
@@ -1327,13 +1330,48 @@
         "timezone": "Africa/Algiers",
         "source": "Horaires publiés en ligne, à confirmer auprès de l'établissement.",
         "schedule": [
-          { "day": "Sunday",   "label": "Dimanche",   "open": "11:30", "close": "23:00" },
-          { "day": "Monday",   "label": "Lundi",       "open": "11:30", "close": "23:00" },
-          { "day": "Tuesday",  "label": "Mardi",       "open": "11:30", "close": "23:00" },
-          { "day": "Wednesday", "label": "Mercredi",  "open": "11:30", "close": "23:00" },
-          { "day": "Thursday", "label": "Jeudi",       "open": "11:30", "close": "23:00" },
-          { "day": "Friday",   "label": "Vendredi",    "open": "16:00", "close": "23:00" },
-          { "day": "Saturday", "label": "Samedi",      "open": "11:30", "close": "23:00" }
+          {
+            "day": "Sunday",
+            "label": "Dimanche",
+            "open": "11:30",
+            "close": "23:00"
+          },
+          {
+            "day": "Monday",
+            "label": "Lundi",
+            "open": "11:30",
+            "close": "23:00"
+          },
+          {
+            "day": "Tuesday",
+            "label": "Mardi",
+            "open": "11:30",
+            "close": "23:00"
+          },
+          {
+            "day": "Wednesday",
+            "label": "Mercredi",
+            "open": "11:30",
+            "close": "23:00"
+          },
+          {
+            "day": "Thursday",
+            "label": "Jeudi",
+            "open": "11:30",
+            "close": "23:00"
+          },
+          {
+            "day": "Friday",
+            "label": "Vendredi",
+            "open": "16:00",
+            "close": "23:00"
+          },
+          {
+            "day": "Saturday",
+            "label": "Samedi",
+            "open": "11:30",
+            "close": "23:00"
+          }
         ]
       },
       "socials": {
@@ -1351,7 +1389,6 @@
         "booking": null
       }
     },
-
     "content": {
       "hero": {
         "eyebrow": "Une adresse gourmande à Ain Allah",
@@ -1360,12 +1397,17 @@
         "description": "Sundae généreux, crêpes gourmandes, cheesecakes et boissons fraîches. À chacun son petit plaisir.",
         "note": "Une carte entre desserts, boissons et café",
         "sticker": "PETIT PLAISIR\nGRAND SOURIRE",
-        "caption": "La pause qui fait du bien."
+        "caption": "La pause qui fait du bien.",
+        "actions": [
+          "Découvrir la carte",
+          "Nous trouver"
+        ]
       },
       "intro": {
         "label": "Le programme",
         "textStart": "Un peu de",
-        "textAccent": "douceur, beaucoup de plaisir."
+        "textAccent": "douceur, beaucoup de plaisir.",
+        "link": "Explorer les envies"
       },
       "menu": {
         "eyebrow": "À chacun son péché mignon",
@@ -1387,14 +1429,24 @@
         "titleStart": "Du frais, du fondant,",
         "titleAccent": "du gourmand.",
         "description": "Envie d'un dessert fruité, d'une crêpe chocolatée ou d'un café ? Explore les différentes familles de la carte et choisis ce qui te fait envie.",
-        "label": "À découvrir sur place"
+        "label": "À découvrir sur place",
+        "button": "Préparer ma visite"
       },
       "visit": {
         "eyebrow": "Passe nous voir",
         "titleStart": "Rendez-vous à",
         "titleAccent": "Ain Allah.",
         "hoursIntro": "Horaires publiés en ligne, à confirmer auprès de l'établissement.",
-        "hoursDisclaimer": "Les horaires peuvent changer. Un appel avant le déplacement est conseillé."
+        "hoursDisclaimer": "Les horaires peuvent changer. Un appel avant le déplacement est conseillé.",
+        "titles": [
+          "On se retrouve où ?",
+          "Quand passer ?"
+        ],
+        "p": "Dély Ibrahim, Alger, Algérie",
+        "actions": [
+          "Itinéraire",
+          "Appeler"
+        ]
       },
       "final": {
         "eyebrow": "Ta prochaine pause",
@@ -1406,20 +1458,51 @@
       "footer": {
         "description": "Ain Allah · Dély Ibrahim · Alger",
         "links": [
-          { "label": "Instagram", "urlKey": "instagram" },
-          { "label": "Google Maps", "urlKey": "place" },
-          { "label": "Appeler", "urlKey": "phone" }
+          {
+            "label": "Instagram",
+            "urlKey": "instagram"
+          },
+          {
+            "label": "Google Maps",
+            "urlKey": "place"
+          },
+          {
+            "label": "Appeler",
+            "urlKey": "phone"
+          }
         ]
       },
       "navigation": [
-        { "label": "La carte", "href": "#carte" },
-        { "label": "Le concept", "href": "#signature" },
-        { "label": "Nous trouver", "href": "#visiter" }
+        {
+          "label": "La carte",
+          "href": "#carte"
+        },
+        {
+          "label": "Le concept",
+          "href": "#signature"
+        },
+        {
+          "label": "Nous trouver",
+          "href": "#visiter"
+        }
       ],
-      "marquee": ["Sundae", "Crêpes", "Cheesecake", "Tiramisu", "Frappés", "Café glacé"],
-      "socialProof": { "headline": null, "body": null, "cta": null }
+      "marquee": [
+        "Sundae",
+        "Crêpes",
+        "Cheesecake",
+        "Tiramisu",
+        "Frappés",
+        "Café glacé"
+      ],
+      "socialProof": {
+        "headline": null,
+        "body": null,
+        "cta": null
+      },
+      "header": {
+        "button": "Nous trouver"
+      }
     },
-
     "offerings": [
       {
         "id": "glaces",
@@ -1518,20 +1601,19 @@
         "icon": "✳"
       }
     ],
-
     "reviews": [],
-
     "gallery": [],
-
-    "assets": { "logo": null, "hero": null, "ogImage": null },
-
+    "assets": {
+      "logo": null,
+      "hero": null,
+      "ogImage": null
+    },
     "seo": {
       "title": "FRENCHY Ain Allah — Sundae, crêpes et desserts à Alger",
       "description": "Découvrez la carte de FRENCHY Ain Allah à Dély Ibrahim : sundae, crêpes, cheesecakes, tiramisu, frappés et café.",
       "canonical": "https://example.com/",
       "ogImage": null
     },
-
     "missing": [
       "Note Google et nombre d'avis non vérifiables sur la fiche publique — à confirmer avec le gérant.",
       "Aucun visuel fourni par le client : logo, photos de la vitrine et photos de la carte restent à ajouter.",
@@ -1568,10 +1650,15 @@
           "'": "&#39;"
         })[char]);
 
-      const bindText = (key, value) => {
-        const element = $(`[data-bind="${key}"]`);
-        if (element) element.textContent = value ?? "";
-      };
+      // Resolve every [data-bind] as a path into site-data, then write it.
+      const readPath = (path) =>
+        path.split(".").reduce((value, key) => (value == null ? value : value[key]), data);
+
+      const bindAll = () =>
+        $$("[data-bind]").forEach((element) => {
+          const value = readPath(element.dataset.bind);
+          if (typeof value === "string") element.textContent = value;
+        });
 
       const setLink = (selector, url, label) => {
         const element = $(selector);
@@ -1609,13 +1696,6 @@
       $("#flavor-track").innerHTML = marqueeGroup + marqueeGroup;
 
       // Hero.
-      bindText("name", business.name);
-      bindText("neighborhood", business.address.short);
-      bindText("hero.eyebrow", content.hero.eyebrow);
-      bindText("hero.description", content.hero.description);
-      bindText("hero.note", content.hero.note);
-      bindText("hero.sticker", content.hero.sticker);
-      bindText("hero.caption", content.hero.caption);
 
       renderHeadline(
         "#hero-title",
@@ -1625,8 +1705,9 @@
 
       setLink("#hero-directions", business.links.maps);
 
+      bindAll();
+
       // Intro.
-      bindText("intro.label", content.intro.label);
 
       renderHeadline(
         "#intro-text",
@@ -1635,9 +1716,6 @@
       );
 
       // Menu.
-      bindText("menu.eyebrow", content.menu.eyebrow);
-      bindText("menu.description", content.menu.description);
-      bindText("menu.note", content.menu.note);
 
       renderHeadline(
         "#menu-title",
@@ -1666,10 +1744,6 @@
       `).join("");
 
       // Signature.
-      bindText("signature.eyebrow", content.signature.eyebrow);
-      bindText("signature.description", content.signature.description);
-      bindText("signature.cta", content.signature.cta);
-      bindText("signature.badge", content.signature.badge);
 
       renderHeadline(
         "#signature-title",
@@ -1678,9 +1752,6 @@
       );
 
       // Experience.
-      bindText("experience.eyebrow", content.experience.eyebrow);
-      bindText("experience.description", content.experience.description);
-      bindText("experience.label", content.experience.label);
 
       renderHeadline(
         "#experience-title",
@@ -1689,10 +1760,6 @@
       );
 
       // Visit.
-      bindText("visit.eyebrow", content.visit.eyebrow);
-      bindText("visit.hoursIntro", content.visit.hoursIntro);
-      bindText("visit.hoursDisclaimer", content.visit.hoursDisclaimer);
-      bindText("address.full", business.address.full);
 
       renderHeadline(
         "#visit-title",
@@ -1705,9 +1772,6 @@
       setLink("#final-directions", business.links.maps);
 
       // Final CTA.
-      bindText("final.eyebrow", content.final.eyebrow);
-      bindText("final.description", content.final.description);
-      bindText("final.cta", content.final.cta);
 
       renderHeadline(
         "#final-title",
@@ -1716,7 +1780,6 @@
       );
 
       // Footer.
-      bindText("footer.description", content.footer.description);
 
       const footerUrlByKey = {
         instagram: business.socials.instagram,

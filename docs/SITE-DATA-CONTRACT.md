@@ -206,6 +206,65 @@ is right — let `text-transform` handle the casing.
 
 ---
 
+## How copy is bound
+
+Every piece of editorial copy lives in `content` and is written into the DOM by
+JS. No headline, subhead, section intro, CTA label, card title, list item or
+footnote is typed into the markup. Both examples work this way; if you write a
+page by hand, copy theirs.
+
+The mechanism is one attribute and one loop:
+
+```html
+<a class="button" href="#carte"><span data-bind="content.hero.actions.0">Voir la carte</span><span class="arrow" aria-hidden="true">↗</span></a>
+```
+
+```js
+const readPath = (path) =>
+  path.split(".").reduce((value, key) => (value == null ? value : value[key]), data);
+
+document.querySelectorAll("[data-bind]").forEach((element) => {
+  const value = readPath(element.dataset.bind);
+  if (typeof value === "string") element.textContent = value;
+});
+```
+
+Dotted paths index arrays too, so a list is a real list, not a naming collision:
+
+```json
+"content": {
+  "header": { "links": ["La carte", "Le concept", "Nous trouver"] },
+  "hero":   { "actions": ["Voir la carte", "Trouver le spot"] },
+  "visit":  { "actions": ["Itinéraire", "Appeler"] }
+}
+```
+
+Two shapes to know about:
+
+- **Repeated roles become arrays.** Three nav links are
+  `content.header.links[0..2]`, not three separate keys. The array is named
+  after the section it lives in.
+- **A line split by `<br>` becomes `.lines[]`.** `<h3>Le poulet<br>fait le
+  show.</h3>` is `content.showcase.titles[0].lines[0..1]`, so neither fragment
+  is stranded in the markup.
+
+### What stays in the markup
+
+Decorative chrome stays. Specifically: the logo mark, icon glyphs and arrows,
+numbered step labels (`01 / …`), star rows, quote marks, typographic art pieces,
+and the copyright year.
+
+The reason is practical, not aesthetic. Binding chrome gains nothing (an owner
+never edits it) and costs something: writing a trimmed string back over a text
+node strips meaningful whitespace. `© <span id="current-year"></span> Brand.`
+becomes `©2026 Brand.` the moment you bind the `©`. If a fragment is
+punctuation only, leave it alone.
+
+Anything a business owner might reasonably want to change is copy, and copy goes
+in `content`.
+
+---
+
 ## Rules
 
 1. **`$contract` is mandatory.** A page without it predates this contract and must be
@@ -225,6 +284,12 @@ is right — let `text-transform` handle the casing.
    is found. CSS-drawn `visual` variants stand in until then.
 7. **`content` is the only free-form part.** Prompt 2 ports `content` into React
    components and does not put it in the database.
+8. **Copy is bound, not typed.** Every editorial string in the page body carries
+   a `data-bind` path into `site-data`. The only text left in the markup is
+   decorative chrome (see *What stays in the markup* above). A page whose
+   headlines sit directly in the HTML does not satisfy this contract: the second
+   prompt has to scrape them out of the markup, which is the fragility this
+   document exists to remove.
 
 ---
 

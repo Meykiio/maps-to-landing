@@ -161,25 +161,41 @@ const ENTITIES = { "&amp;": "&", "&lt;": "<", "&gt;": ">", "&quot;": '"', "&#39;
 function decodeEntities(s) {
   return s.replace(/&(?:amp|lt|gt|quot|#39|nbsp);/g, (m) => ENTITIES[m] ?? m);
 }
-
-/** Build a registry of elements from the tags present in the source HTML. */
+/** Build a registry of elements from the tags present in the source HTML.
+ *  A text node belongs to the innermost element that is open at that point,
+ *  so both leading and trailing direct text are captured. */
 function buildRegistry(html) {
   const registry = [];
-  const re = /<([a-zA-Z][a-zA-Z0-9-]*)((?:\s+[^<>]*?)?)(\/?)>/g;
+  const re = /<([a-zA-Z][a-zA-Z0-9-]*)((?:\s+[^<>]*?)?)(\/?)>|<\/([a-zA-Z][a-zA-Z0-9-]*)\s*>/g;
+  const VOID = new Set(["area","base","br","col","embed","hr","img","input","link","meta","param","source","track","wbr"]);
+  const stack = [];
   let m;
+  let cursor = 0;
+
   while ((m = re.exec(html))) {
+    const between = html.slice(cursor, m.index);
+    if (between && stack.length) {
+      const owner = stack[stack.length - 1];
+      owner.texts = owner.texts || [];
+      owner.texts.push(between);
+    }
+    cursor = re.lastIndex;
+
+    if (m[4]) {
+      for (let i = stack.length - 1; i >= 0; i--) {
+        if (stack[i].tagName === m[4].toUpperCase()) { stack.length = i; break; }
+      }
+      continue;
+    }
+
     const tag = m[1];
     const attrs = parseAttrs(m[2] ?? "");
     const el = new El(tag, attrs);
-
-    /* Capture the element's own leading text so static copy is diffable too. */
-    const rest = html.slice(m.index + m[0].length);
-    const nextTag = rest.search(/</);
-    const own = (nextTag === -1 ? rest : rest.slice(0, nextTag)).trim();
-    if (own) el.textContent = own;
-
     registry.push(el);
+
+    if (m[3] !== "/" && !VOID.has(tag.toLowerCase())) stack.push(el);
   }
+
   /* Scripts are read by the page via textContent, so hand each one its body. */
   const scriptRe = /<script\b([^>]*)>([\s\S]*?)<\/script>/gi;
   let s;
@@ -213,6 +229,14 @@ function matches(el, selector) {
 function makeDom(registry, sink) {
   const byId = new Map();
   for (const el of registry) if (el.id && !byId.has(el.id)) byId.set(el.id, el);
+
+  /* Fold each element's collected direct text into its textContent. */
+  for (const el of registry) {
+    if (el.texts && el.texts.length && !el[TEXT]) {
+      const joined = el.texts.join("").replace(/\s+/g, " ").trim();
+      if (joined) el[TEXT] = joined;
+    }
+  }
 
   const documentElement = new El("html");
   const head = new El("head");

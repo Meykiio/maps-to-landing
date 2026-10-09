@@ -22,9 +22,10 @@ Both files carry their whole data layer in one block:
 <script type="application/json" id="site-data">
 ```
 
-The markup holds structure and classes only; JS writes the text. Open the block
-and you can see exactly what was researched, and exactly what was *not* — which
-is the part that matters when you go to sell this to someone.
+The markup holds structure, classes and a `data-bind` path per string; JS writes
+every piece of copy from the data block. Open the block and you can see exactly
+what was researched, and exactly what was *not* — which is the part that matters
+when you go to sell this to someone.
 
 - `business` — verified facts. Anything unverifiable is `null`, never guessed.
 - `content` — the copy, free-form per business.
@@ -32,10 +33,16 @@ is the part that matters when you go to sell this to someone.
 - `missing[]` — a plain-language list of what to ask the owner. This is your
   sales checklist.
 
-`thaisty-crousty.html` shows the token-substitution pattern: `"{rating} / 5 sur
-Google*"` instead of retyping the number, so the same fact never appears twice
-and cannot go stale. Its JSON-LD is generated from the data block too, so the
-structured data can't contradict the page.
+Inside `content`, lists are arrays (`content.header.links[0..2]`,
+`content.hero.actions[0..1]`) and a heading split by `<br>` is `.lines[0..1]`.
+Search either file for `data-bind=` and every editorial string on the page is
+listed there. The only text left in the markup is decorative chrome — the logo
+mark, arrows, stars, `01 / …` step labels — which an owner never edits.
+
+`thaisty-crousty.html` shows two patterns worth copying: token substitution
+(`"{rating} / 5 sur Google*"` instead of retyping the number, so the same fact
+never appears twice and cannot go stale) and a JSON-LD block generated from the
+data instead of hand-written beside it.
 
 ## Both pass the contract
 

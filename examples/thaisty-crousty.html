@@ -1608,13 +1608,13 @@
       </a>
 
       <div class="nav__links">
-        <a class="nav__link" href="#menu">La carte</a>
-        <a class="nav__link" href="#concept">Le concept</a>
-        <a class="nav__link" href="#location">Nous trouver</a>
+        <a data-bind="content.header.links.0" class="nav__link" href="#menu">La carte</a>
+        <a data-bind="content.header.links.1" class="nav__link" href="#concept">Le concept</a>
+        <a data-bind="content.header.links.2" class="nav__link" href="#location">Nous trouver</a>
         <a class="button button--dark nav__cta"
            data-link="order"
-           href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra">
-          Commander <span class="arrow" aria-hidden="true">↗</span>
+           href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra"><span data-bind="content.header.button">
+          Commander </span><span class="arrow" aria-hidden="true">↗</span>
         </a>
       </div>
     </nav>
@@ -1629,16 +1629,16 @@
         <div class="hero__content">
           <div class="hero__label" data-reveal>
             <span class="hero__label-dot" aria-hidden="true"></span>
-            <span>Le spot Crousty · Sidi Yahia</span>
+            <span data-bind="content.hero.spans.0">Le spot Crousty · Sidi Yahia</span>
           </div>
 
           <h1 class="display hero__title" id="hero-title" data-reveal>
-            <span class="hero__line">Du</span>
-            <span class="hero__line hero__highlight">croustillant.</span>
-            <span class="hero__line">Du goût.</span>
+            <span data-bind="content.hero.lines.0" class="hero__line">Du</span>
+            <span data-bind="content.hero.lines.1" class="hero__line hero__highlight">croustillant.</span>
+            <span data-bind="content.hero.lines.2" class="hero__line">Du goût.</span>
           </h1>
 
-          <p class="hero__description" data-reveal>
+          <p data-bind="content.hero.description" class="hero__description" data-reveal>
             Du poulet croustillant, du riz basmati et des sauces
             pour composer ton prochain bowl préféré.
           </p>
@@ -1646,13 +1646,13 @@
           <div class="hero__actions" data-reveal>
             <a class="button button--dark"
                data-link="order"
-               href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra">
-              Voir la carte <span class="arrow" aria-hidden="true">↗</span>
+               href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra"><span data-bind="content.hero.actions.0">
+              Voir la carte </span><span class="arrow" aria-hidden="true">↗</span>
             </a>
             <a class="button button--light"
                data-link="directions"
-               href="https://www.google.com/maps/dir/?api=1&amp;destination=Thaisty+Crousty%2C+62+Chemin+de+Sidi+Yahia%2C+Hydra%2C+Alger">
-              Trouver le spot <span class="arrow" aria-hidden="true">↗</span>
+               href="https://www.google.com/maps/dir/?api=1&amp;destination=Thaisty+Crousty%2C+62+Chemin+de+Sidi+Yahia%2C+Hydra%2C+Alger"><span data-bind="content.hero.actions.1">
+              Trouver le spot </span><span class="arrow" aria-hidden="true">↗</span>
             </a>
           </div>
 
@@ -1662,7 +1662,7 @@
               <path d="M12 22s8-4.5 8-12V5l-8-3-8 3v5c0 7.5 8 12 8 12Z"/>
               <path d="m9 12 2 2 4-4"/>
             </svg>
-            <span>À emporter ou en livraison</span>
+            <span data-bind="content.hero.spans.1">À emporter ou en livraison</span>
           </div>
         </div>
 
@@ -1721,8 +1721,8 @@
             </svg>
           </span>
           <span>
-            <span class="trust__label">Livraison disponible</span>
-            <span class="trust__detail">Commande via Yassir</span>
+            <span data-bind="content.trust.labels.0" class="trust__label">Livraison disponible</span>
+            <span data-bind="content.trust.details.0" class="trust__detail">Commande via Yassir</span>
           </span>
         </div>
 
@@ -1734,8 +1734,8 @@
             </svg>
           </span>
           <span>
-            <span class="trust__label">Le bowl Crousty</span>
-            <span class="trust__detail">Poulet, riz et sauces</span>
+            <span data-bind="content.trust.labels.1" class="trust__label">Le bowl Crousty</span>
+            <span data-bind="content.trust.details.1" class="trust__detail">Poulet, riz et sauces</span>
           </span>
         </div>
       </div>
@@ -1748,19 +1748,19 @@
              data-section="menu" aria-labelledby="menu-title">
       <div class="section-top">
         <div class="section-top__copy">
-          <p class="eyebrow">La carte</p>
-          <h2 class="section-heading" id="menu-title">
-            Choisis ta <span class="text-accent">sauce.</span>
+          <p data-bind="content.menu.eyebrow" class="eyebrow">La carte</p>
+          <h2 class="section-heading" id="menu-title"><span data-bind="content.menu.section-heading">
+            Choisis ta </span><span data-bind="content.menu.text-accent" class="text-accent">sauce.</span>
           </h2>
-          <p class="section-intro">
+          <p data-bind="content.menu.section-intro" class="section-intro">
             Une base de riz basmati, du poulet croustillant,
             puis la sauce qui change tout.
           </p>
         </div>
         <a class="button button--light"
            data-link="order"
-           href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra">
-          Toute la carte <span class="arrow" aria-hidden="true">↗</span>
+           href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra"><span data-bind="content.menu.button">
+          Toute la carte </span><span class="arrow" aria-hidden="true">↗</span>
         </a>
       </div>
 
@@ -1768,7 +1768,7 @@
         <!-- Cards are rendered from site-data. -->
       </div>
 
-      <p class="menu__disclaimer">
+      <p data-bind="content.menu.disclaimer" class="menu__disclaimer">
         Prix indicatifs issus d'une carte de livraison consultée.
         Vérifie les prix et la disponibilité sur la plateforme avant de commander.
       </p>
@@ -1787,24 +1787,24 @@
         </div>
 
         <div class="story__copy">
-          <p class="eyebrow">Le concept</p>
-          <h2 class="section-heading" id="story-title">
-            Trois éléments.<br>
-            <span>Une envie.</span>
+          <p data-bind="content.story.eyebrow" class="eyebrow">Le concept</p>
+          <h2 class="section-heading" id="story-title"><span data-bind="content.story.section-heading">
+            Trois éléments.</span><br>
+            <span data-bind="content.story.span">Une envie.</span>
           </h2>
-          <p>
+          <p data-bind="content.story.paragraphs.0">
             Chez Thaisty Crousty, le bowl met le poulet croustillant
             au centre du jeu : riz basmati, oignons frits et
             différentes sauces pour varier les saveurs.
           </p>
-          <p>
+          <p data-bind="content.story.paragraphs.1">
             Le principe est simple. Tu choisis ton Crousty,
             tu choisis ton envie, et tu passes commande.
           </p>
           <span class="story__note">
-            <span aria-hidden="true">✳</span>
+            <span aria-hidden="true">✳</span><span data-bind="content.story.note">
             Direction Sidi Yahia, Hydra.
-          </span>
+          </span></span>
         </div>
       </div>
     </section>
@@ -1814,31 +1814,31 @@
     ====================================================== -->
     <section class="showcase container" data-section="showcase"
              aria-labelledby="showcase-title">
-      <p class="eyebrow">Le mood</p>
-      <h2 class="section-heading" id="showcase-title">
-        Simple dans le bowl.<br>
-        <span class="text-accent">Sérieux sur la sauce.</span>
+      <p data-bind="content.showcase.eyebrow" class="eyebrow">Le mood</p>
+      <h2 class="section-heading" id="showcase-title"><span data-bind="content.showcase.section-heading">
+        Simple dans le bowl.</span><br>
+        <span data-bind="content.showcase.text-accent" class="text-accent">Sérieux sur la sauce.</span>
       </h2>
 
       <div class="showcase__grid">
         <article class="showcase-card showcase-card--red">
           <span class="showcase-card__label">01 / Le croustillant</span>
-          <h3 class="showcase-card__title">
-            Le poulet<br>fait le show.
-          </h3>
+          <h3 class="showcase-card__title"><span data-bind="content.showcase.titles.0.lines.0">
+            Le poulet</span><br><span data-bind="content.showcase.titles.0.lines.1">fait le show.
+          </span></h3>
           <span class="showcase-card__shape" aria-hidden="true"></span>
         </article>
 
         <article class="showcase-card showcase-card--dark">
           <span class="showcase-card__label">02 / Le choix de sauce</span>
-          <h3 class="showcase-card__title">
-            Classic.<br>Sweet.<br>Spicy.
-          </h3>
+          <h3 class="showcase-card__title"><span data-bind="content.showcase.titles.1.lines.0">
+            Classic.</span><br><span data-bind="content.showcase.titles.1.lines.1">Sweet.</span><br><span data-bind="content.showcase.titles.1.lines.2">Spicy.
+          </span></h3>
           <span class="showcase-card__shape" aria-hidden="true"></span>
         </article>
       </div>
 
-      <p class="showcase__footnote">
+      <p data-bind="content.showcase.footnote" class="showcase__footnote">
         Visuels typographiques conceptuels. Les photographies réelles
         des plats et du restaurant restent à intégrer.
       </p>
@@ -1851,11 +1851,11 @@
              aria-labelledby="reviews-title">
       <div class="container reviews__grid">
         <div>
-          <p class="eyebrow">Ils en parlent</p>
-          <h2 class="section-heading" id="reviews-title">
-            À toi de <span class="text-accent">juger.</span>
+          <p data-bind="content.reviews.eyebrow" class="eyebrow">Ils en parlent</p>
+          <h2 class="section-heading" id="reviews-title"><span data-bind="content.reviews.section-heading">
+            À toi de </span><span data-bind="content.reviews.text-accent" class="text-accent">juger.</span>
           </h2>
-          <p class="section-intro">
+          <p data-bind="content.reviews.section-intro" class="section-intro">
             Consulte les avis des clients sur Google avant de te faire
             ton propre avis.
           </p>
@@ -1871,8 +1871,8 @@
           <a class="button button--dark"
              data-link="reviews"
              href="https://www.google.com/maps/search/?api=1&amp;query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger"
-             target="_blank" rel="noopener noreferrer">
-            Lire les avis Google <span class="arrow" aria-hidden="true">↗</span>
+             target="_blank" rel="noopener noreferrer"><span data-bind="content.reviews.actions.0">
+            Lire les avis Google </span><span class="arrow" aria-hidden="true">↗</span>
           </a>
         </div>
 
@@ -1887,8 +1887,8 @@
           </p>
           <a class="button button--light"
              href="https://restaurantguru.com/Thaisty-Crousty-Sidi-Yahia-Hydra"
-             target="_blank" rel="noopener noreferrer">
-            Voir la source <span class="arrow" aria-hidden="true">↗</span>
+             target="_blank" rel="noopener noreferrer"><span data-bind="content.reviews.actions.1">
+            Voir la source </span><span class="arrow" aria-hidden="true">↗</span>
           </a>
         </blockquote>
       </div>
@@ -1901,11 +1901,11 @@
              data-section="location" aria-labelledby="location-title">
       <div class="location__grid">
         <div>
-          <p class="eyebrow">Le point de rendez-vous</p>
-          <h2 class="section-heading" id="location-title">
-            On se retrouve à <span class="text-accent">Hydra.</span>
+          <p data-bind="content.location.eyebrow" class="eyebrow">Le point de rendez-vous</p>
+          <h2 class="section-heading" id="location-title"><span data-bind="content.location.section-heading">
+            On se retrouve à </span><span data-bind="content.location.text-accent" class="text-accent">Hydra.</span>
           </h2>
-          <p class="section-intro">
+          <p data-bind="content.location.section-intro" class="section-intro">
             Retrouvez Thaisty Crousty sur le chemin de Sidi Yahia,
             à Hydra, Alger.
           </p>
@@ -1961,7 +1961,7 @@
             </div>
           </div>
 
-          <p class="menu__disclaimer">
+          <p data-bind="content.location.disclaimer" class="menu__disclaimer">
             Les horaires proviennent d'une source tierce et peuvent changer.
             Confirme-les sur la fiche du restaurant avant de te déplacer.
           </p>
@@ -1984,8 +1984,8 @@
             <a class="button button--dark"
                data-link="directions"
                href="https://www.google.com/maps/dir/?api=1&amp;destination=Thaisty+Crousty%2C+62+Chemin+de+Sidi+Yahia%2C+Hydra%2C+Alger"
-               target="_blank" rel="noopener noreferrer">
-              Itinéraire Google Maps <span class="arrow" aria-hidden="true">↗</span>
+               target="_blank" rel="noopener noreferrer"><span data-bind="content.location.button">
+              Itinéraire Google Maps </span><span class="arrow" aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
@@ -1999,19 +1999,19 @@
              aria-labelledby="final-title">
       <div class="container final-cta__inner">
         <div class="final-cta__copy">
-          <p class="eyebrow">Ta prochaine commande</p>
-          <h2 class="display final-cta__title" id="final-title">
-            Alors,<br>quelle sauce ?
-          </h2>
-          <p class="final-cta__text">
+          <p data-bind="content.final-cta.eyebrow" class="eyebrow">Ta prochaine commande</p>
+          <h2 class="display final-cta__title" id="final-title"><span data-bind="content.final-cta.display.lines.0">
+            Alors,</span><br><span data-bind="content.final-cta.display.lines.1">quelle sauce ?
+          </span></h2>
+          <p data-bind="content.final-cta.text" class="final-cta__text">
             Explore les bowls et choisis ton prochain Crousty.
           </p>
         </div>
 
         <a class="button button--gold final-cta__button"
            data-link="order"
-           href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra">
-          Commander sur Yassir <span class="arrow" aria-hidden="true">↗</span>
+           href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra"><span data-bind="content.final-cta.button">
+          Commander sur Yassir </span><span class="arrow" aria-hidden="true">↗</span>
         </a>
       </div>
     </section>
@@ -2032,14 +2032,14 @@
         </a>
 
         <nav class="footer__links" aria-label="Liens complémentaires">
-          <a class="footer__link" href="#menu">La carte</a>
-          <a class="footer__link" href="#concept">Le concept</a>
-          <a class="footer__link"
+          <a data-bind="content.footer.links.0" class="footer__link" href="#menu">La carte</a>
+          <a data-bind="content.footer.links.1" class="footer__link" href="#concept">Le concept</a>
+          <a data-bind="content.footer.links.2" class="footer__link"
              data-link="reviews"
              href="https://www.google.com/maps/search/?api=1&amp;query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger">
             Avis Google
           </a>
-          <a class="footer__link"
+          <a data-bind="content.footer.links.3" class="footer__link"
              data-link="order"
              href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra">
             Commander
@@ -2060,20 +2060,23 @@
   <script type="application/json" id="site-data">
   {
     "$contract": "maps-to-landing/site-data@1",
-
     "meta": {
       "generatedAt": "2026-06-12",
       "source": "website",
       "sourceUrl": "https://restaurantguru.com/Thaisty-Crousty-Sidi-Yahia-Hydra",
       "language": "fr"
     },
-
     "business": {
       "name": "Thaisty Crousty",
       "branch": null,
       "category": "Restaurant",
-      "cuisine": ["Chicken", "Asian-inspired street food"],
-      "languages": ["fr"],
+      "cuisine": [
+        "Chicken",
+        "Asian-inspired street food"
+      ],
+      "languages": [
+        "fr"
+      ],
       "phone": {
         "e164": "+213793755788",
         "display": "0793 75 57 88",
@@ -2102,13 +2105,48 @@
         "timezone": "Africa/Algiers",
         "source": "Restaurant Guru, fiche consultée en 2026",
         "schedule": [
-          { "day": "Sunday",    "label": "Dimanche", "open": "11:00", "close": "03:00" },
-          { "day": "Monday",    "label": "Lundi",     "open": "11:00", "close": "03:00" },
-          { "day": "Tuesday",   "label": "Mardi",     "open": "11:00", "close": "03:00" },
-          { "day": "Wednesday", "label": "Mercredi", "open": "11:30", "close": "03:00" },
-          { "day": "Thursday",  "label": "Jeudi",     "open": "11:00", "close": "03:00" },
-          { "day": "Friday",    "label": "Vendredi",  "open": "17:00", "close": "03:00" },
-          { "day": "Saturday",  "label": "Samedi",    "open": "11:00", "close": "03:00" }
+          {
+            "day": "Sunday",
+            "label": "Dimanche",
+            "open": "11:00",
+            "close": "03:00"
+          },
+          {
+            "day": "Monday",
+            "label": "Lundi",
+            "open": "11:00",
+            "close": "03:00"
+          },
+          {
+            "day": "Tuesday",
+            "label": "Mardi",
+            "open": "11:00",
+            "close": "03:00"
+          },
+          {
+            "day": "Wednesday",
+            "label": "Mercredi",
+            "open": "11:30",
+            "close": "03:00"
+          },
+          {
+            "day": "Thursday",
+            "label": "Jeudi",
+            "open": "11:00",
+            "close": "03:00"
+          },
+          {
+            "day": "Friday",
+            "label": "Vendredi",
+            "open": "17:00",
+            "close": "03:00"
+          },
+          {
+            "day": "Saturday",
+            "label": "Samedi",
+            "open": "11:00",
+            "close": "03:00"
+          }
         ]
       },
       "socials": {
@@ -2126,7 +2164,6 @@
         "booking": null
       }
     },
-
     "content": {
       "brand": {
         "name": "Thaisty Crousty",
@@ -2134,24 +2171,125 @@
       },
       "trust": {
         "ratingLabel": "{rating} / 5 sur Google*",
-        "reviewsLabel": "{reviewCount} avis répertoriés"
+        "reviewsLabel": "{reviewCount} avis répertoriés",
+        "labels": [
+          "Livraison disponible",
+          "Le bowl Crousty"
+        ],
+        "details": [
+          "Commande via Yassir",
+          "Poulet, riz et sauces"
+        ]
       },
       "reviews": {
         "quote": "Excellent bol et dessert !",
         "attribution": "Extrait d'un avis public attribué à RAD BOU, consulté sur Restaurant Guru.",
-        "sourceLabel": "Voir la source"
+        "sourceLabel": "Voir la source",
+        "eyebrow": "Ils en parlent",
+        "text-accent": "juger.",
+        "section-heading": "À toi de",
+        "section-intro": "Consulte les avis des clients sur Google avant de te faire ton propre avis.",
+        "actions": [
+          "Lire les avis Google",
+          "Voir la source"
+        ]
       },
       "location": {
         "address": "{address}",
-        "shortAddress": "{addressShort}"
+        "shortAddress": "{addressShort}",
+        "eyebrow": "Le point de rendez-vous",
+        "text-accent": "Hydra.",
+        "section-heading": "On se retrouve à",
+        "section-intro": "Retrouvez Thaisty Crousty sur le chemin de Sidi Yahia, à Hydra, Alger.",
+        "disclaimer": "Les horaires proviennent d'une source tierce et peuvent changer. Confirme-les sur la fiche du restaurant avant de te déplacer.",
+        "button": "Itinéraire Google Maps"
       },
       "footer": {
         "name": "Thaisty Crousty",
         "sub": "Sidi Yahia · Hydra · Alger",
-        "address": "{addressShort}."
+        "address": "{addressShort}.",
+        "links": [
+          "La carte",
+          "Le concept",
+          "Avis Google",
+          "Commander"
+        ]
+      },
+      "header": {
+        "links": [
+          "La carte",
+          "Le concept",
+          "Nous trouver"
+        ],
+        "button": "Commander"
+      },
+      "hero": {
+        "spans": [
+          "Le spot Crousty · Sidi Yahia",
+          "À emporter ou en livraison"
+        ],
+        "lines": [
+          "Du",
+          "croustillant.",
+          "Du goût."
+        ],
+        "description": "Du poulet croustillant, du riz basmati et des sauces pour composer ton prochain bowl préféré.",
+        "actions": [
+          "Voir la carte",
+          "Trouver le spot"
+        ]
+      },
+      "menu": {
+        "eyebrow": "La carte",
+        "text-accent": "sauce.",
+        "section-heading": "Choisis ta",
+        "section-intro": "Une base de riz basmati, du poulet croustillant, puis la sauce qui change tout.",
+        "button": "Toute la carte",
+        "disclaimer": "Prix indicatifs issus d'une carte de livraison consultée. Vérifie les prix et la disponibilité sur la plateforme avant de commander."
+      },
+      "story": {
+        "eyebrow": "Le concept",
+        "span": "Une envie.",
+        "section-heading": "Trois éléments.",
+        "paragraphs": [
+          "Chez Thaisty Crousty, le bowl met le poulet croustillant au centre du jeu : riz basmati, oignons frits et différentes sauces pour varier les saveurs.",
+          "Le principe est simple. Tu choisis ton Crousty, tu choisis ton envie, et tu passes commande."
+        ],
+        "note": "Direction Sidi Yahia, Hydra."
+      },
+      "showcase": {
+        "eyebrow": "Le mood",
+        "text-accent": "Sérieux sur la sauce.",
+        "section-heading": "Simple dans le bowl.",
+        "titles": [
+          {
+            "lines": [
+              "Le poulet",
+              "fait le show."
+            ]
+          },
+          {
+            "lines": [
+              "Classic.",
+              "Sweet.",
+              "Spicy."
+            ]
+          }
+        ],
+        "footnote": "Visuels typographiques conceptuels. Les photographies réelles des plats et du restaurant restent à intégrer."
+      },
+      "final-cta": {
+        "eyebrow": "Ta prochaine commande",
+        "display": {
+          "lines": [
+            "Alors,",
+            "quelle sauce ?"
+          ]
+        },
+        "text": "Explore les bowls et choisis ton prochain Crousty.",
+        "button": "Commander sur Yassir"
       }
     },
-
     "offerings": [
       {
         "id": "crousty-classic",
@@ -2250,7 +2388,6 @@
         "icon": "✳"
       }
     ],
-
     "reviews": [
       {
         "id": "r1",
@@ -2262,18 +2399,18 @@
         "featured": true
       }
     ],
-
     "gallery": [],
-
-    "assets": { "logo": null, "hero": null, "ogImage": null },
-
+    "assets": {
+      "logo": null,
+      "hero": null,
+      "ogImage": null
+    },
     "seo": {
       "title": "Thaisty Crousty | Bowls croustillants à Hydra, Alger",
       "description": "Découvrez les bowls Crousty de Thaisty Crousty à Sidi Yahia, Hydra, Alger. Poulet croustillant, riz basmati et sauces maison.",
       "canonical": "https://example.com/",
       "ogImage": null
     },
-
     "missing": [
       "Coordonnées GPS non reprises : le point de localisation affiché est un schéma décoratif, pas un vrai plan.",
       "Aucun lien WhatsApp, Facebook ou TikTok trouvé — à confirmer avec le gérant.",
