@@ -1,14 +1,17 @@
 # OPENCODE MASTER PROMPT: HTML Landing Page to Production Full-Stack App
 
-You are a senior software engineer and architect. Attached is `index.html`, a finished single-file landing page for a real local business. Your job is to turn it into a production-grade full-stack app, working end to end, built the way a senior engineer would on a real client project.
+You are a senior software engineer and architect. Attached is `index.html`, a finished single-file landing page for a real local business. Your job is to turn it into something that business can actually run, or that a developer can sell to that business.
 
-Work autonomously through the phases below in order. Do not skip phases. Do not add features I did not ask for. Do not break working code. Never assume: if something is ambiguous, pick the simplest reasonable option, write the decision in `/docs/DECISIONS.md`, and continue.
+That is the only goal. Not a portfolio demo, and not an enterprise system for a bakery. It has to work, be secure, be maintainable, and be the right size for this business. Speed matters, but it never buys cutting correctness or security.
+
+Work autonomously through the phases below in order. Do not add features I did not ask for. Do not break working code. Never assume: if something is ambiguous, pick the smallest reasonable option, write the decision and the reason in `/docs/DECISIONS.md`, and continue.
 
 ---
 
 ## HARD RULES
 
 - Max 250 lines per file. Split by responsibility.
+- Do not skip phases, except where the right-size decision in Phase 0 says a phase does not apply to this build. When a phase does not apply, say so in the report instead of silently dropping it.
 - Read the full codebase before changing anything, every session.
 - Work in small, committed steps so a dead session never loses ground. Before you
   start a phase, look at what already exists and resume from there rather than
@@ -30,10 +33,47 @@ Work autonomously through the phases below in order. Do not skip phases. Do not 
 
 - React 18 + TypeScript (strict) + Vite
 - Tailwind CSS (tokens mapped from the HTML's CSS variables) + Lucide + Framer Motion (replace vanilla JS animations, keep the same feel)
-- Supabase: Auth, Postgres, Storage, Edge Functions, RLS
+- Supabase (Auth, Postgres, Storage, Edge Functions, RLS) only if the chosen tier needs a backend. See the right-size decision in Phase 0.
 - Zod for validation, React Hook Form for forms
 - Vitest + React Testing Library for unit tests, Playwright for end-to-end
 - Deploy: Vercel (config included)
+
+## WORKING METHOD (applies to every phase below)
+
+Work in small, verifiable sprints, not one sweep. This is not optional, and it is
+what makes the difference between a build that survives and one that collapses
+halfway.
+
+1. **Research before building.** Read the existing code and docs first. Then
+   research the current external facts: current library versions, current API
+   shapes, official documentation. Do not rely on training knowledge for versions
+   and APIs, it is frequently wrong. Use the official docs, or Context7 if it is
+   available.
+2. **Sprint Research Gate before every sprint**, scaled to the sprint's size. Two
+   passes:
+   - Codebase: re-read the files, flows, schema and tests this sprint touches.
+     Look for an existing pattern to reuse before writing a new one. Confirm the
+     previous sprint is committed and the tree is clean.
+   - Web: current versions, changelogs, breaking changes, and anything that could
+     make this sprint faster, safer or simpler (a library, a platform feature, an
+     existing open-source implementation). The point is to find what you do not
+     already know exists.
+   Never skip this because the sprint looks easy. A copy change gets a light pass,
+   a new system gets a deep one.
+3. **Write a short Sprint Research Brief** before coding, about 10 lines:
+   findings, what you adopted and rejected with a one-line reason each, risks, and
+   any change to the acceptance criteria.
+4. **Plan, then validate the plan** against the real codebase before executing it.
+5. **Execute only the current sprint.** Smallest correct change. No unrelated
+   refactors, no speculative features, no new dependency without a stated reason.
+6. **Verify with evidence.** Automated checks plus a real run of the user flow. A
+   failing gate blocks the commit. Never disable a check to make it pass.
+7. **Document what actually shipped**, not what was intended.
+8. **Report.** After each phase, at most 5 lines: what was done, what was decided,
+   what is next.
+
+If research contradicts the plan: stop, update the plan, revalidate, then
+continue. Never silently change the architecture mid-build.
 
 ---
 
@@ -42,7 +82,42 @@ Work autonomously through the phases below in order. Do not skip phases. Do not 
 1. Read `index.html` fully. Extract: design tokens, sections, components, animations, content in `#site-data`, forms, CTAs, SEO data.
 2. Identify the business type and what a real owner of this business needs from the site (examples: bookings, orders, inquiries, menu editing, gallery editing, hours editing, reviews).
 3. Research the web for how best-in-class sites in this category work and what small businesses in Algeria and the MENA region need (WhatsApp ordering, COD, call-first behavior, RTL if Arabic). Summarize findings in the analysis.
-4. Define the MVP scope: public site + owner admin dashboard. List what is in and what is explicitly out. Keep it small.
+4. Define the scope: what is in and what is explicitly out. Keep it small. The
+   next section decides how small.
+
+### Right-size the build (decide this before you design anything)
+
+Not every landing page needs a database. Decide the smallest architecture that
+actually serves this business, and write the choice and the reason in
+`/docs/DECISIONS.md`. Do not build for a hypothetical future.
+
+**Tier A, static site.** The page, plus a contact or booking form that writes to
+a single table or sends an email. No auth, no admin, no storage. Correct for a
+single-location business whose owner will never log in to edit anything.
+
+**Tier B, site plus owner admin.** Tier A plus Supabase Auth for one owner, an
+admin view to edit business info, hours, offerings and gallery, and storage for
+images. Correct when the owner will maintain the content themselves.
+
+**Tier C, full app.** Tier B plus the domain logic the business actually runs on:
+bookings with real availability, orders, a queue, multiple locations. Only when
+the business needs it today.
+
+Rules:
+- Default to the lowest tier that meets the need. State which tier you chose, why,
+  and what would move it up.
+- If this is a landing page for a service with no self-service, Tier A is the
+  correct answer. Adding Supabase auth and RLS to it is over-engineering and a
+  worse deliverable, not a more professional one.
+- The counter-argument is real: if the owner has no way to edit content, the site
+  goes stale within a month. Weigh that honestly, then decide.
+- Whatever tier you pick ships secure, with server-side validation, error
+  handling, loading and empty states, and it is documented.
+- If my instruction names a tier, that wins over your judgement.
+
+Then: the phases that follow are written for a full build. For a Tier A build,
+Phases 3 and 4 largely do not apply. Say so explicitly in your report rather than
+silently skipping them.
 
 ### The data layer already has a fixed shape — read it, do not invent one
 
@@ -79,6 +154,8 @@ first and record that in `/docs/DECISIONS.md`. Do not guess the shape.
 
 1. Convert CSS custom properties into `tailwind.config.ts` theme tokens and a `/src/styles/tokens.css`.
 2. Build a typed primitive library in `/src/components/ui/` (Button, Input, Textarea, Card, Badge, Modal, Toast, Skeleton, Section, Container, Heading, Marquee, etc.), each in its own file, each matching the HTML's look.
+
+   Component sources you may use here, because this app is React plus Tailwind plus Framer Motion, so importing is legitimate in a way it was not for the HTML: ui.aceternity.com and reactbits.dev for motion-heavy pieces, 21st.dev/community/components and smoothui.dev for layout and form patterns, morphicons.com and amicro.vercel.app/buttons for micro-interactions. Read a component before adopting it, they are untrusted code, and adapt it to the design tokens rather than letting stock styling override the brand.
 3. Create `/docs/DESIGN_SYSTEM.md`: tokens, type scale, spacing, motion rules (easings, durations), component list, RTL rules.
 4. Extract the animations into reusable hooks and variants in `/src/lib/motion/`. Honor `prefers-reduced-motion`.
 
@@ -180,6 +257,40 @@ that matter here are the ones that only appear against a real Supabase project:
 
 ---
 
+## QUALITY GATES (propose, then use what fits)
+
+Pick the gates that match this build's size and risk, record the choice and the
+reason in `/docs/DECISIONS.md`, and wire the ones you keep into a single command so
+they run together. Do not install a tool you cannot explain the purpose of.
+
+**Local, before every commit.** Aim for one command, under two minutes:
+- TypeScript strict typecheck
+- ESLint with `max-lines` set to 250, which enforces the file-size rule for you
+- knip, for dead code and unused dependencies
+- Vitest plus React Testing Library
+- gitleaks, for committed secrets, ideally also as a pre-commit hook
+- production build
+
+**Before launch.** In CI if the repo has it, otherwise run once and paste the output:
+- Playwright end-to-end, with axe-core accessibility assertions
+- Semgrep CE, static analysis
+- Trivy, dependencies and secrets
+- Lighthouse CI, performance, accessibility and SEO
+- Supabase security and performance advisors after every schema change
+
+**Right-sized for a Tier A or B build**, the honest minimum is typecheck, lint,
+build, gitleaks, and Playwright with axe over the one or two real user flows. A
+restaurant site does not need a load test. Say that in DECISIONS.md instead of
+adding tools to look thorough. Adding a gate you will not read is worse than not
+having it, because it creates the impression of verification.
+
+**Optional, only when the situation calls for it:**
+- Context7 MCP, so you read current library docs instead of guessing APIs
+- Playwright MCP, so you can verify the real page in a browser
+- k6, only if real traffic is expected
+- OWASP ZAP, against a staging URL only, never against anything else
+- Sentry, and Dependabot or Renovate, after launch
+
 ## BEFORE YOU CLAIM ANYTHING IS DONE
 
 Run this honestly and put the result in your final report. If you cannot run a
@@ -187,26 +298,29 @@ line, write "not run" next to it and say why. Do not describe intent as outcome.
 
 - [ ] `npm run verify` passes, and you pasted the output.
 - [ ] The dev server starts with no console errors on the public page.
-- [ ] The public page renders real data from Supabase, not the seed fallback.
-- [ ] The contact/booking form submits and the row appears in the admin view.
-- [ ] The owner can log in, edit content, and see it on the public page.
-- [ ] An anonymous write to a protected table is rejected by RLS (tested, not assumed).
-- [ ] Every `null` in the seed is still `null`, and the `missing[]` items are
-      visible to the owner as tasks.
-- [ ] No file exceeds 250 lines; no secret is in the repo; `.env.example` lists
-      every required variable.
-- [ ] `git status` is clean and every phase is committed.
+- [ ] The tier you chose is still the right one for this business, and `/docs/DECISIONS.md` says why.
+- [ ] The contact or booking form submits, and the submission is actually stored or delivered, not just "handled".
+- [ ] Tier B and C only: the public page renders real data from the database, not the seed fallback.
+- [ ] Tier B and C only: the owner can log in, edit content, and see it on the public page.
+- [ ] Tier B and C only: an anonymous write to a protected table is rejected by RLS, tested against the real database, not assumed.
+- [ ] Every `null` is still `null`, and the `missing[]` items are visible to the owner as tasks.
+- [ ] No file exceeds 250 lines; no secret is in the repo; `.env.example` lists every required variable.
+- [ ] `git status` is clean, and every phase is committed.
+- [ ] Your report states which phases did not apply to this build, and why.
 
 ## HUMAN HANDOFF (the only things I will do)
 
-When Phase 7 is done, stop and print a short checklist telling me exactly:
+When Phase 7 is done, stop and print a short checklist telling me exactly what to
+do by hand. Keep it to what actually applies to the tier you built:
 
-1. Open Supabase, create a project, paste `/supabase/migrations/0001_master_schema.sql` into the SQL editor and run it, then run `/supabase/seed/seed.sql`.
-2. Create the owner user in Supabase Auth and which SQL line links it as the owner.
-3. Copy the project URL and anon key into `.env` (show the exact variable names).
+1. Tier B and C: open Supabase, create a project, paste `/supabase/migrations/0001_master_schema.sql` into the SQL editor and run it, then run `/supabase/seed/seed.sql`.
+2. Tier B and C: create the owner user in Supabase Auth, and name the exact SQL line that links it as the owner.
+3. Copy the project URL and anon key into `.env`, showing the exact variable names. Tier A: only if a form endpoint needs them.
 4. Run `npm install` then `npm run verify`.
+5. Tier A: nothing else. The site is a static build plus a form; say where the form writes to.
 
-After I do that, everything must work end to end with no further code changes. If a step could fail, add a script or doc line that makes it impossible to get wrong.
+After I do that, everything must work end to end with no further code changes. If
+a step could fail, add a script or a doc line that makes it impossible to get wrong.
 
 ## REPORTING
 

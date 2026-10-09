@@ -20,6 +20,7 @@ Do not ask me questions unless the link is unreadable. Make decisions yourself a
    - Their logo, brand colors, fonts, and photo style as actually used
    - How they speak: slogans, caption style, emoji use, language (Arabic, French, English, mixed, dialect)
 4. Research 3 top competitors or best-in-class examples in the same category, only to understand what great looks like and how to stand apart.
+5. Use whatever web access you have. If you have a browser tool or an agent web tool, use it: the business's own Instagram or Facebook is frequently the only place its real colours, type and tone of voice exist. If you cannot reach a source, say so in Missing info instead of inventing a palette from the category.
 
 ### Truth rules (non-negotiable)
 - Never invent facts: no fake reviews, fake awards, fake prices, fake years in business, fake team names, fake stats.
@@ -44,6 +45,41 @@ Before designing, write a compact brief (max 150 words total, shown to me before
 - **Missing info** list
 
 Two different businesses must never produce similar-looking pages. A barbershop, a bakery, a dental clinic, and a gym must each feel like a different designer made them.
+
+---
+
+## PHASE 2B: DESIGN REFERENCES (study these, do not import them)
+
+The page is one file with no dependencies, so you cannot import a component. You
+can and should study real ones for how they solve motion and interaction, then
+rebuild the pattern in plain CSS and JS.
+
+- Motion and interaction: reactbits.dev, ui.aceternity.com
+- Layout and component patterns: 21st.dev/community/components, smoothui.dev
+- Micro-interactions and button detail: amicro.vercel.app/buttons, morphicons.com
+
+Rules:
+- Borrow the idea, never the code. If a pattern only works with a library, either
+  rebuild it in vanilla CSS and JS or choose a different pattern.
+- These are references for behaviour, not a theme to copy wholesale.
+- Say in the brief which two or three patterns you took, and why they fit.
+
+### Do not produce generic AI design (this is where this fails most often)
+
+The default output of an AI asked to design has tells. Every one of these must be
+absent from the final page:
+
+- A purple-to-blue gradient over a dark hero.
+- A centred hero with a generic "Welcome to X" headline and two equal buttons.
+- Identical rounded cards in a three-column grid, each with one icon.
+- One font family at one weight used for everything.
+- Uniform spacing everywhere, so nothing has emphasis and nothing is the focal point.
+- Decorative blobs, floating shapes, or glassmorphism with nothing behind it.
+- Emoji standing in for icons.
+
+Instead: commit to one typographic point of view, introduce one deliberate
+asymmetry or tension, let a single colour lead, and give the layout one clear
+focal point. Derive the visual language from the business's own materials.
 
 ---
 
@@ -132,6 +168,7 @@ prompt works at all.
 - [ ] `#site-data` declares `"$contract": "maps-to-landing/site-data@1"` and passes `tools/check-contract.mjs`
 - [ ] No editorial copy is typed into the markup — headlines, subheads, CTAs, intros and list items all come from `#site-data` via `data-bind`; repeated facts use tokens; only decorative chrome is left in the HTML
 - [ ] JSON-LD is generated from `#site-data`, never a second hand-written copy of the business details
+- [ ] None of the generic AI tells are present: no purple-to-blue hero gradient, no three identical icon cards, no single-weight default font, no centred generic hero
 - [ ] Looks and feels unlike a generic template; signature idea is visible
 - [ ] Colors, fonts, tone, and layout clearly match this specific business
 - [ ] Copy is specific, human, and in the right language; zero lorem ipsum, zero clichés like "welcome to our website"
