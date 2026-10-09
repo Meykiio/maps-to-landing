@@ -10,6 +10,16 @@ Work autonomously through the phases below in order. Do not skip phases. Do not 
 
 - Max 250 lines per file. Split by responsibility.
 - Read the full codebase before changing anything, every session.
+- Work in small, committed steps so a dead session never loses ground. Before you
+  start a phase, look at what already exists and resume from there rather than
+  rebuilding: check `git log --oneline -20`, read `/docs/CHANGELOG.md`, and read
+  the files you are about to touch. If a phase is half done, finish it, do not
+  restart it.
+- Never claim a phase is complete without evidence. "The tests pass" means you
+  ran them and pasted the result. "It works end to end" means you started the dev
+  server and exercised the flow, or ran the e2e suite against a real Supabase
+  project. If you could not run something, say so explicitly instead of implying
+  success.
 - Maintain `/docs` and update it after every meaningful change: `PROJECT_STRUCTURE.md`, `DATABASE.md`, `CHANGELOG.md`, `FEATURES.md`, `SYSTEM_INSTRUCTIONS.md`, `DECISIONS.md`.
 - Git: `git init` on start. Commit after every completed task with a conventional message (`feat:`, `fix:`, `docs:`, `test:`, `chore:`). Never leave work uncommitted at the end of a phase.
 - No over-engineering. Simple beats clever. No unrequested features.
@@ -93,6 +103,29 @@ first and record that in `/docs/DECISIONS.md`. Do not guess the shape.
 
 STOP condition for this phase: the schema must be self-reviewed against these questions before moving on. Can an anonymous user write anything they should not? Can one owner touch another owner's rows? Is every foreign key indexed? Is every public form rate-limited or captcha-protected? Does every seeded `null` correspond to a line in `missing[]`? Fix issues, then continue.
 
+### Known ways this phase breaks — check each one
+
+1. **`handle_new_user` / owner linkage.** You create an `owner_id` FK to
+   `auth.users`, but nothing sets it on signup. Either a trigger on `auth.users`
+   inserts the profile row, or you document the exact SQL that links the first
+   user. Pick one, implement it, and put the SQL in the handoff checklist.
+2. **RLS that locks you out.** Enabling RLS with no policy on a table the admin
+   needs hides every row and looks like an empty database. Write the policies in
+   the same migration that enables RLS, never in a later one.
+3. **Owner-only policies that match nothing.** A policy using `auth.uid() = owner_id`
+   is silently false when `owner_id` is null. Make the column `not null` or
+   default it.
+4. **`update_modified_column` triggers on tables without the column.** A generic
+   `updated_at` trigger applied to a join table without `updated_at` errors on
+   every write.
+5. **Storage policies that block anonymous reads.** The public site needs to read
+   images; uploads are owner-only. Write both policies, and separate `select`
+   from `insert`/`update`/`delete`.
+6. **`price` seeded as text.** The contract says numeric. If you seed the display
+   string, every later calculation breaks.
+7. **Idempotency.** `create table` without `if not exists`, or an enum created
+   twice, fails on a second run. The file must be safe to paste twice.
+
 ## PHASE 4: BACKEND AND SECURITY
 
 1. Supabase client in `/src/lib/supabase.ts`, reading only `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`. Never expose the service role key in the client.
@@ -116,6 +149,28 @@ STOP condition for this phase: the schema must be self-reviewed against these qu
 3. Playwright end-to-end covering: public site loads with real data, contact/booking form submits and appears in admin, owner login, edit content and see it live on the public site, image upload, logout, protected route redirect, RLS check (anonymous cannot write protected tables).
 4. All tests must pass. Document how to run them in `/docs/TESTING.md`. Add a `npm run verify` script that runs typecheck, lint, unit tests, build, and e2e.
 
+### This phase is where "it works" usually turns out to be false
+
+Tests that only run against mocks prove nothing about the database. The failures
+that matter here are the ones that only appear against a real Supabase project:
+
+1. **Run the app once for real before writing the e2e suite against it.** Start
+   `npm run dev`, open the public page, submit the form, log in as the owner,
+   edit something, confirm it changed on the public page. If any of that fails,
+   fix the app, not the test.
+2. **Do not write e2e tests that assert against your own mocks.** The point is the
+   real database. The RLS test must attempt a real anonymous write and assert it
+   is rejected by the database, not by client-side code.
+3. **Auth session is the usual flake.** Persist the logged-in state once
+   (storage state) and reuse it; do not log in through the UI in every spec.
+4. **Give the e2e run a real seed and a clean start.** A spec that depends on rows
+   left by a previous run passes locally and fails in CI.
+5. **`.env` for e2e is a separate concern.** If the tests need Supabase keys, say
+   so in `/docs/TESTING.md` and fail with a clear message when they are missing,
+   rather than passing quietly.
+6. **`npm run verify` must fail loudly.** If a step is skipped because a key is
+   absent, that is a failure, not a pass.
+
 ## PHASE 7: DEPLOY READINESS AND DOCS
 
 1. `vercel.json`, build config, environment variable list, `.env.example`.
@@ -124,6 +179,23 @@ STOP condition for this phase: the schema must be self-reviewed against these qu
 4. Final audit: read the whole codebase once more, remove dead code, confirm no file exceeds 250 lines, confirm all docs are accurate, confirm git is clean.
 
 ---
+
+## BEFORE YOU CLAIM ANYTHING IS DONE
+
+Run this honestly and put the result in your final report. If you cannot run a
+line, write "not run" next to it and say why. Do not describe intent as outcome.
+
+- [ ] `npm run verify` passes, and you pasted the output.
+- [ ] The dev server starts with no console errors on the public page.
+- [ ] The public page renders real data from Supabase, not the seed fallback.
+- [ ] The contact/booking form submits and the row appears in the admin view.
+- [ ] The owner can log in, edit content, and see it on the public page.
+- [ ] An anonymous write to a protected table is rejected by RLS (tested, not assumed).
+- [ ] Every `null` in the seed is still `null`, and the `missing[]` items are
+      visible to the owner as tasks.
+- [ ] No file exceeds 250 lines; no secret is in the repo; `.env.example` lists
+      every required variable.
+- [ ] `git status` is clean and every phase is committed.
 
 ## HUMAN HANDOFF (the only things I will do)
 

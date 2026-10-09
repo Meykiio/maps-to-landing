@@ -153,6 +153,12 @@ tools/
   first-class calls to action, RTL is handled properly for Arabic, and Prompt 2
   covers law n° 25-11 on personal data. The prompts still work elsewhere; the
   defaults are just not aimed there.
+- **Prompt 2 has not been run end to end yet.** It carries a list of the ways
+  phases 3 and 6 are known to break, and it is required to prove its own work
+  before reporting done, but its output has not been executed against a live
+  Supabase project in this repository. Treat it as a strong starting point, not
+  a verified build. Prompt 1's output *is* verified — both examples are in
+  `examples/` and checked on every push.
 
 ## Contributing
 
