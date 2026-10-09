@@ -1,0 +1,522 @@
+{
+  "file": "frenchy-ain-allah.html",
+  "errors": [],
+  "rendered": {
+    "#accueil": {
+      "class": "hero"
+    },
+    "#business-schema": {
+      "text": "{\"@context\":\"https://schema.org\",\"@type\":\"IceCreamShop\",\"name\":\"FRENCHY Ain Allah\",\"telephone\":\"+213556508142\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"Coopérative El Moustakbel, n° 286, Route Ain Allah\",\"addressLocality\":\"Dély Ibrahim\",\"postalCode\":\"16302\",\"addressRegion\":\"Alger\",\"addressCountry\":\"DZ\"},\"geo\":{\"@type\":\"GeoCoordinates\",\"latitude\":36.7501648,\"longitude\":2.9951359},\"hasMenu\":\"https://hbconnect.marcadz.com/frenchyainallah\",\"sameAs\":[\"https://www.instagram.com/Frenchy_dz/\"]}"
+    },
+    "#carte": {
+      "class": "menu-section"
+    },
+    "#experience": {
+      "class": "experience"
+    },
+    "#experience-title": {
+      "text": "Du frais, du fondant, du gourmand.",
+      "class": "section-heading"
+    },
+    "#final-directions": {
+      "href": "https://www.google.com/maps/dir/?api=1&destination=36.7501648%2C2.9951359",
+      "class": "button button--dark"
+    },
+    "#final-title": {
+      "text": "On se retrouve chez Frenchy ?",
+      "class": "final-cta__title"
+    },
+    "#flavor-track": {
+      "text": "<div class=\"flavor-marquee__group\">\n          \n            <span>Sundae</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n            <span>Crêpes</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n            <span>Cheesecake</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n            <span>Tiramisu</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n            <span>Frappés</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n            <span>Café glacé</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n        </div>\n      \n        <div class=\"flavor-marquee__group\">\n          \n            <span>Sundae</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n            <span>Crêpes</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n            <span>Cheesecake</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n            <span>Tiramisu</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n            <span>Frappés</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n            <span>Café glacé</span>\n            <span class=\"flavor-marquee__star\" aria-hidden=\"true\">✳</span>\n          \n        </div>",
+      "class": "flavor-marquee__track"
+    },
+    "#footer-links": {
+      "text": "<a href=\"https://www.instagram.com/Frenchy_dz/\"\n             target=\"_blank\" rel=\"noopener noreferrer\">\n            Instagram\n          </a>\n        \n          <a href=\"https://www.google.com/maps/search/?api=1&amp;query=FRENCHY+Ain+Allah+Alger\"\n             target=\"_blank\" rel=\"noopener noreferrer\">\n            Google Maps\n          </a>\n        \n          <a href=\"tel:+213556508142\"\n             >\n            Appeler\n          </a>",
+      "class": "footer__links"
+    },
+    "#hero-directions": {
+      "text": "Nous trouver",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=36.7501648%2C2.9951359",
+      "class": "button button--light"
+    },
+    "#hero-title": {
+      "text": "Une envie de douceur ?",
+      "class": "hero__title"
+    },
+    "#hours-list": {
+      "text": "<li class=\"hours-list__row\">\n            <span>Dimanche</span>\n            <span>11:30 – 23:00</span>\n          </li>\n        \n          <li class=\"hours-list__row\">\n            <span>Lundi</span>\n            <span>11:30 – 23:00</span>\n          </li>\n        \n          <li class=\"hours-list__row\">\n            <span>Mardi</span>\n            <span>11:30 – 23:00</span>\n          </li>\n        \n          <li class=\"hours-list__row\">\n            <span>Mercredi</span>\n            <span>11:30 – 23:00</span>\n          </li>\n        \n          <li class=\"hours-list__row\">\n            <span>Jeudi</span>\n            <span>11:30 – 23:00</span>\n          </li>\n        \n          <li class=\"hours-list__row\">\n            <span>Vendredi · Aujourd'hui</span>\n            <span>16:00 – 23:00</span>\n          </li>\n        \n          <li class=\"hours-list__row\">\n            <span>Samedi</span>\n            <span>11:30 – 23:00</span>\n          </li>",
+      "class": "hours-list"
+    },
+    "#hours-status": {
+      "class": "hours-status is-closed"
+    },
+    "#hours-status-text": {
+      "text": "Ouverture indiquée : 16:00 – 23:00"
+    },
+    "#intro-text": {
+      "text": "Un peu de douceur, beaucoup de plaisir.",
+      "class": "intro__text"
+    },
+    "#main-navigation": {
+      "text": "<a href=\"#carte\">La carte</a>\n      \n        <a href=\"#signature\">Le concept</a>\n      \n        <a href=\"#visiter\">Nous trouver</a>",
+      "class": "header__nav"
+    },
+    "#menu-grid": {
+      "text": "<article class=\"menu-card reveal\">\n          <div class=\"menu-card__number\">01 / GLACES</div>\n          <div class=\"menu-card__visual menu-card__visual--sundae\"\n               aria-hidden=\"true\">✳</div>\n          <div class=\"menu-card__body\">\n            <h3 class=\"menu-card__title\">Sundae</h3>\n            <p class=\"menu-card__description\">Nutella, Oreo, Kinder Bueno et autres toppings.</p>\n            <div class=\"menu-card__footer\">\n              <span class=\"menu-card__price\">Dès 250 DA</span>\n              <a class=\"menu-card__link\"\n                 href=\"https://hbconnect.marcadz.com/frenchyainallah\"\n                 target=\"_blank\"\n                 rel=\"noopener noreferrer\"\n                 aria-label=\"Voir la carte des glaces\">↗</a>\n            </div>\n          </div>\n        </article>\n      \n        <article class=\"menu-card reveal\">\n          <div class=\"menu-card__number\">02 / CRÊPES</div>\n          <div class=\"menu-card__visual menu-card__visual--crepe\"\n               aria-hidden=\"true\">◉</div>\n          <div class=\"menu-card__body\">\n            <h3 class=\"menu-card__title\">Crêpes</h3>\n            <p class=\"menu-card__description\">Chocolat-noisette, pistache et crêpe Frenchy.</p>\n            <div class=\"menu-card__footer\">\n              <span class=\"menu-card__price\">Dès 400 DA</span>\n              <a class=\"menu-card__link\"\n                 href=\"https://hbconnect.marcadz.com/frenchyainallah\"\n                 target=\"_blank\"\n                 rel=\"noopener noreferrer\"\n                 aria-label=\"Voir les crêpes\">↗</a>\n            </div>\n          </div>\n        </article>\n      \n        <article class=\"menu-card reveal\">\n          <div class=\"menu-card__number\">03 / PÂTISSERIES</div>\n          <div class=\"menu-card__visual menu-card__visual--cake\"\n               aria-hidden=\"true\">✳</div>\n          <div class=\"menu-card__body\">\n            <h3 class=\"menu-card__title\">Cheesecakes</h3>\n            <p class=\"menu-card__description\">New Yorkais, citron, framboise, Oreo et spéculoos.</p>\n            <div class=\"menu-card__footer\">\n              <span class=\"menu-card__price\">Dès 450 DA</span>\n              <a class=\"menu-card__link\"\n                 href=\"https://hbconnect.marcadz.com/frenchyainallah\"\n                 target=\"_blank\"\n                 rel=\"noopener noreferrer\"\n                 aria-label=\"Voir les pâtisseries\">↗</a>\n            </div>\n          </div>\n        </article>\n      \n        <article class=\"menu-card reveal\">\n          <div class=\"menu-card__number\">04 / BOISSONS</div>\n          <div class=\"menu-card__visual menu-card__visual--drink\"\n               aria-hidden=\"true\">↗</div>\n          <div class=\"menu-card__body\">\n            <h3 class=\"menu-card__title\">Frappés</h3>\n            <p class=\"menu-card__description\">Oreo, pistache, chocolat-noisette et caramel spéculoos.</p>\n            <div class=\"menu-card__footer\">\n              <span class=\"menu-card__price\">Dès 500 DA</span>\n              <a class=\"menu-card__link\"\n                 href=\"https://hbconnect.marcadz.com/frenchyainallah\"\n                 target=\"_blank\"\n                 rel=\"noopener noreferrer\"\n                 aria-label=\"Voir les frappés\">↗</a>\n            </div>\n          </div>\n        </article>\n      \n        <article class=\"menu-card reveal\">\n          <div class=\"menu-card__number\">05 / CAFÉ</div>\n          <div class=\"menu-card__visual menu-card__visual--coffee\"\n               aria-hidden=\"true\">◉</div>\n          <div class=\"menu-card__body\">\n            <h3 class=\"menu-card__title\">Café &amp; thé</h3>\n            <p class=\"menu-card__description\">Espresso, cappuccino, café glacé et thé.</p>\n            <div class=\"menu-card__footer\">\n              <span class=\"menu-card__price\">Dès 250 DA</span>\n              <a class=\"menu-card__link\"\n                 href=\"https://hbconnect.marcadz.com/frenchyainallah\"\n                 target=\"_blank\"\n                 rel=\"noopener noreferrer\"\n                 aria-label=\"Voir les boissons chaudes\">↗</a>\n            </div>\n          </div>\n        </article>\n      \n        <article class=\"menu-card reveal\">\n          <div class=\"menu-card__number\">06 / DESSERTS</div>\n          <div class=\"menu-card__visual menu-card__visual--tiramisu\"\n               aria-hidden=\"true\">✳</div>\n          <div class=\"menu-card__body\">\n            <h3 class=\"menu-card__title\">Tiramisu</h3>\n            <p class=\"menu-card__description\">Une sélection de desserts et de douceurs à découvrir.</p>\n            <div class=\"menu-card__footer\">\n              <span class=\"menu-card__price\">Dès 450 DA</span>\n              <a class=\"menu-card__link\"\n                 href=\"https://hbconnect.marcadz.com/frenchyainallah\"\n                 target=\"_blank\"\n                 rel=\"noopener noreferrer\"\n                 aria-label=\"Voir les desserts\">↗</a>\n            </div>\n          </div>\n        </article>",
+      "class": "menu-grid"
+    },
+    "#menu-title": {
+      "text": "Tes envies, tes règles.",
+      "class": "section-heading"
+    },
+    "#signature": {
+      "class": "signature"
+    },
+    "#signature-title": {
+      "text": "Un petit creux ? Fais-toi plaisir.",
+      "class": "signature__title"
+    },
+    "#site-data": {
+      "text": "{\n    \"$contract\": \"maps-to-landing/site-data@1\",\n\n    \"meta\": {\n      \"generatedAt\": \"2026-06-12\",\n      \"source\": \"google-maps\",\n      \"sourceUrl\": \"https://www.google.com/maps/search/?api=1&query=FRENCHY+Ain+Allah+Alger\",\n      \"language\": \"fr\"\n    },\n\n    \"business\": {\n      \"name\": \"FRENCHY\",\n      \"branch\": \"Ain Allah\",\n      \"category\": \"Dessert café\",\n      \"cuisine\": null,\n      \"languages\": [\"fr\"],\n      \"phone\": {\n        \"e164\": \"+213556508142\",\n        \"display\": \"0556 50 81 42\",\n        \"whatsapp\": null\n      },\n      \"address\": {\n        \"line1\": \"Coopérative El Moustakbel, n° 286, Route Ain Allah\",\n        \"neighborhood\": \"Ain Allah\",\n        \"locality\": \"Dély Ibrahim\",\n        \"city\": \"Alger\",\n        \"region\": null,\n        \"postalCode\": \"16302\",\n        \"country\": \"Algérie\",\n        \"countryCode\": \"DZ\",\n        \"short\": \"Ain Allah · Alger\",\n        \"full\": \"Coopérative El Moustakbel, n° 286, Route Ain Allah, Dély Ibrahim 16302\"\n      },\n      \"coordinates\": { \"lat\": 36.7501648, \"lng\": 2.9951359 },\n      \"rating\": {\n        \"value\": null,\n        \"reviewCount\": null,\n        \"url\": \"https://www.google.com/maps/search/?api=1&query=FRENCHY+Ain+Allah+Alger\",\n        \"source\": \"google-maps\"\n      },\n      \"hours\": {\n        \"timezone\": \"Africa/Algiers\",\n        \"source\": \"Horaires publiés en ligne, à confirmer auprès de l'établissement.\",\n        \"schedule\": [\n          { \"day\": \"Sunday\",   \"label\": \"Dimanche\",   \"open\": \"11:30\", \"close\": \"23:00\" },\n          { \"day\": \"Monday\",   \"label\": \"Lundi\",       \"open\": \"11:30\", \"close\": \"23:00\" },\n          { \"day\": \"Tuesday\",  \"label\": \"Mardi\",       \"open\": \"11:30\", \"close\": \"23:00\" },\n          { \"day\": \"Wednesday\", \"label\": \"Mercredi\",  \"open\": \"11:30\", \"close\": \"23:00\" },\n          { \"day\": \"Thursday\", \"label\": \"Jeudi\",       \"open\": \"11:30\", \"close\": \"23:00\" },\n          { \"day\": \"Friday\",   \"label\": \"Vendredi\",    \"open\": \"16:00\", \"close\": \"23:00\" },\n          { \"day\": \"Saturday\", \"label\": \"Samedi\",      \"open\": \"11:30\", \"close\": \"23:00\" }\n        ]\n      },\n      \"socials\": {\n        \"instagram\": \"https://www.instagram.com/Frenchy_dz/\",\n        \"facebook\": null,\n        \"tiktok\": null\n      },\n      \"links\": {\n        \"maps\": \"https://www.google.com/maps/dir/?api=1&destination=36.7501648%2C2.9951359\",\n        \"place\": \"https://www.google.com/maps/search/?api=1&query=FRENCHY+Ain+Allah+Alger\",\n        \"directions\": \"https://www.google.com/maps/dir/?api=1&destination=36.7501648%2C2.9951359\",\n        \"website\": \"https://www.frenchy-dz.com/\",\n        \"menu\": \"https://hbconnect.marcadz.com/frenchyainallah\",\n        \"order\": null,\n        \"booking\": null\n      }\n    },\n\n    \"content\": {\n      \"hero\": {\n        \"eyebrow\": \"Une adresse gourmande à Ain Allah\",\n        \"titleStart\": \"Une envie\",\n        \"titleAccent\": \"de douceur ?\",\n        \"description\": \"Sundae généreux, crêpes gourmandes, cheesecakes et boissons fraîches. À chacun son petit plaisir.\",\n        \"note\": \"Une carte entre desserts, boissons et café\",\n        \"sticker\": \"PETIT PLAISIR\\nGRAND SOURIRE\",\n        \"caption\": \"La pause qui fait du bien.\"\n      },\n      \"intro\": {\n        \"label\": \"Le programme\",\n        \"textStart\": \"Un peu de\",\n        \"textAccent\": \"douceur, beaucoup de plaisir.\"\n      },\n      \"menu\": {\n        \"eyebrow\": \"À chacun son péché mignon\",\n        \"titleStart\": \"Tes envies,\",\n        \"titleAccent\": \"tes règles.\",\n        \"description\": \"Du premier café au dessert qui fait craquer, explore quelques incontournables de la carte.\",\n        \"note\": \"Sélection indicative. Consultez la carte complète ou contactez l'établissement pour confirmer la disponibilité et les tarifs.\"\n      },\n      \"signature\": {\n        \"eyebrow\": \"Le plaisir en version généreuse\",\n        \"titleStart\": \"Un petit creux ?\",\n        \"titleAccent\": \"Fais-toi plaisir.\",\n        \"description\": \"Sundae, yaourt glacé, toppings et associations gourmandes : compose ta prochaine envie parmi les choix proposés sur la carte.\",\n        \"cta\": \"Trouver l'adresse\",\n        \"badge\": \"Ta prochaine pause gourmande commence ici.\"\n      },\n      \"experience\": {\n        \"eyebrow\": \"Une carte pour toutes les envies\",\n        \"titleStart\": \"Du frais, du fondant,\",\n        \"titleAccent\": \"du gourmand.\",\n        \"description\": \"Envie d'un dessert fruité, d'une crêpe chocolatée ou d'un café ? Explore les différentes familles de la carte et choisis ce qui te fait envie.\",\n        \"label\": \"À découvrir sur place\"\n      },\n      \"visit\": {\n        \"eyebrow\": \"Passe nous voir\",\n        \"titleStart\": \"Rendez-vous à\",\n        \"titleAccent\": \"Ain Allah.\",\n        \"hoursIntro\": \"Horaires publiés en ligne, à confirmer auprès de l'établissement.\",\n        \"hoursDisclaimer\": \"Les horaires peuvent changer. Un appel avant le déplacement est conseillé.\"\n      },\n      \"final\": {\n        \"eyebrow\": \"Ta prochaine pause\",\n        \"titleStart\": \"On se retrouve\",\n        \"titleAccent\": \"chez Frenchy ?\",\n        \"description\": \"Retrouve l'adresse, consulte l'itinéraire et choisis le bon moment pour passer.\",\n        \"cta\": \"Calculer mon itinéraire\"\n      },\n      \"footer\": {\n        \"description\": \"Ain Allah · Dély Ibrahim · Alger\",\n        \"links\": [\n          { \"label\": \"Instagram\", \"urlKey\": \"instagram\" },\n          { \"label\": \"Google Maps\", \"urlKey\": \"place\" },\n          { \"label\": \"Appeler\", \"urlKey\": \"phone\" }\n        ]\n      },\n      \"navigation\": [\n        { \"label\": \"La carte\", \"href\": \"#carte\" },\n        { \"label\": \"Le concept\", \"href\": \"#signature\" },\n        { \"label\": \"Nous trouver\", \"href\": \"#visiter\" }\n      ],\n      \"marquee\": [\"Sundae\", \"Crêpes\", \"Cheesecake\", \"Tiramisu\", \"Frappés\", \"Café glacé\"],\n      \"socialProof\": { \"headline\": null, \"body\": null, \"cta\": null }\n    },\n\n    \"offerings\": [\n      {\n        \"id\": \"glaces\",\n        \"name\": \"Sundae\",\n        \"description\": \"Nutella, Oreo, Kinder Bueno et autres toppings.\",\n        \"price\": 250,\n        \"priceDisplay\": \"Dès 250 DA\",\n        \"currency\": \"DZD\",\n        \"tag\": \"01 / GLACES\",\n        \"category\": \"Glaces\",\n        \"featured\": false,\n        \"order\": 1,\n        \"url\": \"https://hbconnect.marcadz.com/frenchyainallah\",\n        \"cta\": \"Voir la carte des glaces\",\n        \"visual\": \"sundae\",\n        \"icon\": \"✳\"\n      },\n      {\n        \"id\": \"crepes\",\n        \"name\": \"Crêpes\",\n        \"description\": \"Chocolat-noisette, pistache et crêpe Frenchy.\",\n        \"price\": 400,\n        \"priceDisplay\": \"Dès 400 DA\",\n        \"currency\": \"DZD\",\n        \"tag\": \"02 / CRÊPES\",\n        \"category\": \"Crêpes\",\n        \"featured\": false,\n        \"order\": 2,\n        \"url\": \"https://hbconnect.marcadz.com/frenchyainallah\",\n        \"cta\": \"Voir les crêpes\",\n        \"visual\": \"crepe\",\n        \"icon\": \"◉\"\n      },\n      {\n        \"id\": \"patisseries\",\n        \"name\": \"Cheesecakes\",\n        \"description\": \"New Yorkais, citron, framboise, Oreo et spéculoos.\",\n        \"price\": 450,\n        \"priceDisplay\": \"Dès 450 DA\",\n        \"currency\": \"DZD\",\n        \"tag\": \"03 / PÂTISSERIES\",\n        \"category\": \"Pâtisseries\",\n        \"featured\": false,\n        \"order\": 3,\n        \"url\": \"https://hbconnect.marcadz.com/frenchyainallah\",\n        \"cta\": \"Voir les pâtisseries\",\n        \"visual\": \"cake\",\n        \"icon\": \"✳\"\n      },\n      {\n        \"id\": \"boissons\",\n        \"name\": \"Frappés\",\n        \"description\": \"Oreo, pistache, chocolat-noisette et caramel spéculoos.\",\n        \"price\": 500,\n        \"priceDisplay\": \"Dès 500 DA\",\n        \"currency\": \"DZD\",\n        \"tag\": \"04 / BOISSONS\",\n        \"category\": \"Boissons\",\n        \"featured\": false,\n        \"order\": 4,\n        \"url\": \"https://hbconnect.marcadz.com/frenchyainallah\",\n        \"cta\": \"Voir les frappés\",\n        \"visual\": \"drink\",\n        \"icon\": \"↗\"\n      },\n      {\n        \"id\": \"cafe\",\n        \"name\": \"Café & thé\",\n        \"description\": \"Espresso, cappuccino, café glacé et thé.\",\n        \"price\": 250,\n        \"priceDisplay\": \"Dès 250 DA\",\n        \"currency\": \"DZD\",\n        \"tag\": \"05 / CAFÉ\",\n        \"category\": \"Café\",\n        \"featured\": false,\n        \"order\": 5,\n        \"url\": \"https://hbconnect.marcadz.com/frenchyainallah\",\n        \"cta\": \"Voir les boissons chaudes\",\n        \"visual\": \"coffee\",\n        \"icon\": \"◉\"\n      },\n      {\n        \"id\": \"desserts\",\n        \"name\": \"Tiramisu\",\n        \"description\": \"Une sélection de desserts et de douceurs à découvrir.\",\n        \"price\": 450,\n        \"priceDisplay\": \"Dès 450 DA\",\n        \"currency\": \"DZD\",\n        \"tag\": \"06 / DESSERTS\",\n        \"category\": \"Desserts\",\n        \"featured\": false,\n        \"order\": 6,\n        \"url\": \"https://hbconnect.marcadz.com/frenchyainallah\",\n        \"cta\": \"Voir les desserts\",\n        \"visual\": \"tiramisu\",\n        \"icon\": \"✳\"\n      }\n    ],\n\n    \"reviews\": [],\n\n    \"gallery\": [],\n\n    \"assets\": { \"logo\": null, \"hero\": null, \"ogImage\": null },\n\n    \"seo\": {\n      \"title\": \"FRENCHY Ain Allah — Sundae, crêpes et desserts à Alger\",\n      \"description\": \"Découvrez la carte de FRENCHY Ain Allah à Dély Ibrahim : sundae, crêpes, cheesecakes, tiramisu, frappés et café.\",\n      \"canonical\": \"https://example.com/\",\n      \"ogImage\": null\n    },\n\n    \"missing\": [\n      \"Note Google et nombre d'avis non vérifiables sur la fiche publique — à confirmer avec le gérant.\",\n      \"Aucun visuel fourni par le client : logo, photos de la vitrine et photos de la carte restent à ajouter.\",\n      \"Horaires repris de la publication en ligne : à reconfirmer, notamment la journée du vendredi.\",\n      \"Aucun avis client attribuable à une source vérifiable : la section preuve sociale reste volontairement vide.\"\n    ]\n  }"
+    },
+    "#top": {
+      "class": "site-header"
+    },
+    "#visit-call": {
+      "text": "Appeler",
+      "href": "tel:+213556508142",
+      "class": "button button--light"
+    },
+    "#visit-directions": {
+      "text": "Itinéraire",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=36.7501648%2C2.9951359",
+      "class": "button button--pink"
+    },
+    "#visit-title": {
+      "text": "Rendez-vous à Ain Allah.",
+      "class": "section-heading visit__heading"
+    },
+    "#visiter": {
+      "class": "visit"
+    },
+    "A.": {
+      "text": "${escapeHTML(item.label)}",
+      "href": "${escapeHTML(item.href)}"
+    },
+    "A.#2": {
+      "text": "${escapeHTML(item.label)}",
+      "href": "${escapeHTML(url)}"
+    },
+    "A.brand": {
+      "href": "#top",
+      "class": "brand"
+    },
+    "A.button.button--dark": {
+      "text": "Découvrir la carte",
+      "href": "#carte",
+      "class": "button button--dark"
+    },
+    "A.button.button--dark.header__action": {
+      "text": "Nous trouver",
+      "href": "#visiter",
+      "class": "button button--dark header__action"
+    },
+    "A.button.button--dark#2": {
+      "href": "#visiter",
+      "class": "button button--dark"
+    },
+    "A.button.button--light": {
+      "text": "Préparer ma visite",
+      "href": "#visiter",
+      "class": "button button--light"
+    },
+    "A.intro__link": {
+      "text": "Explorer les envies",
+      "href": "#carte",
+      "class": "intro__link"
+    },
+    "A.menu-card__link": {
+      "text": "↗",
+      "href": "${escapeHTML(item.url)}",
+      "class": "menu-card__link"
+    },
+    "ARTICLE.menu-card.reveal": {
+      "class": "menu-card reveal"
+    },
+    "ARTICLE.reveal.visit-card": {
+      "class": "reveal visit-card"
+    },
+    "ARTICLE.reveal.visit-card#2": {
+      "class": "reveal visit-card"
+    },
+    "DIV.container": {
+      "class": "container"
+    },
+    "DIV.container.experience__grid": {
+      "class": "container experience__grid"
+    },
+    "DIV.container.final-cta__inner.reveal": {
+      "class": "container final-cta__inner reveal"
+    },
+    "DIV.container.footer__inner": {
+      "class": "container footer__inner"
+    },
+    "DIV.container.header__inner": {
+      "class": "container header__inner"
+    },
+    "DIV.container.hero__grid": {
+      "class": "container hero__grid"
+    },
+    "DIV.container.intro__inner": {
+      "class": "container intro__inner"
+    },
+    "DIV.container.signature__grid": {
+      "class": "container signature__grid"
+    },
+    "DIV.container#2": {
+      "class": "container"
+    },
+    "DIV.dessert": {
+      "class": "dessert"
+    },
+    "DIV.dessert__base": {
+      "class": "dessert__base"
+    },
+    "DIV.dessert__berry": {
+      "class": "dessert__berry"
+    },
+    "DIV.dessert__cream": {
+      "class": "dessert__cream"
+    },
+    "DIV.dessert__cup": {
+      "class": "dessert__cup"
+    },
+    "DIV.dessert__sauce": {
+      "class": "dessert__sauce"
+    },
+    "DIV.experience__copy.reveal": {
+      "class": "experience__copy reveal"
+    },
+    "DIV.experience__illustration": {
+      "text": "🍰",
+      "class": "experience__illustration"
+    },
+    "DIV.experience__label": {
+      "text": "À découvrir sur place",
+      "class": "experience__label"
+    },
+    "DIV.experience__visual": {
+      "class": "experience__visual"
+    },
+    "DIV.flavor-marquee": {
+      "class": "flavor-marquee"
+    },
+    "DIV.flavor-marquee__group": {
+      "text": "${content.marquee.map(flavor => `",
+      "class": "flavor-marquee__group"
+    },
+    "DIV.footer__brand": {
+      "class": "footer__brand"
+    },
+    "DIV.footer__meta": {
+      "text": "Ain Allah · Dély Ibrahim · Alger",
+      "class": "footer__meta"
+    },
+    "DIV.hero__actions": {
+      "class": "hero__actions"
+    },
+    "DIV.hero__art": {
+      "class": "hero__art"
+    },
+    "DIV.hero__caption": {
+      "text": "La pause qui fait du bien.",
+      "class": "hero__caption"
+    },
+    "DIV.hero__copy": {
+      "class": "hero__copy"
+    },
+    "DIV.hero__note": {
+      "class": "hero__note"
+    },
+    "DIV.hero__sticker": {
+      "text": "PETIT PLAISIR\nGRAND SOURIRE",
+      "class": "hero__sticker"
+    },
+    "DIV.intro__label": {
+      "text": "Le programme",
+      "class": "intro__label"
+    },
+    "DIV.menu-card__body": {
+      "class": "menu-card__body"
+    },
+    "DIV.menu-card__footer": {
+      "class": "menu-card__footer"
+    },
+    "DIV.menu-card__number": {
+      "text": "${escapeHTML(item.tag)}",
+      "class": "menu-card__number"
+    },
+    "DIV.menu-card__visual.menu-card__visual--${escapeHTML(item.visual)}": {
+      "text": "${escapeHTML(item.icon)}",
+      "class": "menu-card__visual menu-card__visual--${escapeHTML(item.visual)}"
+    },
+    "DIV.reveal.section-top": {
+      "class": "reveal section-top"
+    },
+    "DIV.reveal.signature__copy": {
+      "class": "reveal signature__copy"
+    },
+    "DIV.section-top__copy": {
+      "class": "section-top__copy"
+    },
+    "DIV.signature__art": {
+      "class": "signature__art"
+    },
+    "DIV.signature__badge": {
+      "text": "Ta prochaine pause gourmande commence ici.",
+      "class": "signature__badge"
+    },
+    "DIV.signature__circle": {
+      "text": "✳",
+      "class": "signature__circle"
+    },
+    "DIV.site-shell": {
+      "class": "site-shell"
+    },
+    "DIV.visit__actions": {
+      "class": "visit__actions"
+    },
+    "DIV.visit__grid": {
+      "class": "visit__grid"
+    },
+    "DIV.visit-card__label": {
+      "text": "01 / Adresse",
+      "class": "visit-card__label"
+    },
+    "DIV.visit-card__label#2": {
+      "text": "02 / Horaires",
+      "class": "visit-card__label"
+    },
+    "document.title": {
+      "text": "FRENCHY Ain Allah — Sundae, crêpes et desserts à Alger"
+    },
+    "documentElement.class": {
+      "class": ""
+    },
+    "FOOTER.site-footer": {
+      "class": "site-footer"
+    },
+    "H3.menu-card__title": {
+      "text": "${escapeHTML(item.name)}",
+      "class": "menu-card__title"
+    },
+    "H3.visit-card__title": {
+      "text": "On se retrouve où ?",
+      "class": "visit-card__title"
+    },
+    "H3.visit-card__title#2": {
+      "text": "Quand passer ?",
+      "class": "visit-card__title"
+    },
+    "LI.hours-list__row": {
+      "class": "hours-list__row"
+    },
+    "LINK.": {
+      "href": "https://example.com/"
+    },
+    "LINK.#2": {
+      "href": "https://fonts.googleapis.com"
+    },
+    "LINK.#3": {
+      "href": "https://fonts.gstatic.com"
+    },
+    "LINK.#4": {
+      "href": "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap"
+    },
+    "META.#10": {
+      "content": "FRENCHY Ain Allah"
+    },
+    "META.#11": {
+      "content": "summary_large_image"
+    },
+    "META.#2": {
+      "content": "width=device-width, initial-scale=1"
+    },
+    "META.#3": {
+      "content": "#20112B"
+    },
+    "META.#4": {
+      "content": "Découvrez la carte de FRENCHY Ain Allah à Dély Ibrahim : sundae, crêpes, cheesecakes, tiramisu, frappés et café."
+    },
+    "META.#5": {
+      "content": "index,follow"
+    },
+    "META.#6": {
+      "content": "website"
+    },
+    "META.#7": {
+      "content": "FRENCHY Ain Allah — Sundae, crêpes et desserts à Alger"
+    },
+    "META.#8": {
+      "content": "Découvrez la carte de FRENCHY Ain Allah à Dély Ibrahim : sundae, crêpes, cheesecakes, tiramisu, frappés et café."
+    },
+    "META.#9": {
+      "content": "fr_DZ"
+    },
+    "P.": {
+      "text": "Envie d'un dessert fruité, d'une crêpe chocolatée ou d'un café ? Explore les différentes familles de la carte et choisis ce qui te fait envie."
+    },
+    "P.#2": {
+      "text": "Coopérative El Moustakbel, n° 286, Route Ain Allah, Dély Ibrahim 16302"
+    },
+    "P.#3": {
+      "text": "Dély Ibrahim, Alger, Algérie"
+    },
+    "P.#4": {
+      "text": "Horaires publiés en ligne, à confirmer auprès de l'établissement."
+    },
+    "P.#5": {
+      "text": "Les horaires peuvent changer. Un appel avant le déplacement est conseillé."
+    },
+    "P.final-cta__text": {
+      "text": "Retrouve l'adresse, consulte l'itinéraire et choisis le bon moment pour passer.",
+      "class": "final-cta__text"
+    },
+    "P.hero__description": {
+      "text": "Sundae généreux, crêpes gourmandes, cheesecakes et boissons fraîches. À chacun son petit plaisir.",
+      "class": "hero__description"
+    },
+    "P.menu-card__description": {
+      "text": "${escapeHTML(item.description)}",
+      "class": "menu-card__description"
+    },
+    "P.menu-note": {
+      "text": "Sélection indicative. Consultez la carte complète ou contactez l'établissement pour confirmer la disponibilité et les tarifs.",
+      "class": "menu-note"
+    },
+    "P.section-intro": {
+      "text": "Du premier café au dessert qui fait craquer, explore quelques incontournables de la carte.",
+      "class": "section-intro"
+    },
+    "P.signature__description": {
+      "text": "Sundae, yaourt glacé, toppings et associations gourmandes : compose ta prochaine envie parmi les choix proposés sur la carte.",
+      "class": "signature__description"
+    },
+    "SCRIPT.": {
+      "text": "(() => {\n      \"use strict\";\n\n      const data = JSON.parse(\n        document.getElementById(\"site-data\").textContent\n      );\n\n      const business = data.business;\n      const content = data.content;\n\n      const $ = (selector, root = document) =>\n        root.querySelector(selector);\n\n      const $$ = (selector, root = document) =>\n        [...root.querySelectorAll(selector)];\n\n      const escapeHTML = value =>\n        String(value ?? \"\").replace(/[&"
+    },
+    "SECTION.final-cta": {
+      "class": "final-cta"
+    },
+    "SECTION.intro": {
+      "class": "intro"
+    },
+    "SPAN.": {
+      "text": "✳"
+    },
+    "SPAN.#10": {
+      "text": "${escapeHTML(item.open)} – ${escapeHTML(item.close)}"
+    },
+    "SPAN.#2": {
+      "text": "Une carte entre desserts, boissons et café"
+    },
+    "SPAN.#3": {
+      "text": "↘"
+    },
+    "SPAN.#4": {
+      "text": "Trouver l'adresse"
+    },
+    "SPAN.#5": {
+      "text": "↗"
+    },
+    "SPAN.#6": {
+      "text": "Calculer mon itinéraire"
+    },
+    "SPAN.#7": {
+      "text": "↗"
+    },
+    "SPAN.#8": {
+      "text": "${escapeHTML(flavor)}"
+    },
+    "SPAN.#9": {
+      "text": "${escapeHTML(item.label)}${today ? \" · Aujourd'hui\" : \"\"}"
+    },
+    "SPAN.brand__location": {
+      "text": "Ain Allah · Alger",
+      "class": "brand__location"
+    },
+    "SPAN.brand__name": {
+      "text": "FRENCHY",
+      "class": "brand__name"
+    },
+    "SPAN.eyebrow": {
+      "text": "Une adresse gourmande à Ain Allah",
+      "class": "eyebrow"
+    },
+    "SPAN.eyebrow#2": {
+      "text": "À chacun son péché mignon",
+      "class": "eyebrow"
+    },
+    "SPAN.eyebrow#3": {
+      "text": "Le plaisir en version généreuse",
+      "class": "eyebrow"
+    },
+    "SPAN.eyebrow#4": {
+      "text": "Une carte pour toutes les envies",
+      "class": "eyebrow"
+    },
+    "SPAN.eyebrow#5": {
+      "text": "Passe nous voir",
+      "class": "eyebrow"
+    },
+    "SPAN.eyebrow#6": {
+      "text": "Ta prochaine pause",
+      "class": "eyebrow"
+    },
+    "SPAN.flavor-marquee__star": {
+      "text": "✳",
+      "class": "flavor-marquee__star"
+    },
+    "SPAN.hours-status__dot": {
+      "class": "hours-status__dot"
+    },
+    "SPAN.icon-arrow": {
+      "text": "↗",
+      "class": "icon-arrow"
+    },
+    "SPAN.icon-arrow#2": {
+      "text": "↗",
+      "class": "icon-arrow"
+    },
+    "SPAN.icon-arrow#3": {
+      "text": "↗",
+      "class": "icon-arrow"
+    },
+    "SPAN.icon-arrow#4": {
+      "text": "↗",
+      "class": "icon-arrow"
+    },
+    "SPAN.menu-card__price": {
+      "text": "${escapeHTML(item.priceDisplay)}",
+      "class": "menu-card__price"
+    },
+    "STYLE.": {
+      "text": ":root {\n      --color-ink: #20112B;\n      --color-ink-soft: #392546;\n      --color-pistachio: #C9F27A;\n      --color-raspberry: #F45C83;\n      --color-cream: #FFF9F0;\n      --color-white: #FFFFFF;\n      --color-text: #28232B;\n      --color-muted: #766B79;\n      --color-border: rgba(32, 17, 43, .14);\n\n      --font-display: \"DM Serif Display\", Georgia, serif;\n      --font-body: \"DM Sans\", Arial, sans-serif;\n\n      --space-1: .5rem;\n      --space-2: .75rem;\n      --space-3: 1rem;\n      --space-4: 1.5rem;\n      --space-5: 2rem;\n      --space-6: 3rem;\n      --space-7: 4.5rem;\n      --space-8: 7rem;\n\n      --radius-sm: 12px;\n      --radius-md: 24px;\n      --radius-lg: 36px;\n      --radius-pill: 999px;\n\n      --shadow-card: 0 18px 55px rgba(32, 17, 43, .09);\n      --ease-out: cubic-bezier(.2, .75, .25, 1);\n      --duration-fast: 180ms;\n      --duration-normal: 450ms;\n\n      --container: 1240px;\n      --gutter: 6%;\n    }\n\n    /* BASE */\n    *, *::before, *::after { box-sizing: border-box; }\n\n    html {\n      scroll-behavior: smooth;\n      scroll-padding-top: 90px;\n    }\n\n    body {\n      margin: 0;\n      background: var(--color-cream);\n      color: var(--color-text);\n      font-family: var(--font-body);\n      line-height: 1.6;\n      -webkit-font-smoothing: antialiased;\n      overflow-x: clip;\n    }\n\n    img, svg { display: block; max-width: 100%; }\n    a { color: inherit; }\n    button { font: inherit; }\n    button, a { -webkit-tap-highlight-color: transparent; }\n\n    a:focus-visible, button:focus-visible {\n      outline: 3px solid var(--color-raspberry);\n      outline-offset: 4px;\n    }\n\n    ::selection {\n      background: var(--color-pistachio);\n      color: var(--color-ink);\n    }\n\n    .site-shell { overflow: clip; }\n    .container {\n      width: min(var(--container), 100% - 2 * var(--gutter));\n      margin-inline: auto;\n    }\n\n    .eyebrow {\n      display: inline-flex;\n      align-items: center;\n      gap: .65rem;\n      font-size: .72rem;\n      font-weight: 800;\n      letter-spacing: .13em;\n      text-transform: uppercase;\n    }\n\n    .eyebrow::before {\n      content: \"\";\n      width: 8px;\n      height: 8px;\n      background: var(--color-raspberry);\n      border-radius: 50%;\n    }\n\n    .section-heading {\n      max-width: 760px;\n      margin: 0;\n      font-family: var(--font-display);\n      font-size: clamp(2.8rem, 6vw, 5.5rem);\n      font-weight: 400;\n      letter-spacing: -.045em;\n      line-height: .99;\n    }\n\n    .section-heading em {\n      color: var(--color-raspberry);\n      font-weight: 400;\n    }\n\n    .section-intro {\n      max-width: 490px;\n      color: var(--color-muted);\n      font-size: 1rem;\n    }\n\n    .button {\n      min-height: 50px;\n      display: inline-flex;\n      align-items: center;\n      justify-content: center;\n      gap: .65rem;\n      padding: .85rem 1.35rem;\n      border: 1px solid transparent;\n      border-radius: var(--radius-pill);\n      font-size: .88rem;\n      font-weight: 800;\n      text-decoration: none;\n      transition:\n        transform var(--duration-fast) var(--ease-out),\n        background var(--duration-fast),\n        color var(--duration-fast);\n    }\n\n    .button:hover { transform: translateY(-3px); }\n\n    .button--dark {\n      background: var(--color-ink);\n      color: var(--color-white);\n    }\n\n    .button--dark:hover { background: var(--color-ink-soft); }\n\n    .button--light {\n      border-color: var(--color-border);\n      color: var(--color-ink);\n    }\n\n    .button--light:hover { background: var(--color-white); }\n\n    .button--pink {\n      background: var(--color-raspberry);\n      color: var(--color-ink);\n    }\n\n    .button--pink:hover { background: #FF7A9A; }\n\n    .icon-arrow { font-size: 1.15rem; }\n\n    /* LAYOUT */\n    .site-header {\n      position: relative;\n      z-index: 10;\n      background: var(--color-cream);\n    }\n\n    .header__inner {\n      min-height: 84px;\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      gap: 1rem;\n      border-bottom: 1px solid var(--color-border);\n    }\n\n    .brand {\n      display: inline-flex;\n      flex-direction: column;\n      text-decoration: none;\n      color: var(--color-ink);\n      line-height: 1;\n    }\n\n    .brand__name {\n      font-size: 1.45rem;\n      font-weight: 800;\n      letter-spacing: -.075em;\n    }\n\n    .brand__location {\n      margin-top: .35rem;\n      font-size: .58rem;\n      font-weight: 700;\n      letter-spacing: .14em;\n      text-transform: uppercase;\n    }\n\n    .header__nav {\n      display: flex;\n      align-items: center;\n      gap: clamp(1rem, 2.5vw, 2rem);\n    }\n\n    .header__nav a {\n      font-size: .82rem;\n      font-weight: 700;\n      text-decoration: none;\n    }\n\n    .header__nav a:hover { color: #9C3152; }\n\n    .header__action { white-space: nowrap; }\n\n    /* COMPONENTS */\n    .flavor-marquee {\n      overflow: hidden;\n      padding-block: .8rem;\n      background: var(--color-pistachio);\n      color: var(--color-ink);\n    }\n\n    .flavor-marquee__track {\n      display: flex;\n      width: max-content;\n      animation: marquee 32s linear infinite;\n    }\n\n    .flavor-marquee__group {\n      display: flex;\n      align-items: center;\n      gap: 1.6rem;\n      padding-inline: .8rem;\n      white-space: nowrap;\n      font-size: .7rem;\n      font-weight: 800;\n      letter-spacing: .13em;\n      text-transform: uppercase;\n    }\n\n    .flavor-marquee__star {\n      font-size: 1.1rem;\n      color: #80502A;\n    }\n\n    .reveal {\n      opacity: 0;\n      transform: translateY(24px);\n      transition:\n        opacity 700ms var(--ease-out),\n        transform 700ms var(--ease-out);\n    }\n\n    .reveal.is-visible {\n      opacity: 1;\n      transform: translateY(0);\n    }\n\n    /* SECTIONS: HERO */\n    .hero {\n      position: relative;\n      padding-block: clamp(3.5rem, 8vw, 7rem) clamp(4rem, 8vw, 7rem);\n      background: var(--color-cream);\n    }\n\n    .hero__grid {\n      display: grid;\n      grid-template-columns: 1.05fr .95fr;\n      align-items: center;\n      gap: clamp(2rem, 5vw, 5rem);\n    }\n\n    .hero__copy { position: relative; z-index: 2; }\n\n    .hero__title {\n      max-width: 740px;\n      margin: 1.5rem 0;\n      color: var(--color-ink);\n      font-family: var(--font-display);\n      font-size: clamp(4rem, 8vw, 7.5rem);\n      font-weight: 400;\n      letter-spacing: -.065em;\n      line-height: .88;\n    }\n\n    .hero__title em {\n      color: var(--color-raspberry);\n      font-weight: 400;\n    }\n\n    .hero__description {\n      max-width: 430px;\n      margin-bottom: 1.8rem;\n      color: var(--color-muted);\n      font-size: clamp(1rem, 1.5vw, 1.12rem);\n    }\n\n    .hero__actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: .8rem;\n    }\n\n    .hero__note {\n      display: flex;\n      align-items: center;\n      gap: .65rem;\n      margin-top: 2rem;\n      font-size: .77rem;\n      font-weight: 700;\n    }\n\n    .hero__note span {\n      display: inline-grid;\n      width: 30px;\n      height: 30px;\n      place-items: center;\n      border-radius: 50%;\n      background: var(--color-pistachio);\n    }\n\n    .hero__art {\n      position: relative;\n      min-width: 0;\n      min-height: 470px;\n      display: grid;\n      place-items: center;\n      isolation: isolate;\n    }\n\n    .hero__art::before {\n      position: absolute;\n      z-index: -2;\n      content: \"\";\n      width: min(100%, 500px);\n      aspect-ratio: 1;\n      border-radius: 48% 52% 43% 57% / 55% 43% 57% 45%;\n      background: var(--color-pistachio);\n      transform: rotate(-9deg);\n    }\n\n    .hero__art::after {\n      position: absolute;\n      z-index: -1;\n      content: \"\";\n      width: 72%;\n      aspect-ratio: 1;\n      border: 1px solid rgba(32,17,43,.2);\n      border-radius: 50%;\n      transform: rotate(28deg) scale(1.12, .84);\n    }\n\n    .dessert {\n      position: relative;\n      width: min(78%, 340px);\n      aspect-ratio: .78;\n      filter: drop-shadow(0 28px 22px rgba(32,17,43,.14));\n      animation: dessert-float 5s ease-in-out infinite;\n    }\n\n    .dessert__cream {\n      position: absolute;\n      z-index: 3;\n      top: 5%;\n      left: 12%;\n      width: 76%;\n      height: 43%;\n      border-radius: 48% 48% 34% 34%;\n      background:\n        radial-gradient(ellipse at 30% 25%, #FFF 0 9%, transparent 10%),\n        radial-gradient(ellipse at 70% 34%, #FFF8E9 0 8%, transparent 9%),\n        linear-gradient(145deg, #F5DAB0, #FFF9E8 50%, #EBCBA0);\n      clip-path: polygon(0 36%, 12% 12%, 30% 17%, 42% 0, 60% 12%, 77% 8%, 100% 38%, 90% 100%, 12% 100%);\n    }\n\n    .dessert__sauce {\n      position: absolute;\n      z-index: 4;\n      top: 24%;\n      left: 12%;\n      width: 76%;\n      height: 24%;\n      border-radius: 40%;\n      background:\n        radial-gradient(ellipse at 50% 0%, #8B5637 0 10%, transparent 11%),\n        linear-gradient(115deg, #77432F, #C08A5B 40%, #76442E 75%, #A66E4B);\n      clip-path: polygon(0 14%, 10% 3%, 22% 15%, 34% 0, 46% 12%, 60% 0, 74% 13%, 89% 0, 100% 17%, 93% 68%, 81% 52%, 73% 100%, 59% 61%, 44% 88%, 32% 58%, 19% 78%, 8% 55%);\n    }\n\n    .dessert__cup {\n      position: absolute;\n      z-index: 2;\n      top: 39%;\n      left: 15%;\n      width: 70%;\n      height: 44%;\n      border-radius: 8% 8% 24% 24%;\n      background: linear-gradient(90deg, #7DA33D, #C9F27A 32%, #D9F7A4 66%, #83A93C);\n      clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);\n    }\n\n    .dessert__cup::after {\n      position: absolute;\n      content: \"F\";\n      inset: 15% 0;\n      display: grid;\n      place-items: center;\n      color: var(--color-ink);\n      font-family: var(--font-display);\n      font-size: 6rem;\n      font-style: italic;\n      opacity: .8;\n    }\n\n    .dessert__base {\n      position: absolute;\n      z-index: 1;\n      bottom: 7%;\n      left: 23%;\n      width: 54%;\n      height: 13%;\n      border-radius: 50%;\n      background: #8AA946;\n    }\n\n    .dessert__berry {\n      position: absolute;\n      z-index: 5;\n      top: 10%;\n      right: 21%;\n      width: 19%;\n      aspect-ratio: .8;\n      border-radius: 65% 35% 60% 40%;\n      background: linear-gradient(135deg, #FF91A7, #E82E62 70%);\n      transform: rotate(38deg);\n    }\n\n    .dessert__berry::before,\n    .dessert__berry::after {\n      position: absolute;\n      content: \"\";\n      top: -10%;\n      left: 37%;\n      width: 27%;\n      height: 34%;\n      border-radius: 100% 0;\n      background: #5C8637;\n      transform: rotate(-45deg);\n    }\n\n    .dessert__berry::after {\n      left: 57%;\n      transform: rotate(35deg);\n    }\n\n    .hero__sticker {\n      position: absolute;\n      top: 12%;\n      right: 0;\n      display: grid;\n      width: 105px;\n      aspect-ratio: 1;\n      place-items: center;\n      border-radius: 50%;\n      background: var(--color-raspberry);\n      color: var(--color-ink);\n      font-size: .73rem;\n      font-weight: 800;\n      line-height: 1.35;\n      text-align: center;\n      transform: rotate(12deg);\n    }\n\n    .hero__caption {\n      position: absolute;\n      bottom: 4%;\n      left: 0;\n      font-family: var(--font-display);\n      font-size: 1.25rem;\n      font-style: italic;\n      transform: rotate(-8deg);\n    }\n\n    /* SECTIONS: INTRO */\n    .intro {\n      padding-block: 2rem;\n      background: var(--color-ink);\n      color: var(--color-white);\n    }\n\n    .intro__inner {\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      gap: 1.5rem;\n    }\n\n    .intro__label {\n      color: var(--color-pistachio);\n      font-size: .72rem;\n      font-weight: 800;\n      letter-spacing: .13em;\n      text-transform: uppercase;\n    }\n\n    .intro__text {\n      margin: .3rem 0 0;\n      font-family: var(--font-display);\n      font-size: clamp(1.5rem, 3vw, 2.5rem);\n    }\n\n    .intro__text em { color: var(--color-pistachio); }\n\n    .intro__link {\n      flex-shrink: 0;\n      color: var(--color-pistachio);\n      font-size: .85rem;\n      font-weight: 800;\n      text-decoration: none;\n    }\n\n    /* SECTIONS: MENU */\n    .menu-section { padding-block: var(--space-8); }\n\n    .section-top {\n      display: flex;\n      align-items: end;\n      justify-content: space-between;\n      gap: 2rem;\n      margin-bottom: 3rem;\n    }\n\n    .section-top__copy { max-width: 720px; }\n\n    .section-top .section-intro { margin-bottom: 0; }\n\n    .menu-grid {\n      display: grid;\n      grid-template-columns: repeat(3, minmax(0, 1fr));\n      gap: 1rem;\n    }\n\n    .menu-card {\n      position: relative;\n      min-width: 0;\n      min-height: 335px;\n      display: flex;\n      flex-direction: column;\n      justify-content: space-between;\n      overflow: hidden;\n      padding: 1.5rem;\n      border-radius: var(--radius-md);\n      background: var(--color-white);\n      box-shadow: var(--shadow-card);\n      transition: transform var(--duration-normal) var(--ease-out);\n    }\n\n    .menu-card:hover { transform: translateY(-6px); }\n\n    .menu-card:nth-child(2) { background: #F9D8E1; }\n    .menu-card:nth-child(3) { background: #E6EDCE; }\n    .menu-card:nth-child(4) { background: #E8E1F1; }\n    .menu-card:nth-child(5) { background: #F5E5C8; }\n    .menu-card:nth-child(6) { background: #E2ECF4; }\n\n    .menu-card__number {\n      position: relative;\n      z-index: 1;\n      font-size: .7rem;\n      font-weight: 800;\n      letter-spacing: .13em;\n    }\n\n    .menu-card__visual {\n      position: absolute;\n      top: 20%;\n      right: -5%;\n      width: 65%;\n      aspect-ratio: 1;\n      display: grid;\n      place-items: center;\n      font-size: clamp(4rem, 8vw, 7rem);\n      transform: rotate(-12deg);\n      transition: transform var(--duration-normal) var(--ease-out);\n    }\n\n    .menu-card:hover .menu-card__visual {\n      transform: rotate(0) scale(1.1);\n    }\n\n    .menu-card__visual--sundae {\n      border-radius: 48% 52% 45% 55%;\n      background: radial-gradient(circle at 45% 30%, #FFF8E9 0 15%, #C9F27A 16% 35%, #6C893B 36% 39%, transparent 40%);\n    }\n\n    .menu-card__visual--crepe {\n      border-radius: 50%;\n      background: radial-gradient(circle at 50% 50%, #9D5B39 0 12%, #F4CF8A 13% 57%, #D5A765 58% 63%, transparent 64%);\n    }\n\n    .menu-card__visual--cake {\n      border-radius: 50%;\n      background: radial-gradient(circle, #F3E4CB 0 43%, #A45C45 44% 50%, transparent 51%);\n    }\n\n    .menu-card__visual--drink {\n      width: 45%;\n      border: 8px solid rgba(32,17,43,.15);\n      border-radius: 24% 24% 35% 35%;\n      background: linear-gradient(180deg, #F9C4D0, #B74E78);\n      font-size: 4rem;\n    }\n\n    .menu-card__visual--coffee {\n      width: 57%;\n      border: 15px solid #D7B58A;\n      border-radius: 50%;\n      background: radial-gradient(circle, #754A37 0 46%, #E9D1B1 47% 62%, transparent 63%);\n      font-size: 3rem;\n    }\n\n    .menu-card__visual--tiramisu {\n      width: 60%;\n      border-radius: 15px 15px 35px 35px;\n      background: repeating-linear-gradient(0deg, #8D573F 0 13px, #EAD1AD 13px 26px);\n      font-size: 4rem;\n    }\n\n    .menu-card__body { position: relative; z-index: 1; margin-top: auto; }\n\n    .menu-card__title {\n      max-width: 260px;\n      margin: 0 0 .45rem;\n      color: var(--color-ink);\n      font-family: var(--font-display);\n      font-size: clamp(1.9rem, 3vw, 2.7rem);\n      font-weight: 400;\n      line-height: 1;\n    }\n\n    .menu-card__description {\n      max-width: 260px;\n      margin: 0;\n      font-size: .85rem;\n    }\n\n    .menu-card__footer {\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      gap: 1rem;\n      margin-top: 1.3rem;\n    }\n\n    .menu-card__price {\n      color: var(--color-ink);\n      font-size: .78rem;\n      font-weight: 800;\n    }\n\n    .menu-card__link {\n      display: grid;\n      width: 40px;\n      height: 40px;\n      place-items: center;\n      border-radius: 50%;\n      background: var(--color-ink);\n      color: var(--color-white);\n      text-decoration: none;\n    }\n\n    .menu-note {\n      margin-top: 1.4rem;\n      color: var(--color-muted);\n      font-size: .75rem;\n    }\n\n    /* SECTIONS: SIGNATURE */\n    .signature {\n      position: relative;\n      padding-block: var(--space-8);\n      overflow: hidden;\n      background: var(--color-raspberry);\n    }\n\n    .signature__grid {\n      display: grid;\n      grid-template-columns: 1fr .8fr;\n      align-items: center;\n      gap: 3rem;\n    }\n\n    .signature__copy { position: relative; z-index: 1; }\n\n    .signature__title {\n      max-width: 650px;\n      margin: 1rem 0;\n      color: var(--color-ink);\n      font-family: var(--font-display);\n      font-size: clamp(3.5rem, 7vw, 6.7rem);\n      font-weight: 400;\n      letter-spacing: -.055em;\n      line-height: .91;\n    }\n\n    .signature__title em { color: var(--color-white); }\n\n    .signature__description {\n      max-width: 420px;\n      margin-bottom: 1.6rem;\n    }\n\n    .signature__art {\n      position: relative;\n      min-height: 360px;\n      display: grid;\n      place-items: center;\n    }\n\n    .signature__circle {\n      width: min(100%, 340px);\n      aspect-ratio: 1;\n      display: grid;\n      place-items: center;\n      border-radius: 50%;\n      background: var(--color-pistachio);\n      font-size: clamp(7rem, 14vw, 12rem);\n      transform: rotate(-10deg);\n    }\n\n    .signature__badge {\n      position: absolute;\n      right: 0;\n      bottom: 12%;\n      max-width: 155px;\n      padding: 1rem;\n      border-radius: var(--radius-md);\n      background: var(--color-ink);\n      color: var(--color-white);\n      font-size: .8rem;\n      font-weight: 700;\n      transform: rotate(5deg);\n    }\n\n    /* SECTIONS: EXPERIENCE */\n    .experience { padding-block: var(--space-8); }\n\n    .experience__grid {\n      display: grid;\n      grid-template-columns: .9fr 1.1fr;\n      gap: clamp(2rem, 6vw, 6rem);\n      align-items: center;\n    }\n\n    .experience__copy .section-heading { margin-top: 1.1rem; }\n\n    .experience__copy p {\n      max-width: 440px;\n      color: var(--color-muted);\n    }\n\n    .experience__visual {\n      position: relative;\n      min-height: 400px;\n      display: grid;\n      place-items: center;\n      overflow: hidden;\n      border-radius: var(--radius-lg);\n      background: #F0E4D4;\n    }\n\n    .experience__visual::before {\n      position: absolute;\n      content: \"\";\n      width: 76%;\n      aspect-ratio: 1;\n      border: 1px solid rgba(32,17,43,.2);\n      border-radius: 50%;\n    }\n\n    .experience__visual::after {\n      position: absolute;\n      content: \"\";\n      width: 56%;\n      aspect-ratio: 1;\n      border: 1px solid rgba(32,17,43,.2);\n      border-radius: 50%;\n    }\n\n    .experience__illustration {\n      position: relative;\n      z-index: 1;\n      font-size: clamp(8rem, 16vw, 14rem);\n      transform: rotate(-12deg);\n    }\n\n    .experience__label {\n      position: absolute;\n      right: 7%;\n      bottom: 7%;\n      z-index: 2;\n      padding: .9rem 1.1rem;\n      border-radius: var(--radius-pill);\n      background: var(--color-white);\n      color: var(--color-ink);\n      font-size: .75rem;\n      font-weight: 800;\n    }\n\n    /* SECTIONS: VISIT */\n    .visit {\n      padding-block: var(--space-8);\n      background: var(--color-ink);\n      color: var(--color-white);\n    }\n\n    .visit__heading { max-width: 650px; }\n    .visit__heading em { color: var(--color-pistachio); }\n\n    .visit__grid {\n      display: grid;\n      grid-template-columns: 1fr 1fr;\n      gap: 1.2rem;\n      margin-top: 3rem;\n    }\n\n    .visit-card {\n      padding: clamp(1.5rem, 4vw, 2.5rem);\n      border: 1px solid rgba(255,255,255,.18);\n      border-radius: var(--radius-md);\n      background: rgba(255,255,255,.045);\n    }\n\n    .visit-card__label {\n      color: var(--color-pistachio);\n      font-size: .7rem;\n      font-weight: 800;\n      letter-spacing: .13em;\n      text-transform: uppercase;\n    }\n\n    .visit-card__title {\n      margin: 1rem 0 .5rem;\n      font-family: var(--font-display);\n      font-size: 2rem;\n      font-weight: 400;\n    }\n\n    .visit-card p { color: rgba(255,255,255,.75); }\n\n    .visit-card a:not(.button) { color: var(--color-pistachio); }\n\n    .hours-list {\n      display: grid;\n      gap: .7rem;\n      margin: 1.4rem 0;\n      padding: 0;\n      list-style: none;\n    }\n\n    .hours-list__row {\n      display: flex;\n      justify-content: space-between;\n      gap: 1rem;\n      padding-bottom: .6rem;\n      border-bottom: 1px solid rgba(255,255,255,.12);\n      font-size: .82rem;\n    }\n\n    .hours-list__row span:last-child {\n      text-align: end;\n      font-weight: 700;\n    }\n\n    .hours-status {\n      display: flex;\n      align-items: center;\n      gap: .6rem;\n      margin-top: 1.1rem;\n      font-size: .8rem;\n      font-weight: 800;\n    }\n\n    .hours-status__dot {\n      width: 9px;\n      height: 9px;\n      flex-shrink: 0;\n      border-radius: 50%;\n      background: var(--color-pistachio);\n    }\n\n    .hours-status.is-closed .hours-status__dot {\n      background: var(--color-raspberry);\n    }\n\n    .visit__actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: .7rem;\n      margin-top: 1.4rem;\n    }\n\n    .visit .button--light {\n      border-color: rgba(255,255,255,.25);\n      color: var(--color-white);\n    }\n\n    .visit .button--light:hover {\n      background: rgba(255,255,255,.1);\n    }\n\n    /* SECTIONS: FINAL CTA */\n    .final-cta {\n      padding-block: var(--space-8);\n      text-align: center;\n    }\n\n    .final-cta__inner { max-width: 760px; margin-inline: auto; }\n\n    .final-cta__title {\n      margin: 1.2rem 0;\n      color: var(--color-ink);\n      font-family: var(--font-display);\n      font-size: clamp(3.3rem, 8vw, 7rem);\n      font-weight: 400;\n      letter-spacing: -.06em;\n      line-height: .94;\n    }\n\n    .final-cta__title em { color: var(--color-raspberry); }\n\n    .final-cta__text {\n      max-width: 470px;\n      margin: 0 auto 1.8rem;\n      color: var(--color-muted);\n    }\n\n    /* SECTIONS: FOOTER */\n    .site-footer {\n      padding-block: 2rem;\n      background: var(--color-pistachio);\n      color: var(--color-ink);\n    }\n\n    .footer__inner {\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      gap: 1.5rem;\n    }\n\n    .footer__brand {\n      font-size: 1.2rem;\n      font-weight: 800;\n      letter-spacing: -.06em;\n    }\n\n    .footer__meta {\n      margin-top: .25rem;\n      font-size: .75rem;\n    }\n\n    .footer__links {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 1.2rem;\n    }\n\n    .footer__links a {\n      font-size: .78rem;\n      font-weight: 800;\n      text-decoration: none;\n    }\n\n    /* MOTION */\n    @keyframes marquee {\n      to { transform: translateX(-50%); }\n    }\n\n    @keyframes dessert-float {\n      0%, 100% { transform: translateY(0) rotate(-2deg); }\n      50% { transform: translateY(-12px) rotate(2deg); }\n    }\n\n    /* RESPONSIVE */\n    @media (min-width: 1500px) {\n      :root { --gutter: 8%; }\n    }\n\n    @media (max-width: 900px) {\n      .hero__grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }\n      .hero__title { font-size: clamp(3.6rem, 8vw, 5.5rem); }\n      .hero__art { min-height: 380px; }\n      .hero__sticker { width: 82px; font-size: .65rem; }\n      .menu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }\n      .signature__grid { gap: 1.5rem; }\n      .experience__grid { gap: 2rem; }\n      .experience__visual { min-height: 330px; }\n    }\n\n    @media (max-width: 650px) {\n      :root {\n        --gutter: 5%;\n        --space-8: 4.5rem;\n      }\n\n      .header__inner { min-height: 72px; }\n      .header__nav { display: none; }\n      .header__action { min-height: 43px; padding-inline: 1rem; font-size: .78rem; }\n\n      .hero { padding-block: 3.3rem 4rem; }\n      .hero__grid { grid-template-columns: 1fr; gap: .5rem; }\n      .hero__title { font-size: clamp(4rem, 15vw, 6rem); }\n      .hero__description { max-width: 370px; }\n      .hero__art { min-height: 360px; margin-top: .5rem; }\n      .dessert { width: min(72%, 275px); }\n      .hero__sticker { right: 5%; }\n      .hero__caption { left: 5%; bottom: 1%; }\n\n      .intro__inner { align-items: flex-start; flex-direction: column; gap: 1rem; }\n      .intro__link { padding-block: .3rem; }\n\n      .section-top { align-items: flex-start; flex-direction: column; gap: 1rem; margin-bottom: 2rem; }\n      .menu-grid { grid-template-columns: 1fr; gap: .9rem; }\n      .menu-card { min-height: 300px; }\n      .menu-card__visual { width: 55%; right: 1%; }\n      .menu-card__title { font-size: 2.6rem; }\n\n      .signature__grid { grid-template-columns: 1fr; }\n      .signature__art { min-height: 300px; }\n      .signature__circle { width: min(75%, 290px); }\n\n      .experience__grid { grid-template-columns: 1fr; }\n      .experience__visual { min-height: 310px; }\n\n      .visit__grid { grid-template-columns: 1fr; gap: 1rem; }\n      .visit-card { padding: 1.5rem; }\n\n      .footer__inner { align-items: flex-start; flex-direction: column; }\n      .footer__links { gap: 1rem; }\n    }\n\n    @media (max-width: 380px) {\n      .hero__title { font-size: 3.7rem; }\n      .hero__actions { align-items: stretch; flex-direction: column; }\n      .hero__actions .button { width: 100%; }\n      .hero__art { min-height: 310px; }\n      .hours-list__row { font-size: .74rem; }\n    }\n\n    @media (prefers-reduced-motion: reduce) {\n      *, *::before, *::after {\n        scroll-behavior: auto !important;\n        animation-duration: .01ms !important;\n        animation-iteration-count: 1 !important;\n        transition-duration: .01ms !important;\n      }\n\n      .reveal {\n        opacity: 1;\n        transform: none;\n      }\n    }"
+    },
+    "TITLE.": {
+      "text": "FRENCHY Ain Allah — Une envie de douceur ?"
+    }
+  },
+  "dataKeys": [
+    "$contract",
+    "assets",
+    "business",
+    "content",
+    "gallery",
+    "meta",
+    "missing",
+    "offerings",
+    "reviews",
+    "seo"
+  ]
+}

@@ -1,0 +1,35 @@
+MIT License
+
+Copyright (c) 2026 Meykiio
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+A note on what this licence covers and what it does not.
+
+It covers the two prompts, the tooling in `tools/`, the documentation, and the
+example landing pages in `examples/`.
+
+It does not grant any right to the businesses whose public information appears
+in the examples. Names, addresses, phone numbers, prices and opening hours in
+`examples/` were taken from publicly available listings at the time of writing
+and remain the property of those businesses. They are reproduced here for
+demonstration. Do not present them as your own, and delete or replace them with
+your own client data before you ship anything.

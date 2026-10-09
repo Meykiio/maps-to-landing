@@ -1,0 +1,67 @@
+name: validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  examples:
+    name: Examples are valid and unchanged
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify each example passes the site-data contract
+        run: node tools/check-contract.mjs examples/*.html
+
+      - name: Verify each example still renders as committed
+        run: |
+          set -euo pipefail
+          for page in examples/*.html; do
+            name="$(basename "$page" .html)"
+            node tools/render-snapshot.mjs "$page" --json > "/tmp/$name.json"
+            if ! diff -u "examples/__snapshots__/$name.json" "/tmp/$name.json"; then
+              echo ""
+              echo "::error file=$page::Rendered output changed."
+              echo "If this change is intentional, regenerate the baseline:"
+              echo "  node tools/render-snapshot.mjs $page --json > examples/__snapshots__/$name.json"
+              exit 1
+            fi
+            echo "OK  $name renders identically"
+          done
+
+      - name: Verify the examples stay single-file and self-contained
+        run: |
+          set -euo pipefail
+          for page in examples/*.html; do
+            size=$(wc -c < "$page")
+            if [ "$size" -gt 300000 ]; then
+              echo "::error file=$page::Page is ${size} bytes, over the 300KB budget."
+              exit 1
+            fi
+            if grep -qiE '<script[^>]+src=' "$page"; then
+              echo "::error file=$page::Page loads an external script; it must be one file."
+              exit 1
+            fi
+            echo "OK  $page is single-file, ${size} bytes"
+          done
+
+      - name: Verify the prompts are unchanged in spirit and present
+        run: |
+          set -euo pipefail
+          for prompt in prompts/*.md; do
+            if ! grep -q 'GOOGLE MAPS LINK\|Begin with Phase 0' "$prompt"; then
+              echo "::error file=$prompt::Prompt looks truncated."
+              exit 1
+            fi
+            echo "OK  $prompt"
+          done
+          grep -q 'maps-to-landing/site-data@1' prompts/maps-to-landing-master-prompt.md
+          grep -q 'maps-to-landing/site-data@1' prompts/opencode-html-to-fullstack-prompt.md
+          echo "OK  both prompts reference the contract"

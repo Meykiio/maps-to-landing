@@ -1,0 +1,15 @@
+# Normalize line endings. The render snapshots are compared byte-for-byte in CI,
+# so a CRLF checkout must never turn a passing page into a failing one.
+* text=auto eol=lf
+
+*.html text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+*.mjs  text eol=lf
+*.yml  text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+
+LICENSE text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf

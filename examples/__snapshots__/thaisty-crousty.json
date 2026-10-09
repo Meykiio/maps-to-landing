@@ -1,0 +1,757 @@
+{
+  "file": "thaisty-crousty.html",
+  "errors": [],
+  "rendered": {
+    "#business-schema": {
+      "text": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Restaurant\",\n  \"name\": \"Thaisty Crousty\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"62 Chemin de Sidi Yahia\",\n    \"addressLocality\": \"Hydra\",\n    \"addressRegion\": \"Algiers\",\n    \"postalCode\": \"16000\",\n    \"addressCountry\": \"DZ\"\n  },\n  \"telephone\": \"+213793755788\",\n  \"servesCuisine\": [\n    \"Chicken\",\n    \"Asian-inspired street food\"\n  ],\n  \"priceRange\": \"600–950 DZD\",\n  \"hasMenu\": \"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\"\n}"
+    },
+    "#concept": {
+      "class": "story"
+    },
+    "#current-year": {
+      "text": "2026"
+    },
+    "#final-title": {
+      "text": "Alors,",
+      "class": "display final-cta__title"
+    },
+    "#hero-title": {
+      "class": "display hero__title"
+    },
+    "#location": {
+      "class": "container location"
+    },
+    "#location-title": {
+      "text": "On se retrouve à",
+      "class": "section-heading"
+    },
+    "#menu": {
+      "class": "container menu"
+    },
+    "#menu-grid": {
+      "text": "<article class=\"menu-card\"\n                 data-reveal>\n          <div class=\"menu-card__top\">\n            <span class=\"menu-card__tag\">L&#39;essentiel</span>\n            <span class=\"menu-card__price\">600 DA</span>\n          </div>\n          <div class=\"menu-card__art\" aria-hidden=\"true\">\n            <div class=\"menu-card__food\"></div>\n          </div>\n          <h3 class=\"menu-card__name\">Crousty Classic</h3>\n          <p class=\"menu-card__description\">Riz basmati, poulet croustillant, sauce blanche maison, oignons frits et persil.</p>\n          <div class=\"menu-card__footer\">\n            <a class=\"menu-card__link\"\n               href=\"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\"\n               target=\"_blank\" rel=\"noopener noreferrer\">\n              Commander <span aria-hidden=\"true\">↗</span>\n            </a>\n            <span aria-hidden=\"true\">✳</span>\n          </div>\n        </article>\n      \n        <article class=\"menu-card menu-card--featured\"\n                 data-reveal>\n          <div class=\"menu-card__top\">\n            <span class=\"menu-card__tag\">Sucré-salé</span>\n            <span class=\"menu-card__price\">700 DA</span>\n          </div>\n          <div class=\"menu-card__art\" aria-hidden=\"true\">\n            <div class=\"menu-card__food\"></div>\n          </div>\n          <h3 class=\"menu-card__name\">Crousty Sweet</h3>\n          <p class=\"menu-card__description\">Riz basmati, poulet croustillant, sauce blanche maison, sauce sucrée, oignons frits et persil.</p>\n          <div class=\"menu-card__footer\">\n            <a class=\"menu-card__link\"\n               href=\"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\"\n               target=\"_blank\" rel=\"noopener noreferrer\">\n              Commander <span aria-hidden=\"true\">↗</span>\n            </a>\n            <span aria-hidden=\"true\">✳</span>\n          </div>\n        </article>\n      \n        <article class=\"menu-card\"\n                 data-reveal>\n          <div class=\"menu-card__top\">\n            <span class=\"menu-card__tag\">Relevé</span>\n            <span class=\"menu-card__price\">700 DA</span>\n          </div>\n          <div class=\"menu-card__art\" aria-hidden=\"true\">\n            <div class=\"menu-card__food\"></div>\n          </div>\n          <h3 class=\"menu-card__name\">Crousty Spicy</h3>\n          <p class=\"menu-card__description\">Riz basmati, poulet croustillant, sauce blanche maison, sauce piquante, oignons frits et persil.</p>\n          <div class=\"menu-card__footer\">\n            <a class=\"menu-card__link\"\n               href=\"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\"\n               target=\"_blank\" rel=\"noopener noreferrer\">\n              Commander <span aria-hidden=\"true\">↗</span>\n            </a>\n            <span aria-hidden=\"true\">✳</span>\n          </div>\n        </article>\n      \n        <article class=\"menu-card\"\n                 data-reveal>\n          <div class=\"menu-card__top\">\n            <span class=\"menu-card__tag\">Deux sauces</span>\n            <span class=\"menu-card__price\">800 DA</span>\n          </div>\n          <div class=\"menu-card__art\" aria-hidden=\"true\">\n            <div class=\"menu-card__food\"></div>\n          </div>\n          <h3 class=\"menu-card__name\">Crousty Mix</h3>\n          <p class=\"menu-card__description\">Riz basmati, poulet croustillant, sauce blanche maison, sauce sucrée et sauce piquante.</p>\n          <div class=\"menu-card__footer\">\n            <a class=\"menu-card__link\"\n               href=\"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\"\n               target=\"_blank\" rel=\"noopener noreferrer\">\n              Commander <span aria-hidden=\"true\">↗</span>\n            </a>\n            <span aria-hidden=\"true\">✳</span>\n          </div>\n        </article>\n      \n        <article class=\"menu-card\"\n                 data-reveal>\n          <div class=\"menu-card__top\">\n            <span class=\"menu-card__tag\">Curry</span>\n            <span class=\"menu-card__price\">800 DA</span>\n          </div>\n          <div class=\"menu-card__art\" aria-hidden=\"true\">\n            <div class=\"menu-card__food\"></div>\n          </div>\n          <h3 class=\"menu-card__name\">Crousty Curry Thai</h3>\n          <p class=\"menu-card__description\">Riz basmati, poulet croustillant, sauce curry et oignons crispy.</p>\n          <div class=\"menu-card__footer\">\n            <a class=\"menu-card__link\"\n               href=\"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\"\n               target=\"_blank\" rel=\"noopener noreferrer\">\n              Commander <span aria-hidden=\"true\">↗</span>\n            </a>\n            <span aria-hidden=\"true\">✳</span>\n          </div>\n        </article>\n      \n        <article class=\"menu-card\"\n                 data-reveal>\n          <div class=\"menu-card__top\">\n            <span class=\"menu-card__tag\">Gourmand</span>\n            <span class=\"menu-card__price\">950 DA</span>\n          </div>\n          <div class=\"menu-card__art\" aria-hidden=\"true\">\n            <div class=\"menu-card__food\"></div>\n          </div>\n          <h3 class=\"menu-card__name\">Crousty Curry Mix</h3>\n          <p class=\"menu-card__description\">Riz basmati, double dose de sauce curry, poulet croustillant et oignons crispy.</p>\n          <div class=\"menu-card__footer\">\n            <a class=\"menu-card__link\"\n               href=\"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\"\n               target=\"_blank\" rel=\"noopener noreferrer\">\n              Commander <span aria-hidden=\"true\">↗</span>\n            </a>\n            <span aria-hidden=\"true\">✳</span>\n          </div>\n        </article>",
+      "class": "menu__grid"
+    },
+    "#menu-title": {
+      "text": "Choisis ta",
+      "class": "section-heading"
+    },
+    "#open-status": {
+      "text": "Probablement fermé selon les horaires publiés",
+      "class": "location__value"
+    },
+    "#opening-hours": {
+      "text": "<div class=\"location__hours-row\">\n              <span>Dimanche</span>\n              <span>11:00 – 03:00</span>\n            </div>\n          \n            <div class=\"location__hours-row\">\n              <span>Lundi</span>\n              <span>11:00 – 03:00</span>\n            </div>\n          \n            <div class=\"location__hours-row\">\n              <span>Mardi</span>\n              <span>11:00 – 03:00</span>\n            </div>\n          \n            <div class=\"location__hours-row\">\n              <span>Mercredi</span>\n              <span>11:30 – 03:00</span>\n            </div>\n          \n            <div class=\"location__hours-row\">\n              <span>Jeudi</span>\n              <span>11:00 – 03:00</span>\n            </div>\n          \n            <div class=\"location__hours-row is-today\">\n              <span>Vendredi · Aujourd'hui</span>\n              <span>17:00 – 03:00</span>\n            </div>\n          \n            <div class=\"location__hours-row\">\n              <span>Samedi</span>\n              <span>11:00 – 03:00</span>\n            </div>",
+      "class": "location__hours"
+    },
+    "#review-count": {
+      "text": "Sur la base de 312 avis répertoriés. Vérifier la fiche Google pour la note actuelle.",
+      "class": "reviews__meta"
+    },
+    "#review-score": {
+      "text": "4,3",
+      "class": "reviews__score"
+    },
+    "#reviews-title": {
+      "text": "À toi de",
+      "class": "section-heading"
+    },
+    "#showcase-title": {
+      "text": "Simple dans le bowl.",
+      "class": "section-heading"
+    },
+    "#site-data": {
+      "text": "{\n    \"$contract\": \"maps-to-landing/site-data@1\",\n\n    \"meta\": {\n      \"generatedAt\": \"2026-06-12\",\n      \"source\": \"website\",\n      \"sourceUrl\": \"https://restaurantguru.com/Thaisty-Crousty-Sidi-Yahia-Hydra\",\n      \"language\": \"fr\"\n    },\n\n    \"business\": {\n      \"name\": \"Thaisty Crousty\",\n      \"branch\": null,\n      \"category\": \"Restaurant\",\n      \"cuisine\": [\"Chicken\", \"Asian-inspired street food\"],\n      \"languages\": [\"fr\"],\n      \"phone\": {\n        \"e164\": \"+213793755788\",\n        \"display\": \"0793 75 57 88\",\n        \"whatsapp\": null\n      },\n      \"address\": {\n        \"line1\": \"62 Chemin de Sidi Yahia\",\n        \"neighborhood\": \"Sidi Yahia\",\n        \"locality\": \"Hydra\",\n        \"city\": \"Alger\",\n        \"region\": \"Algiers\",\n        \"postalCode\": \"16000\",\n        \"country\": \"Algérie\",\n        \"countryCode\": \"DZ\",\n        \"short\": \"Sidi Yahia · Hydra\",\n        \"full\": \"62 Chemin de Sidi Yahia, Hydra, 16000 Alger, Algérie\"\n      },\n      \"coordinates\": null,\n      \"rating\": {\n        \"value\": 4.3,\n        \"reviewCount\": 312,\n        \"url\": \"https://www.google.com/maps/search/?api=1&query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger\",\n        \"source\": \"google-maps\"\n      },\n      \"hours\": {\n        \"timezone\": \"Africa/Algiers\",\n        \"source\": \"Restaurant Guru, fiche consultée en 2026\",\n        \"schedule\": [\n          { \"day\": \"Sunday\",    \"label\": \"Dimanche\", \"open\": \"11:00\", \"close\": \"03:00\" },\n          { \"day\": \"Monday\",    \"label\": \"Lundi\",     \"open\": \"11:00\", \"close\": \"03:00\" },\n          { \"day\": \"Tuesday\",   \"label\": \"Mardi\",     \"open\": \"11:00\", \"close\": \"03:00\" },\n          { \"day\": \"Wednesday\", \"label\": \"Mercredi\", \"open\": \"11:30\", \"close\": \"03:00\" },\n          { \"day\": \"Thursday\",  \"label\": \"Jeudi\",     \"open\": \"11:00\", \"close\": \"03:00\" },\n          { \"day\": \"Friday\",    \"label\": \"Vendredi\",  \"open\": \"17:00\", \"close\": \"03:00\" },\n          { \"day\": \"Saturday\",  \"label\": \"Samedi\",    \"open\": \"11:00\", \"close\": \"03:00\" }\n        ]\n      },\n      \"socials\": {\n        \"instagram\": null,\n        \"facebook\": null,\n        \"tiktok\": null\n      },\n      \"links\": {\n        \"maps\": \"https://www.google.com/maps/search/?api=1&query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger\",\n        \"place\": \"https://www.google.com/maps/search/?api=1&query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger\",\n        \"directions\": \"https://www.google.com/maps/dir/?api=1&destination=Thaisty+Crousty%2C+62+Chemin+de+Sidi+Yahia%2C+Hydra%2C+Alger\",\n        \"website\": null,\n        \"menu\": \"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\",\n        \"order\": \"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\",\n        \"booking\": null\n      }\n    },\n\n    \"content\": {\n      \"brand\": {\n        \"name\": \"Thaisty Crousty\",\n        \"sub\": \"Sidi Yahia · Hydra\"\n      },\n      \"trust\": {\n        \"ratingLabel\": \"{rating} / 5 sur Google*\",\n        \"reviewsLabel\": \"{reviewCount} avis répertoriés\"\n      },\n      \"reviews\": {\n        \"quote\": \"Excellent bol et dessert !\",\n        \"attribution\": \"Extrait d'un avis public attribué à RAD BOU, consulté sur Restaurant Guru.\",\n        \"sourceLabel\": \"Voir la source\"\n      },\n      \"location\": {\n        \"address\": \"{address}\",\n        \"shortAddress\": \"{addressShort}\"\n      },\n      \"footer\": {\n        \"name\": \"Thaisty Crousty\",\n        \"sub\": \"Sidi Yahia · Hydra · Alger\",\n        \"address\": \"{addressShort}.\"\n      }\n    },\n\n    \"offerings\": [\n      {\n        \"id\": \"crousty-classic\",\n        \"name\": \"Crousty Classic\",\n        \"description\": \"Riz basmati, poulet croustillant, sauce blanche maison, oignons frits et persil.\",\n        \"price\": 600,\n        \"priceDisplay\": null,\n        \"currency\": \"DZD\",\n        \"tag\": \"L'essentiel\",\n        \"category\": \"Bowls\",\n        \"featured\": false,\n        \"order\": 1,\n        \"url\": \"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\",\n        \"cta\": \"Commander\",\n        \"visual\": \"bowl\",\n        \"icon\": \"✳\"\n      },\n      {\n        \"id\": \"crousty-sweet\",\n        \"name\": \"Crousty Sweet\",\n        \"description\": \"Riz basmati, poulet croustillant, sauce blanche maison, sauce sucrée, oignons frits et persil.\",\n        \"price\": 700,\n        \"priceDisplay\": null,\n        \"currency\": \"DZD\",\n        \"tag\": \"Sucré-salé\",\n        \"category\": \"Bowls\",\n        \"featured\": true,\n        \"order\": 2,\n        \"url\": \"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\",\n        \"cta\": \"Commander\",\n        \"visual\": \"bowl\",\n        \"icon\": \"✳\"\n      },\n      {\n        \"id\": \"crousty-spicy\",\n        \"name\": \"Crousty Spicy\",\n        \"description\": \"Riz basmati, poulet croustillant, sauce blanche maison, sauce piquante, oignons frits et persil.\",\n        \"price\": 700,\n        \"priceDisplay\": null,\n        \"currency\": \"DZD\",\n        \"tag\": \"Relevé\",\n        \"category\": \"Bowls\",\n        \"featured\": false,\n        \"order\": 3,\n        \"url\": \"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\",\n        \"cta\": \"Commander\",\n        \"visual\": \"bowl\",\n        \"icon\": \"✳\"\n      },\n      {\n        \"id\": \"crousty-mix\",\n        \"name\": \"Crousty Mix\",\n        \"description\": \"Riz basmati, poulet croustillant, sauce blanche maison, sauce sucrée et sauce piquante.\",\n        \"price\": 800,\n        \"priceDisplay\": null,\n        \"currency\": \"DZD\",\n        \"tag\": \"Deux sauces\",\n        \"category\": \"Bowls\",\n        \"featured\": false,\n        \"order\": 4,\n        \"url\": \"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\",\n        \"cta\": \"Commander\",\n        \"visual\": \"bowl\",\n        \"icon\": \"✳\"\n      },\n      {\n        \"id\": \"crousty-curry-thai\",\n        \"name\": \"Crousty Curry Thai\",\n        \"description\": \"Riz basmati, poulet croustillant, sauce curry et oignons crispy.\",\n        \"price\": 800,\n        \"priceDisplay\": null,\n        \"currency\": \"DZD\",\n        \"tag\": \"Curry\",\n        \"category\": \"Bowls\",\n        \"featured\": false,\n        \"order\": 5,\n        \"url\": \"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\",\n        \"cta\": \"Commander\",\n        \"visual\": \"bowl\",\n        \"icon\": \"✳\"\n      },\n      {\n        \"id\": \"crousty-curry-mix\",\n        \"name\": \"Crousty Curry Mix\",\n        \"description\": \"Riz basmati, double dose de sauce curry, poulet croustillant et oignons crispy.\",\n        \"price\": 950,\n        \"priceDisplay\": null,\n        \"currency\": \"DZD\",\n        \"tag\": \"Gourmand\",\n        \"category\": \"Bowls\",\n        \"featured\": false,\n        \"order\": 6,\n        \"url\": \"https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra\",\n        \"cta\": \"Commander\",\n        \"visual\": \"bowl\",\n        \"icon\": \"✳\"\n      }\n    ],\n\n    \"reviews\": [\n      {\n        \"id\": \"r1\",\n        \"quote\": \"Excellent bol et dessert !\",\n        \"author\": \"RAD BOU\",\n        \"source\": \"Restaurant Guru\",\n        \"url\": \"https://restaurantguru.com/Thaisty-Crousty-Sidi-Yahia-Hydra\",\n        \"rating\": null,\n        \"featured\": true\n      }\n    ],\n\n    \"gallery\": [],\n\n    \"assets\": { \"logo\": null, \"hero\": null, \"ogImage\": null },\n\n    \"seo\": {\n      \"title\": \"Thaisty Crousty | Bowls croustillants à Hydra, Alger\",\n      \"description\": \"Découvrez les bowls Crousty de Thaisty Crousty à Sidi Yahia, Hydra, Alger. Poulet croustillant, riz basmati et sauces maison.\",\n      \"canonical\": \"https://example.com/\",\n      \"ogImage\": null\n    },\n\n    \"missing\": [\n      \"Coordonnées GPS non reprises : le point de localisation affiché est un schéma décoratif, pas un vrai plan.\",\n      \"Aucun lien WhatsApp, Facebook ou TikTok trouvé — à confirmer avec le gérant.\",\n      \"Note Google et nombre d'avis repris de la fiche publique au moment de la rédaction : à vérifier avant mise en ligne.\",\n      \"Tarifs issus d'une carte de livraison consultée : prix à reconfirmer au restaurant.\",\n      \"Aucune photographie réelle du restaurant ou des plats : les visuels sont des compositions CSS et typographiques.\"\n    ]\n  }"
+    },
+    "#story-title": {
+      "text": "Trois éléments.",
+      "class": "section-heading"
+    },
+    "#top": {
+      "class": "header"
+    },
+    "A.brand": {
+      "href": "#top",
+      "class": "brand"
+    },
+    "A.brand#2": {
+      "href": "#top",
+      "class": "brand"
+    },
+    "A.button.button--dark": {
+      "text": "Voir la carte",
+      "href": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+      "class": "button button--dark"
+    },
+    "A.button.button--dark.nav__cta": {
+      "text": "Commander",
+      "href": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+      "class": "button button--dark nav__cta"
+    },
+    "A.button.button--dark#2": {
+      "text": "Lire les avis Google",
+      "href": "https://www.google.com/maps/search/?api=1&query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger",
+      "class": "button button--dark"
+    },
+    "A.button.button--dark#3": {
+      "text": "Itinéraire Google Maps",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=Thaisty+Crousty%2C+62+Chemin+de+Sidi+Yahia%2C+Hydra%2C+Alger",
+      "class": "button button--dark"
+    },
+    "A.button.button--gold.final-cta__button": {
+      "text": "Commander sur Yassir",
+      "href": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+      "class": "button button--gold final-cta__button"
+    },
+    "A.button.button--light": {
+      "text": "Trouver le spot",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=Thaisty+Crousty%2C+62+Chemin+de+Sidi+Yahia%2C+Hydra%2C+Alger",
+      "class": "button button--light"
+    },
+    "A.button.button--light#2": {
+      "text": "Toute la carte",
+      "href": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+      "class": "button button--light"
+    },
+    "A.button.button--light#3": {
+      "text": "Voir la source",
+      "href": "https://restaurantguru.com/Thaisty-Crousty-Sidi-Yahia-Hydra",
+      "class": "button button--light"
+    },
+    "A.footer__link": {
+      "text": "La carte",
+      "href": "#menu",
+      "class": "footer__link"
+    },
+    "A.footer__link#2": {
+      "text": "Le concept",
+      "href": "#concept",
+      "class": "footer__link"
+    },
+    "A.footer__link#3": {
+      "text": "Avis Google",
+      "href": "https://www.google.com/maps/search/?api=1&query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger",
+      "class": "footer__link"
+    },
+    "A.footer__link#4": {
+      "text": "Commander",
+      "href": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+      "class": "footer__link"
+    },
+    "A.location__value": {
+      "text": "0793 75 57 88",
+      "href": "tel:+213793755788",
+      "class": "location__value"
+    },
+    "A.menu-card__link": {
+      "text": "Commander",
+      "href": "${escapeHTML(business.links.order)}",
+      "class": "menu-card__link"
+    },
+    "A.nav__link": {
+      "text": "La carte",
+      "href": "#menu",
+      "class": "nav__link"
+    },
+    "A.nav__link#2": {
+      "text": "Le concept",
+      "href": "#concept",
+      "class": "nav__link"
+    },
+    "A.nav__link#3": {
+      "text": "Nous trouver",
+      "href": "#location",
+      "class": "nav__link"
+    },
+    "A.trust__item": {
+      "href": "https://www.google.com/maps/search/?api=1&query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger",
+      "class": "trust__item"
+    },
+    "ARTICLE.?.menu-card${item.featured": {
+      "class": "? menu-card${item.featured"
+    },
+    "ARTICLE.showcase-card.showcase-card--dark": {
+      "class": "showcase-card showcase-card--dark"
+    },
+    "ARTICLE.showcase-card.showcase-card--red": {
+      "class": "showcase-card showcase-card--red"
+    },
+    "BLOCKQUOTE.reviews__quote": {
+      "class": "reviews__quote"
+    },
+    "BR.": {
+      "text": "mood"
+    },
+    "BR.#10": {
+      "text": "quelle sauce ?"
+    },
+    "BR.#2": {
+      "text": "game"
+    },
+    "BR.#3": {
+      "text": "Poulet."
+    },
+    "BR.#4": {
+      "text": "Sauce."
+    },
+    "BR.#7": {
+      "text": "fait le show."
+    },
+    "BR.#8": {
+      "text": "Sweet."
+    },
+    "BR.#9": {
+      "text": "Spicy."
+    },
+    "DIV.?.location__hours-row${isToday": {
+      "class": "? location__hours-row${isToday"
+    },
+    "DIV.container": {
+      "class": "container"
+    },
+    "DIV.container.final-cta__inner": {
+      "class": "container final-cta__inner"
+    },
+    "DIV.container.hero__grid": {
+      "class": "container hero__grid"
+    },
+    "DIV.container.reviews__grid": {
+      "class": "container reviews__grid"
+    },
+    "DIV.container.story__grid": {
+      "class": "container story__grid"
+    },
+    "DIV.container.trust__grid": {
+      "class": "container trust__grid"
+    },
+    "DIV.final-cta__copy": {
+      "class": "final-cta__copy"
+    },
+    "DIV.footer__bottom": {
+      "class": "footer__bottom"
+    },
+    "DIV.footer__top": {
+      "class": "footer__top"
+    },
+    "DIV.hero__actions": {
+      "class": "hero__actions"
+    },
+    "DIV.hero__content": {
+      "class": "hero__content"
+    },
+    "DIV.hero__label": {
+      "class": "hero__label"
+    },
+    "DIV.hero__note": {
+      "class": "hero__note"
+    },
+    "DIV.hero-art": {
+      "class": "hero-art"
+    },
+    "DIV.hero-art__bowl": {
+      "class": "hero-art__bowl"
+    },
+    "DIV.hero-art__burst": {
+      "class": "hero-art__burst"
+    },
+    "DIV.hero-art__chicken": {
+      "class": "hero-art__chicken"
+    },
+    "DIV.hero-art__orbit": {
+      "class": "hero-art__orbit"
+    },
+    "DIV.hero-art__rice": {
+      "class": "hero-art__rice"
+    },
+    "DIV.hero-art__sticker.hero-art__sticker--bottom": {
+      "text": "Sauce",
+      "class": "hero-art__sticker hero-art__sticker--bottom"
+    },
+    "DIV.hero-art__sticker.hero-art__sticker--top": {
+      "text": "Crispy",
+      "class": "hero-art__sticker hero-art__sticker--top"
+    },
+    "DIV.location__details": {
+      "class": "location__details"
+    },
+    "DIV.location__grid": {
+      "class": "location__grid"
+    },
+    "DIV.location__map": {
+      "class": "location__map"
+    },
+    "DIV.location__map-card": {
+      "class": "location__map-card"
+    },
+    "DIV.location__pin": {
+      "class": "location__pin"
+    },
+    "DIV.location__row": {
+      "class": "location__row"
+    },
+    "DIV.location__row#2": {
+      "class": "location__row"
+    },
+    "DIV.location__row#3": {
+      "class": "location__row"
+    },
+    "DIV.menu-card__art": {
+      "class": "menu-card__art"
+    },
+    "DIV.menu-card__food": {
+      "class": "menu-card__food"
+    },
+    "DIV.menu-card__footer": {
+      "class": "menu-card__footer"
+    },
+    "DIV.menu-card__top": {
+      "class": "menu-card__top"
+    },
+    "DIV.nav__links": {
+      "class": "nav__links"
+    },
+    "DIV.reviews__quote-mark": {
+      "text": "“",
+      "class": "reviews__quote-mark"
+    },
+    "DIV.reviews__stars": {
+      "text": "★★★★★",
+      "class": "reviews__stars"
+    },
+    "DIV.section-top": {
+      "class": "section-top"
+    },
+    "DIV.section-top__copy": {
+      "class": "section-top__copy"
+    },
+    "DIV.showcase__grid": {
+      "class": "showcase__grid"
+    },
+    "DIV.story__copy": {
+      "class": "story__copy"
+    },
+    "DIV.story__graphic": {
+      "class": "story__graphic"
+    },
+    "DIV.story__graphic-text": {
+      "text": "Riz.",
+      "class": "story__graphic-text"
+    },
+    "DIV.trust__item": {
+      "class": "trust__item"
+    },
+    "DIV.trust__item#2": {
+      "class": "trust__item"
+    },
+    "document.title": {
+      "text": ""
+    },
+    "documentElement.class": {
+      "class": "motion-ready"
+    },
+    "FOOTER.footer": {
+      "class": "footer"
+    },
+    "H3.menu-card__name": {
+      "text": "${escapeHTML(item.name)}",
+      "class": "menu-card__name"
+    },
+    "H3.showcase-card__title": {
+      "text": "Le poulet",
+      "class": "showcase-card__title"
+    },
+    "H3.showcase-card__title#2": {
+      "text": "Classic.",
+      "class": "showcase-card__title"
+    },
+    "LINK.": {
+      "href": "https://example.com/"
+    },
+    "LINK.#2": {
+      "href": "https://fonts.googleapis.com"
+    },
+    "LINK.#3": {
+      "href": "https://fonts.gstatic.com"
+    },
+    "LINK.#4": {
+      "href": "https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700;800&display=swap"
+    },
+    "META.#10": {
+      "content": ""
+    },
+    "META.#11": {
+      "content": "summary_large_image"
+    },
+    "META.#2": {
+      "content": "width=device-width, initial-scale=1"
+    },
+    "META.#3": {
+      "content": "#201c1a"
+    },
+    "META.#4": {
+      "content": "Découvrez les bowls Crousty de Thaisty Crousty à Sidi Yahia, Hydra, Alger. Poulet croustillant, riz basmati et sauces gourmandes."
+    },
+    "META.#5": {
+      "content": "index,follow"
+    },
+    "META.#6": {
+      "content": "website"
+    },
+    "META.#7": {
+      "content": "Thaisty Crousty — Le croustillant, autrement."
+    },
+    "META.#8": {
+      "content": "Poulet croustillant, riz basmati et sauces généreuses à Sidi Yahia, Hydra, Alger."
+    },
+    "META.#9": {
+      "content": "fr_DZ"
+    },
+    "NAV.container.nav": {
+      "class": "container nav"
+    },
+    "NAV.footer__links": {
+      "class": "footer__links"
+    },
+    "P.": {
+      "text": "Chez Thaisty Crousty, le bowl met le poulet croustillant\n            au centre du jeu : riz basmati, oignons frits et\n            différentes sauces pour varier les saveurs."
+    },
+    "P.#2": {
+      "text": "Le principe est simple. Tu choisis ton Crousty,\n            tu choisis ton envie, et tu passes commande."
+    },
+    "P.#3": {
+      "text": "62 Chemin de Sidi Yahia, Hydra, Alger"
+    },
+    "P.eyebrow": {
+      "text": "La carte",
+      "class": "eyebrow"
+    },
+    "P.eyebrow#2": {
+      "text": "Le concept",
+      "class": "eyebrow"
+    },
+    "P.eyebrow#3": {
+      "text": "Le mood",
+      "class": "eyebrow"
+    },
+    "P.eyebrow#4": {
+      "text": "Ils en parlent",
+      "class": "eyebrow"
+    },
+    "P.eyebrow#5": {
+      "text": "Le point de rendez-vous",
+      "class": "eyebrow"
+    },
+    "P.eyebrow#6": {
+      "text": "Ta prochaine commande",
+      "class": "eyebrow"
+    },
+    "P.final-cta__text": {
+      "text": "Explore les bowls et choisis ton prochain Crousty.",
+      "class": "final-cta__text"
+    },
+    "P.hero__description": {
+      "text": "Du poulet croustillant, du riz basmati et des sauces\n            pour composer ton prochain bowl préféré.",
+      "class": "hero__description"
+    },
+    "P.menu__disclaimer": {
+      "text": "Prix indicatifs issus d'une carte de livraison consultée.\n        Vérifie les prix et la disponibilité sur la plateforme avant de commander.",
+      "class": "menu__disclaimer"
+    },
+    "P.menu__disclaimer#2": {
+      "text": "Les horaires proviennent d'une source tierce et peuvent changer.\n            Confirme-les sur la fiche du restaurant avant de te déplacer.",
+      "class": "menu__disclaimer"
+    },
+    "P.menu-card__description": {
+      "text": "${escapeHTML(item.description)}",
+      "class": "menu-card__description"
+    },
+    "P.reviews__quote-source": {
+      "text": "Extrait d'un avis public attribué à RAD BOU, consulté sur Restaurant Guru.",
+      "class": "reviews__quote-source"
+    },
+    "P.reviews__quote-text": {
+      "text": "Excellent bol et dessert !",
+      "class": "reviews__quote-text"
+    },
+    "P.section-intro": {
+      "text": "Une base de riz basmati, du poulet croustillant,\n            puis la sauce qui change tout.",
+      "class": "section-intro"
+    },
+    "P.section-intro#2": {
+      "text": "Consulte les avis des clients sur Google avant de te faire\n            ton propre avis.",
+      "class": "section-intro"
+    },
+    "P.section-intro#3": {
+      "text": "Retrouvez Thaisty Crousty sur le chemin de Sidi Yahia,\n            à Hydra, Alger.",
+      "class": "section-intro"
+    },
+    "P.showcase__footnote": {
+      "text": "Visuels typographiques conceptuels. Les photographies réelles\n        des plats et du restaurant restent à intégrer.",
+      "class": "showcase__footnote"
+    },
+    "SCRIPT.": {
+      "text": "(() => {\n      \"use strict\";\n\n      const dataElement = document.getElementById(\"site-data\");\n      const data = JSON.parse(dataElement.textContent);\n      const business = data.business;\n      const content = data.content;\n\n      /*\n       * Bind every business fact that appears more than once. Content strings\n       * may use these tokens so a fact is never typed twice:\n       *   {rating} {reviewCount} {phone} {address} {addressShort}\n       */\n      const ratingDisplay = business.rating.value.toLocaleString(\"fr-FR\", {\n        minimumFractionDigits: 1,\n        maximumFractionDigits: 1\n      });\n\n      const tokens = {\n        \"{rating}\": ratingDisplay,\n        \"{reviewCount}\": String(business.rating.reviewCount),\n        \"{phone}\": business.phone.display,\n        \"{address}\": [business.address.line1, business.address.locality].join(\", \")\n          + \", \" + business.address.postalCode + \" \" + business.address.city,\n        \"{addressShort}\": [\n          business.address.line1,\n          business.address.locality,\n          business.address.city\n        ].join(\", \")\n      };\n\n      const readPath = (path) =>\n        path.split(\".\").reduce((value, key) => (value == null ? value : value[key]), data);\n\n      document.querySelectorAll(\"[data-bind]\").forEach((element) => {\n        const value = readPath(element.dataset.bind);\n\n        if (typeof value !== \"string\") return;\n\n        element.textContent = value.replace(\n          /\\{(?:rating|reviewCount|phone|address|addressShort)\\}/g,\n          (token) => tokens[token]\n        );\n      });\n\n      /*\n       * Structured data is derived from the same block, so it can never drift\n       * from what the page shows or from what the database will hold.\n       */\n      const priced = data.offerings\n        .map((item) => item.price)\n        .filter((value) => typeof value === \"number\");\n\n      const schema = {\n        \"@context\": \"https://schema.org\",\n        \"@type\": \"Restaurant\",\n        \"name\": business.name,\n        \"address\": {\n          \"@type\": \"PostalAddress\",\n          \"streetAddress\": business.address.line1,\n          \"addressLocality\": business.address.locality,\n          \"addressRegion\": business.address.region,\n          \"postalCode\": business.address.postalCode,\n          \"addressCountry\": business.address.countryCode\n        },\n        \"telephone\": business.phone.e164,\n        \"servesCuisine\": business.cuisine,\n        \"priceRange\": priced.length\n          ? `${Math.min(...priced)}\\u2013${Math.max(...priced)} ${data.offerings[0].currency}`\n          : null,\n        \"hasMenu\": business.links.menu\n      };\n\n      document.getElementById(\"business-schema\").textContent =\n        JSON.stringify(schema, null, 2);\n      const escapeHTML = (value) =>\n        String(value).replace(/[&"
+    },
+    "SECTION.container.showcase": {
+      "class": "container showcase"
+    },
+    "SECTION.final-cta": {
+      "class": "final-cta"
+    },
+    "SECTION.hero": {
+      "class": "hero"
+    },
+    "SECTION.reviews": {
+      "class": "reviews"
+    },
+    "SECTION.trust": {
+      "class": "trust"
+    },
+    "SPAN.#10": {
+      "text": "©"
+    },
+    "SPAN.#11": {
+      "text": "Thaisty Crousty"
+    },
+    "SPAN.#12": {
+      "text": "62 Chemin de Sidi Yahia, Hydra, Alger."
+    },
+    "SPAN.#13": {
+      "text": "↗"
+    },
+    "SPAN.#14": {
+      "text": "✳"
+    },
+    "SPAN.#15": {
+      "text": "${escapeHTML(entry.label)}${isToday ? \" · Aujourd'hui\" : \"\"}"
+    },
+    "SPAN.#16": {
+      "text": "${escapeHTML(entry.open)} – ${escapeHTML(closeLabel)}"
+    },
+    "SPAN.#2": {
+      "text": "Le spot Crousty · Sidi Yahia"
+    },
+    "SPAN.#3": {
+      "text": "À emporter ou en livraison"
+    },
+    "SPAN.#7": {
+      "text": "Une envie."
+    },
+    "SPAN.#8": {
+      "text": "✳"
+    },
+    "SPAN.arrow": {
+      "text": "↗",
+      "class": "arrow"
+    },
+    "SPAN.arrow#2": {
+      "text": "↗",
+      "class": "arrow"
+    },
+    "SPAN.arrow#3": {
+      "text": "↗",
+      "class": "arrow"
+    },
+    "SPAN.arrow#4": {
+      "text": "↗",
+      "class": "arrow"
+    },
+    "SPAN.arrow#5": {
+      "text": "↗",
+      "class": "arrow"
+    },
+    "SPAN.arrow#6": {
+      "text": "↗",
+      "class": "arrow"
+    },
+    "SPAN.arrow#7": {
+      "text": "↗",
+      "class": "arrow"
+    },
+    "SPAN.arrow#8": {
+      "text": "↗",
+      "class": "arrow"
+    },
+    "SPAN.brand__mark": {
+      "text": "TC.",
+      "class": "brand__mark"
+    },
+    "SPAN.brand__mark#2": {
+      "text": "TC.",
+      "class": "brand__mark"
+    },
+    "SPAN.brand__name": {
+      "text": "Thaisty Crousty",
+      "class": "brand__name"
+    },
+    "SPAN.brand__name#2": {
+      "text": "Thaisty Crousty",
+      "class": "brand__name"
+    },
+    "SPAN.brand__sub": {
+      "text": "Sidi Yahia · Hydra",
+      "class": "brand__sub"
+    },
+    "SPAN.brand__sub#2": {
+      "text": "Sidi Yahia · Hydra · Alger",
+      "class": "brand__sub"
+    },
+    "SPAN.hero__highlight.hero__line": {
+      "text": "croustillant.",
+      "class": "hero__highlight hero__line"
+    },
+    "SPAN.hero__label-dot": {
+      "class": "hero__label-dot"
+    },
+    "SPAN.hero__line": {
+      "text": "Du",
+      "class": "hero__line"
+    },
+    "SPAN.hero__line#2": {
+      "text": "Du goût.",
+      "class": "hero__line"
+    },
+    "SPAN.hero-art__piece": {
+      "class": "hero-art__piece"
+    },
+    "SPAN.hero-art__piece#2": {
+      "class": "hero-art__piece"
+    },
+    "SPAN.hero-art__piece#3": {
+      "class": "hero-art__piece"
+    },
+    "SPAN.hero-art__sauce": {
+      "class": "hero-art__sauce"
+    },
+    "SPAN.hero-art__sprinkle.hero-art__sprinkle--one": {
+      "class": "hero-art__sprinkle hero-art__sprinkle--one"
+    },
+    "SPAN.hero-art__sprinkle.hero-art__sprinkle--two": {
+      "class": "hero-art__sprinkle hero-art__sprinkle--two"
+    },
+    "SPAN.location__icon": {
+      "class": "location__icon"
+    },
+    "SPAN.location__icon#2": {
+      "class": "location__icon"
+    },
+    "SPAN.location__icon#3": {
+      "class": "location__icon"
+    },
+    "SPAN.location__label": {
+      "text": "Adresse",
+      "class": "location__label"
+    },
+    "SPAN.location__label#2": {
+      "text": "Téléphone",
+      "class": "location__label"
+    },
+    "SPAN.location__label#3": {
+      "text": "Horaires communiqués en ligne",
+      "class": "location__label"
+    },
+    "SPAN.location__map-label": {
+      "text": "Sidi Yahia · Hydra",
+      "class": "location__map-label"
+    },
+    "SPAN.location__value": {
+      "text": "62 Chemin de Sidi Yahia, Hydra, 16000 Alger",
+      "class": "location__value"
+    },
+    "SPAN.menu-card__price": {
+      "text": "${formatPrice(item.price)}",
+      "class": "menu-card__price"
+    },
+    "SPAN.menu-card__tag": {
+      "text": "${escapeHTML(item.tag)}",
+      "class": "menu-card__tag"
+    },
+    "SPAN.showcase-card__label": {
+      "text": "01 / Le croustillant",
+      "class": "showcase-card__label"
+    },
+    "SPAN.showcase-card__label#2": {
+      "text": "02 / Le choix de sauce",
+      "class": "showcase-card__label"
+    },
+    "SPAN.showcase-card__shape": {
+      "class": "showcase-card__shape"
+    },
+    "SPAN.showcase-card__shape#2": {
+      "class": "showcase-card__shape"
+    },
+    "SPAN.story__note": {
+      "class": "story__note"
+    },
+    "SPAN.text-accent": {
+      "text": "sauce.",
+      "class": "text-accent"
+    },
+    "SPAN.text-accent#2": {
+      "text": "Sérieux sur la sauce.",
+      "class": "text-accent"
+    },
+    "SPAN.text-accent#3": {
+      "text": "juger.",
+      "class": "text-accent"
+    },
+    "SPAN.text-accent#4": {
+      "text": "Hydra.",
+      "class": "text-accent"
+    },
+    "SPAN.trust__detail": {
+      "text": "312 avis répertoriés",
+      "class": "trust__detail"
+    },
+    "SPAN.trust__detail#2": {
+      "text": "Commande via Yassir",
+      "class": "trust__detail"
+    },
+    "SPAN.trust__detail#3": {
+      "text": "Poulet, riz et sauces",
+      "class": "trust__detail"
+    },
+    "SPAN.trust__icon": {
+      "class": "trust__icon"
+    },
+    "SPAN.trust__icon#2": {
+      "class": "trust__icon"
+    },
+    "SPAN.trust__icon#3": {
+      "class": "trust__icon"
+    },
+    "SPAN.trust__label": {
+      "text": "4,3 / 5 sur Google*",
+      "class": "trust__label"
+    },
+    "SPAN.trust__label#2": {
+      "text": "Livraison disponible",
+      "class": "trust__label"
+    },
+    "SPAN.trust__label#3": {
+      "text": "Le bowl Crousty",
+      "class": "trust__label"
+    },
+    "STRONG.": {
+      "text": "Thaisty Crousty"
+    },
+    "STYLE.": {
+      "text": "/* =========================================================\n       TOKENS\n    ========================================================= */\n    :root {\n      color-scheme: light;\n      --color-ink: #201c1a;\n      --color-cream: #fff3df;\n      --color-paper: #fffaf2;\n      --color-red: #e63932;\n      --color-gold: #ffbe3d;\n      --color-muted: #796f66;\n      --color-white: #ffffff;\n      --color-line: #e9ddca;\n\n      --font-display: \"Archivo Black\", Impact, sans-serif;\n      --font-body: \"DM Sans\", sans-serif;\n\n      --space-1: 0.25rem;\n      --space-2: 0.5rem;\n      --space-3: 0.75rem;\n      --space-4: 1rem;\n      --space-5: 1.5rem;\n      --space-6: 2rem;\n      --space-7: 3rem;\n      --space-8: 4rem;\n      --space-9: 6rem;\n      --space-10: 8rem;\n\n      --radius-sm: 0.5rem;\n      --radius-md: 1.25rem;\n      --radius-lg: 2rem;\n      --radius-pill: 999px;\n\n      --shadow-card: 0 16px 50px rgb(32 28 26 / 8%);\n      --ease-out: cubic-bezier(.2, .75, .25, 1);\n      --duration-fast: 180ms;\n      --duration-base: 400ms;\n      --content-width: 1240px;\n    }\n\n    /* =========================================================\n       BASE\n    ========================================================= */\n    *,\n    *::before,\n    *::after {\n      box-sizing: border-box;\n    }\n\n    html {\n      scroll-behavior: smooth;\n      scroll-padding-top: 90px;\n    }\n\n    body {\n      margin: 0;\n      background: var(--color-paper);\n      color: var(--color-ink);\n      font-family: var(--font-body);\n      font-size: 16px;\n      line-height: 1.6;\n      -webkit-font-smoothing: antialiased;\n    }\n\n    body,\n    button,\n    a {\n      -webkit-tap-highlight-color: transparent;\n    }\n\n    img,\n    svg {\n      display: block;\n      max-width: 100%;\n    }\n\n    a {\n      color: inherit;\n      text-decoration: none;\n    }\n\n    button,\n    a {\n      touch-action: manipulation;\n    }\n\n    button {\n      font: inherit;\n    }\n\n    a:focus-visible,\n    button:focus-visible {\n      outline: 3px solid var(--color-red);\n      outline-offset: 4px;\n    }\n\n    ::selection {\n      color: var(--color-ink);\n      background: var(--color-gold);\n    }\n\n    .container {\n      width: min(calc(100% - 40px), var(--content-width));\n      margin-inline: auto;\n    }\n\n    .eyebrow {\n      display: inline-flex;\n      align-items: center;\n      gap: 10px;\n      margin: 0 0 var(--space-4);\n      font-size: 0.72rem;\n      font-weight: 800;\n      letter-spacing: 0.15em;\n      text-transform: uppercase;\n    }\n\n    .eyebrow::before {\n      width: 24px;\n      height: 3px;\n      background: var(--color-red);\n      content: \"\";\n    }\n\n    .display {\n      margin: 0;\n      font-family: var(--font-display);\n      font-weight: 400;\n      letter-spacing: -0.055em;\n      line-height: 0.97;\n      text-transform: uppercase;\n    }\n\n    .section-heading {\n      max-width: 760px;\n      margin: 0;\n      font-family: var(--font-display);\n      font-size: clamp(2.5rem, 6vw, 5.3rem);\n      font-weight: 400;\n      letter-spacing: -0.06em;\n      line-height: 0.99;\n      text-transform: uppercase;\n    }\n\n    .section-intro {\n      max-width: 540px;\n      color: var(--color-muted);\n      font-size: 1rem;\n    }\n\n    .text-accent {\n      color: var(--color-red);\n    }\n\n    .button {\n      display: inline-flex;\n      min-height: 52px;\n      align-items: center;\n      justify-content: center;\n      gap: 10px;\n      padding: 14px 23px;\n      border: 1px solid transparent;\n      border-radius: var(--radius-pill);\n      font-size: 0.88rem;\n      font-weight: 800;\n      transition:\n        transform var(--duration-fast) var(--ease-out),\n        background var(--duration-fast) ease,\n        color var(--duration-fast) ease;\n    }\n\n    .button:hover {\n      transform: translateY(-3px);\n    }\n\n    .button--dark {\n      background: var(--color-ink);\n      color: var(--color-white);\n    }\n\n    .button--dark:hover {\n      background: var(--color-red);\n    }\n\n    .button--light {\n      border-color: var(--color-line);\n      background: transparent;\n      color: var(--color-ink);\n    }\n\n    .button--light:hover {\n      border-color: var(--color-ink);\n    }\n\n    .button--gold {\n      background: var(--color-gold);\n      color: var(--color-ink);\n    }\n\n    .arrow {\n      display: inline-block;\n      transition: transform var(--duration-fast) ease;\n    }\n\n    .button:hover .arrow {\n      transform: translateX(4px);\n    }\n\n    /* =========================================================\n       COMPONENTS: Navigation\n    ========================================================= */\n    .header {\n      position: relative;\n      z-index: 10;\n      background: var(--color-paper);\n      border-bottom: 1px solid var(--color-line);\n    }\n\n    .nav {\n      display: flex;\n      min-height: 82px;\n      align-items: center;\n      justify-content: space-between;\n      gap: var(--space-4);\n    }\n\n    .brand {\n      display: inline-flex;\n      align-items: center;\n      gap: 11px;\n      flex-shrink: 0;\n    }\n\n    .brand__mark {\n      display: grid;\n      width: 44px;\n      height: 44px;\n      place-items: center;\n      border-radius: 50%;\n      background: var(--color-red);\n      color: var(--color-white);\n      font-family: var(--font-display);\n      font-size: 1rem;\n      transform: rotate(-8deg);\n    }\n\n    .brand__name {\n      display: block;\n      font-family: var(--font-display);\n      font-size: 1rem;\n      letter-spacing: -0.05em;\n      line-height: 1.05;\n      text-transform: uppercase;\n    }\n\n    .brand__sub {\n      display: block;\n      margin-top: 4px;\n      color: var(--color-muted);\n      font-size: 0.65rem;\n      font-weight: 700;\n      letter-spacing: 0.13em;\n      text-transform: uppercase;\n    }\n\n    .nav__links {\n      display: flex;\n      align-items: center;\n      gap: clamp(16px, 3vw, 38px);\n    }\n\n    .nav__link {\n      font-size: 0.82rem;\n      font-weight: 700;\n      transition: color var(--duration-fast) ease;\n    }\n\n    .nav__link:hover {\n      color: var(--color-red);\n    }\n\n    .nav__cta {\n      min-height: 44px;\n      padding: 10px 18px;\n      font-size: 0.8rem;\n    }\n\n    /* =========================================================\n       SECTIONS: Hero\n    ========================================================= */\n    .hero {\n      position: relative;\n      overflow: hidden;\n      padding-block: clamp(54px, 9vw, 118px) clamp(62px, 8vw, 105px);\n      background: var(--color-cream);\n      isolation: isolate;\n    }\n\n    .hero__grid {\n      display: grid;\n      align-items: center;\n      gap: clamp(35px, 6vw, 90px);\n      grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);\n    }\n\n    .hero__content {\n      position: relative;\n      z-index: 2;\n    }\n\n    .hero__label {\n      display: inline-flex;\n      align-items: center;\n      gap: 9px;\n      margin-bottom: var(--space-5);\n      padding: 8px 13px;\n      border: 1px solid rgb(32 28 26 / 16%);\n      border-radius: var(--radius-pill);\n      font-size: 0.73rem;\n      font-weight: 800;\n    }\n\n    .hero__label-dot {\n      width: 8px;\n      height: 8px;\n      border-radius: 50%;\n      background: var(--color-red);\n    }\n\n    .hero__title {\n      max-width: 740px;\n      font-size: clamp(3.5rem, 8vw, 7.5rem);\n    }\n\n    .hero__title .hero__line {\n      display: block;\n    }\n\n    .hero__title .hero__highlight {\n      position: relative;\n      display: inline-block;\n      color: var(--color-red);\n    }\n\n    .hero__title .hero__highlight::after {\n      position: absolute;\n      right: 0;\n      bottom: -5px;\n      left: 0;\n      height: 7px;\n      border-radius: var(--radius-pill);\n      background: var(--color-gold);\n      content: \"\";\n      transform: rotate(-2deg);\n    }\n\n    .hero__description {\n      max-width: 430px;\n      margin-block: var(--space-6);\n      color: #5c5147;\n      font-size: clamp(1rem, 1.5vw, 1.1rem);\n    }\n\n    .hero__actions {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 12px;\n    }\n\n    .hero__note {\n      display: flex;\n      align-items: center;\n      gap: 10px;\n      margin-top: var(--space-6);\n      color: var(--color-muted);\n      font-size: 0.78rem;\n      font-weight: 600;\n    }\n\n    .hero__note svg {\n      width: 19px;\n      flex: 0 0 19px;\n    }\n\n    /* Original CSS illustration, not a real food photograph. */\n    .hero-art {\n      position: relative;\n      display: grid;\n      min-height: 430px;\n      aspect-ratio: 1 / 1;\n      place-items: center;\n    }\n\n    .hero-art__orbit {\n      position: absolute;\n      width: 94%;\n      aspect-ratio: 1;\n      border: 1px solid rgb(32 28 26 / 15%);\n      border-radius: 50%;\n    }\n\n    .hero-art__orbit::before,\n    .hero-art__orbit::after {\n      position: absolute;\n      width: 12px;\n      height: 12px;\n      border-radius: 50%;\n      background: var(--color-red);\n      content: \"\";\n    }\n\n    .hero-art__orbit::before {\n      top: 15%;\n      right: 12%;\n    }\n\n    .hero-art__orbit::after {\n      bottom: 15%;\n      left: 9%;\n      background: var(--color-gold);\n    }\n\n    .hero-art__burst {\n      position: absolute;\n      width: 76%;\n      aspect-ratio: 1;\n      border-radius: 50%;\n      background: var(--color-red);\n      transform: rotate(-9deg);\n    }\n\n    .hero-art__bowl {\n      position: relative;\n      z-index: 1;\n      display: grid;\n      width: 76%;\n      aspect-ratio: 1;\n      place-items: center;\n      border: 12px solid #f4e5ce;\n      border-radius: 50%;\n      background:\n        radial-gradient(ellipse at 45% 48%, #fff5df 0 36%, #e8d1ac 37% 43%, #fff8eb 44% 53%, #c6a982 54% 57%, #fff8eb 58%);\n      box-shadow: 0 28px 0 rgb(32 28 26 / 12%);\n      transform: rotate(8deg);\n    }\n\n    .hero-art__rice {\n      position: absolute;\n      width: 68%;\n      height: 40%;\n      top: 29%;\n      left: 16%;\n      overflow: hidden;\n      border-radius: 50%;\n      background:\n        radial-gradient(ellipse at 18% 35%, #fff8e7 0 2%, transparent 3%),\n        radial-gradient(ellipse at 30% 55%, #fff8e7 0 2%, transparent 3%),\n        radial-gradient(ellipse at 65% 27%, #fff8e7 0 2%, transparent 3%),\n        radial-gradient(ellipse at 74% 59%, #fff8e7 0 2%, transparent 3%),\n        repeating-radial-gradient(ellipse at 50% 50%, #fff6df 0 5px, #ead7b4 6px 8px);\n      transform: rotate(-5deg);\n    }\n\n    .hero-art__chicken {\n      position: absolute;\n      z-index: 2;\n      display: flex;\n      width: 64%;\n      height: 40%;\n      align-items: center;\n      justify-content: center;\n      gap: 4%;\n      top: 24%;\n      left: 18%;\n      transform: rotate(-8deg);\n    }\n\n    .hero-art__piece {\n      position: relative;\n      width: 28%;\n      height: 65%;\n      border: 3px solid #b65b21;\n      border-radius: 45% 55% 46% 54%;\n      background:\n        radial-gradient(circle at 28% 28%, #ffd77c 0 5%, transparent 6%),\n        radial-gradient(circle at 62% 58%, #b75c20 0 4%, transparent 5%),\n        repeating-linear-gradient(135deg, #f4b44f 0 6px, #d9822e 7px 10px);\n      box-shadow: 0 5px 0 #b96b29;\n      transform: rotate(18deg);\n    }\n\n    .hero-art__piece:nth-child(2) {\n      height: 78%;\n      transform: rotate(-19deg);\n    }\n\n    .hero-art__piece:nth-child(3) {\n      height: 57%;\n      transform: rotate(29deg);\n    }\n\n    .hero-art__sauce {\n      position: absolute;\n      z-index: 3;\n      width: 28%;\n      height: 10%;\n      top: 37%;\n      left: 37%;\n      border-radius: 50%;\n      background: #fff9eb;\n      opacity: 0.9;\n      transform: rotate(-25deg);\n    }\n\n    .hero-art__sprinkle {\n      position: absolute;\n      z-index: 3;\n      width: 6px;\n      height: 23px;\n      border-radius: var(--radius-pill);\n      background: var(--color-red);\n    }\n\n    .hero-art__sprinkle--one {\n      top: 22%;\n      left: 29%;\n      transform: rotate(32deg);\n    }\n\n    .hero-art__sprinkle--two {\n      right: 27%;\n      bottom: 27%;\n      height: 17px;\n      background: #47845c;\n      transform: rotate(48deg);\n    }\n\n    .hero-art__sticker {\n      position: absolute;\n      z-index: 4;\n      display: grid;\n      width: 112px;\n      aspect-ratio: 1;\n      place-items: center;\n      border: 4px solid var(--color-cream);\n      border-radius: 50%;\n      background: var(--color-gold);\n      color: var(--color-ink);\n      font-family: var(--font-display);\n      font-size: 0.8rem;\n      line-height: 1.2;\n      text-align: center;\n      text-transform: uppercase;\n      transform: rotate(12deg);\n    }\n\n    .hero-art__sticker--top {\n      top: 3%;\n      right: 0;\n    }\n\n    .hero-art__sticker--bottom {\n      bottom: 6%;\n      left: 0;\n      width: 95px;\n      background: var(--color-ink);\n      color: var(--color-white);\n      transform: rotate(-12deg);\n    }\n\n    /* =========================================================\n       SECTIONS: Trust strip\n    ========================================================= */\n    .trust {\n      padding-block: 25px;\n      background: var(--color-ink);\n      color: var(--color-white);\n    }\n\n    .trust__grid {\n      display: grid;\n      grid-template-columns: repeat(3, minmax(0, 1fr));\n      gap: 20px;\n    }\n\n    .trust__item {\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      gap: 12px;\n      text-align: center;\n    }\n\n    .trust__icon {\n      display: grid;\n      width: 39px;\n      height: 39px;\n      flex: 0 0 39px;\n      place-items: center;\n      border-radius: 50%;\n      background: rgb(255 255 255 / 10%);\n      color: var(--color-gold);\n    }\n\n    .trust__icon svg {\n      width: 20px;\n      height: 20px;\n    }\n\n    .trust__label {\n      display: block;\n      font-size: 0.82rem;\n      font-weight: 800;\n    }\n\n    .trust__detail {\n      display: block;\n      color: #c8bfb5;\n      font-size: 0.7rem;\n    }\n\n    /* =========================================================\n       SECTIONS: Menu\n    ========================================================= */\n    .menu {\n      padding-block: var(--space-10);\n    }\n\n    .section-top {\n      display: flex;\n      align-items: end;\n      justify-content: space-between;\n      gap: 35px;\n      margin-bottom: var(--space-7);\n    }\n\n    .section-top__copy {\n      max-width: 650px;\n    }\n\n    .menu__grid {\n      display: grid;\n      grid-template-columns: repeat(3, minmax(0, 1fr));\n      gap: 20px;\n    }\n\n    .menu-card {\n      position: relative;\n      display: flex;\n      min-height: 345px;\n      flex-direction: column;\n      overflow: hidden;\n      padding: 26px;\n      border: 1px solid var(--color-line);\n      border-radius: var(--radius-md);\n      background: var(--color-white);\n      transition:\n        transform var(--duration-base) var(--ease-out),\n        box-shadow var(--duration-base) var(--ease-out);\n    }\n\n    .menu-card:hover {\n      box-shadow: var(--shadow-card);\n      transform: translateY(-6px);\n    }\n\n    .menu-card--featured {\n      border-color: var(--color-red);\n      background: var(--color-red);\n      color: var(--color-white);\n    }\n\n    .menu-card__top {\n      display: flex;\n      align-items: start;\n      justify-content: space-between;\n      gap: 12px;\n    }\n\n    .menu-card__tag {\n      display: inline-flex;\n      padding: 6px 10px;\n      border-radius: var(--radius-pill);\n      background: var(--color-cream);\n      color: var(--color-ink);\n      font-size: 0.65rem;\n      font-weight: 800;\n      letter-spacing: 0.08em;\n      text-transform: uppercase;\n    }\n\n    .menu-card--featured .menu-card__tag {\n      background: var(--color-gold);\n    }\n\n    .menu-card__price {\n      font-size: 0.95rem;\n      font-weight: 800;\n      white-space: nowrap;\n    }\n\n    .menu-card__art {\n      position: relative;\n      display: grid;\n      width: 120px;\n      height: 105px;\n      place-items: center;\n      align-self: center;\n      margin-block: 20px 18px;\n    }\n\n    .menu-card__art::before {\n      position: absolute;\n      width: 94px;\n      height: 94px;\n      border: 8px solid #e9d8bc;\n      border-radius: 50%;\n      background: #fff3dd;\n      box-shadow: 0 7px 0 rgb(32 28 26 / 10%);\n      content: \"\";\n    }\n\n    .menu-card--featured .menu-card__art::before {\n      border-color: #ffd2ac;\n      background: #fff2d7;\n    }\n\n    .menu-card__food {\n      position: relative;\n      z-index: 1;\n      width: 78px;\n      height: 54px;\n      border-radius: 50%;\n      background:\n        radial-gradient(ellipse at 30% 40%, #fff5dc 0 3%, transparent 4%),\n        radial-gradient(ellipse at 60% 70%, #fff5dc 0 3%, transparent 4%),\n        repeating-linear-gradient(130deg, #edb04e 0 8px, #c97029 9px 13px);\n      transform: rotate(-12deg);\n    }\n\n    .menu-card__food::after {\n      position: absolute;\n      top: 40%;\n      left: 20%;\n      width: 60%;\n      height: 12%;\n      border-radius: 50%;\n      background: #fff9eb;\n      content: \"\";\n      transform: rotate(15deg);\n    }\n\n    .menu-card__name {\n      margin: 0 0 8px;\n      font-family: var(--font-display);\n      font-size: 1.45rem;\n      letter-spacing: -0.05em;\n      line-height: 1.1;\n      text-transform: uppercase;\n    }\n\n    .menu-card__description {\n      margin: 0;\n      color: var(--color-muted);\n      font-size: 0.87rem;\n    }\n\n    .menu-card--featured .menu-card__description {\n      color: #fff0e5;\n    }\n\n    .menu-card__footer {\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      gap: 10px;\n      margin-top: auto;\n      padding-top: 22px;\n    }\n\n    .menu-card__link {\n      display: inline-flex;\n      align-items: center;\n      gap: 6px;\n      font-size: 0.77rem;\n      font-weight: 800;\n    }\n\n    .menu-card__link:hover {\n      text-decoration: underline;\n      text-underline-offset: 4px;\n    }\n\n    .menu__disclaimer {\n      margin-top: 18px;\n      color: var(--color-muted);\n      font-size: 0.75rem;\n    }\n\n    /* =========================================================\n       SECTIONS: Brand story\n    ========================================================= */\n    .story {\n      overflow: hidden;\n      padding-block: var(--space-9);\n      background: var(--color-gold);\n    }\n\n    .story__grid {\n      display: grid;\n      align-items: center;\n      gap: clamp(40px, 8vw, 110px);\n      grid-template-columns: 0.95fr 1.05fr;\n    }\n\n    .story__graphic {\n      position: relative;\n      display: grid;\n      min-height: 360px;\n      place-items: center;\n      border-radius: var(--radius-lg);\n      background: var(--color-ink);\n      color: var(--color-cream);\n    }\n\n    .story__graphic::before {\n      position: absolute;\n      width: 78%;\n      aspect-ratio: 1;\n      border: 1px solid rgb(255 243 223 / 24%);\n      border-radius: 50%;\n      content: \"\";\n    }\n\n    .story__graphic::after {\n      position: absolute;\n      width: 60%;\n      aspect-ratio: 1;\n      border-radius: 50%;\n      background: var(--color-red);\n      content: \"\";\n    }\n\n    .story__graphic-text {\n      position: relative;\n      z-index: 1;\n      max-width: 270px;\n      font-family: var(--font-display);\n      font-size: clamp(2.5rem, 5vw, 4.5rem);\n      letter-spacing: -0.06em;\n      line-height: 0.93;\n      text-align: center;\n      text-transform: uppercase;\n      transform: rotate(-5deg);\n    }\n\n    .story__copy .section-heading {\n      font-size: clamp(2.6rem, 5vw, 4.8rem);\n    }\n\n    .story__copy p:not(.eyebrow) {\n      max-width: 520px;\n      color: #51402b;\n    }\n\n    .story__note {\n      display: inline-flex;\n      align-items: center;\n      gap: 8px;\n      margin-top: 10px;\n      font-size: 0.8rem;\n      font-weight: 800;\n    }\n\n    /* =========================================================\n       SECTIONS: Visual showcase\n    ========================================================= */\n    .showcase {\n      padding-block: var(--space-10);\n    }\n\n    .showcase__grid {\n      display: grid;\n      grid-template-columns: 1.15fr 0.85fr;\n      gap: 18px;\n      margin-top: var(--space-7);\n    }\n\n    .showcase-card {\n      position: relative;\n      display: flex;\n      min-height: 260px;\n      overflow: hidden;\n      flex-direction: column;\n      justify-content: space-between;\n      padding: clamp(24px, 4vw, 42px);\n      border-radius: var(--radius-md);\n      background: var(--color-cream);\n    }\n\n    .showcase-card--red {\n      background: var(--color-red);\n      color: var(--color-white);\n    }\n\n    .showcase-card--dark {\n      background: var(--color-ink);\n      color: var(--color-white);\n    }\n\n    .showcase-card__shape {\n      position: absolute;\n      right: -50px;\n      bottom: -90px;\n      width: 240px;\n      height: 240px;\n      border: 25px solid rgb(32 28 26 / 9%);\n      border-radius: 50%;\n    }\n\n    .showcase-card--red .showcase-card__shape {\n      border-color: rgb(255 255 255 / 14%);\n    }\n\n    .showcase-card--dark .showcase-card__shape {\n      border-color: rgb(255 243 223 / 12%);\n    }\n\n    .showcase-card__label {\n      position: relative;\n      z-index: 1;\n      font-size: 0.7rem;\n      font-weight: 800;\n      letter-spacing: 0.15em;\n      text-transform: uppercase;\n    }\n\n    .showcase-card__title {\n      position: relative;\n      z-index: 1;\n      max-width: 470px;\n      margin: 35px 0 0;\n      font-family: var(--font-display);\n      font-size: clamp(2rem, 4.6vw, 4.1rem);\n      letter-spacing: -0.06em;\n      line-height: 0.98;\n      text-transform: uppercase;\n    }\n\n    .showcase__footnote {\n      margin-top: 16px;\n      color: var(--color-muted);\n      font-size: 0.76rem;\n    }\n\n    /* =========================================================\n       SECTIONS: Reviews\n    ========================================================= */\n    .reviews {\n      padding-block: var(--space-9);\n      background: var(--color-cream);\n    }\n\n    .reviews__grid {\n      display: grid;\n      align-items: center;\n      gap: 50px;\n      grid-template-columns: 0.8fr 1.2fr;\n    }\n\n    .reviews__score {\n      margin: 20px 0 0;\n      font-family: var(--font-display);\n      font-size: clamp(4.5rem, 10vw, 7.5rem);\n      letter-spacing: -0.08em;\n      line-height: 1;\n    }\n\n    .reviews__stars {\n      margin-top: 8px;\n      color: #9c6100;\n      font-size: 1.3rem;\n      letter-spacing: 0.1em;\n    }\n\n    .reviews__meta {\n      color: var(--color-muted);\n      font-size: 0.85rem;\n    }\n\n    .reviews__quote {\n      margin: 0;\n      padding: clamp(25px, 5vw, 48px);\n      border: 1px solid var(--color-line);\n      border-radius: var(--radius-md);\n      background: var(--color-paper);\n    }\n\n    .reviews__quote-mark {\n      color: var(--color-red);\n      font-family: Georgia, serif;\n      font-size: 4rem;\n      line-height: 0.8;\n    }\n\n    .reviews__quote-text {\n      margin: 20px 0;\n      font-family: var(--font-display);\n      font-size: clamp(1.3rem, 2.5vw, 2rem);\n      letter-spacing: -0.04em;\n      line-height: 1.25;\n    }\n\n    .reviews__quote-source {\n      margin-bottom: 20px;\n      color: var(--color-muted);\n      font-size: 0.8rem;\n    }\n\n    /* =========================================================\n       SECTIONS: Location\n    ========================================================= */\n    .location {\n      padding-block: var(--space-10);\n    }\n\n    .location__grid {\n      display: grid;\n      gap: 50px;\n      grid-template-columns: 1fr 1fr;\n    }\n\n    .location__details {\n      display: grid;\n      gap: 0;\n      margin-top: 28px;\n    }\n\n    .location__row {\n      display: grid;\n      gap: 12px;\n      grid-template-columns: 34px 1fr;\n      padding-block: 18px;\n      border-bottom: 1px solid var(--color-line);\n    }\n\n    .location__icon {\n      color: var(--color-red);\n    }\n\n    .location__icon svg {\n      width: 23px;\n      height: 23px;\n    }\n\n    .location__label {\n      display: block;\n      margin-bottom: 3px;\n      color: var(--color-muted);\n      font-size: 0.72rem;\n      font-weight: 700;\n      text-transform: uppercase;\n    }\n\n    .location__value {\n      font-size: 0.94rem;\n      font-weight: 700;\n    }\n\n    .location__hours {\n      display: grid;\n      gap: 5px;\n      margin-top: 8px;\n      color: var(--color-muted);\n      font-size: 0.8rem;\n    }\n\n    .location__hours-row {\n      display: flex;\n      justify-content: space-between;\n      gap: 12px;\n    }\n\n    .location__hours-row.is-today {\n      color: var(--color-ink);\n      font-weight: 800;\n    }\n\n    .location__map {\n      position: relative;\n      display: flex;\n      min-height: 420px;\n      flex-direction: column;\n      justify-content: space-between;\n      overflow: hidden;\n      padding: 30px;\n      border-radius: var(--radius-lg);\n      background-color: #eae0ce;\n      background-image:\n        linear-gradient(25deg, transparent 48%, #d1c4ac 49%, #d1c4ac 51%, transparent 52%),\n        linear-gradient(115deg, transparent 45%, #f9f0df 46%, #f9f0df 53%, transparent 54%),\n        linear-gradient(165deg, transparent 60%, #d6c9b1 61%, #d6c9b1 63%, transparent 64%);\n      background-size: 180px 150px, 220px 180px, 200px 220px;\n    }\n\n    .location__map::before {\n      position: absolute;\n      top: 0;\n      right: 0;\n      bottom: 0;\n      left: 0;\n      background: repeating-linear-gradient(\n        45deg,\n        transparent 0 40px,\n        rgb(255 255 255 / 24%) 41px 44px,\n        transparent 45px 80px\n      );\n      content: \"\";\n    }\n\n    .location__map-label {\n      position: relative;\n      z-index: 1;\n      align-self: flex-start;\n      padding: 8px 12px;\n      border-radius: var(--radius-pill);\n      background: var(--color-white);\n      font-size: 0.72rem;\n      font-weight: 800;\n    }\n\n    .location__pin {\n      position: absolute;\n      top: 43%;\n      left: 50%;\n      z-index: 1;\n      display: grid;\n      width: 72px;\n      height: 72px;\n      place-items: center;\n      border: 7px solid rgb(255 255 255 / 80%);\n      border-radius: 50%;\n      background: var(--color-red);\n      color: var(--color-white);\n      box-shadow: 0 10px 30px rgb(32 28 26 / 20%);\n      transform: translate(-50%, -50%) rotate(-8deg);\n    }\n\n    .location__pin svg {\n      width: 29px;\n      height: 29px;\n    }\n\n    .location__map-card {\n      position: relative;\n      z-index: 1;\n      padding: 20px;\n      border-radius: var(--radius-md);\n      background: var(--color-white);\n      box-shadow: var(--shadow-card);\n    }\n\n    .location__map-card strong {\n      display: block;\n      font-family: var(--font-display);\n      font-size: 1.1rem;\n      text-transform: uppercase;\n    }\n\n    .location__map-card p {\n      margin: 5px 0 15px;\n      color: var(--color-muted);\n      font-size: 0.8rem;\n    }\n\n    /* =========================================================\n       SECTIONS: Final CTA and footer\n    ========================================================= */\n    .final-cta {\n      overflow: hidden;\n      padding-block: var(--space-9);\n      background: var(--color-red);\n      color: var(--color-white);\n    }\n\n    .final-cta__inner {\n      position: relative;\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      gap: 40px;\n    }\n\n    .final-cta__copy {\n      position: relative;\n      z-index: 1;\n      max-width: 750px;\n    }\n\n    .final-cta .eyebrow::before {\n      background: var(--color-gold);\n    }\n\n    .final-cta__title {\n      font-size: clamp(3rem, 7vw, 6.5rem);\n    }\n\n    .final-cta__text {\n      max-width: 480px;\n      color: #ffe2d8;\n    }\n\n    .final-cta__button {\n      position: relative;\n      z-index: 1;\n      flex-shrink: 0;\n    }\n\n    .footer {\n      padding-block: 35px;\n      background: var(--color-ink);\n      color: var(--color-white);\n    }\n\n    .footer__top {\n      display: flex;\n      align-items: center;\n      justify-content: space-between;\n      gap: 30px;\n      padding-bottom: 28px;\n      border-bottom: 1px solid rgb(255 255 255 / 15%);\n    }\n\n    .footer .brand__sub {\n      color: #c8bfb5;\n    }\n\n    .footer__links {\n      display: flex;\n      flex-wrap: wrap;\n      gap: 22px;\n    }\n\n    .footer__link {\n      color: #e2d8cc;\n      font-size: 0.8rem;\n      font-weight: 600;\n    }\n\n    .footer__link:hover {\n      color: var(--color-gold);\n    }\n\n    .footer__bottom {\n      display: flex;\n      justify-content: space-between;\n      gap: 20px;\n      padding-top: 20px;\n      color: #c8bfb5;\n      font-size: 0.73rem;\n    }\n\n    /* =========================================================\n       MOTION\n    ========================================================= */\n    [data-reveal] {\n      opacity: 1;\n      transform: none;\n    }\n\n    .motion-ready [data-reveal] {\n      opacity: 0;\n      transform: translateY(18px);\n      transition:\n        opacity 650ms var(--ease-out),\n        transform 650ms var(--ease-out);\n    }\n\n    .motion-ready [data-reveal].is-visible {\n      opacity: 1;\n      transform: translateY(0);\n    }\n\n    .motion-ready .hero__content [data-reveal] {\n      transition-delay: 100ms;\n    }\n\n    .motion-ready .menu-card[data-reveal]:nth-child(2) {\n      transition-delay: 80ms;\n    }\n\n    .motion-ready .menu-card[data-reveal]:nth-child(3) {\n      transition-delay: 160ms;\n    }\n\n    /* =========================================================\n       RESPONSIVE\n    ========================================================= */\n    @media (min-width: 1600px) {\n      .hero__title {\n        font-size: 8rem;\n      }\n\n      .hero-art {\n        max-width: 650px;\n        justify-self: end;\n      }\n    }\n\n    @media (max-width: 900px) {\n      .nav__links {\n        gap: 16px;\n      }\n\n      .nav__links .nav__link {\n        display: none;\n      }\n\n      .hero__grid {\n        grid-template-columns: 1fr 0.85fr;\n        gap: 25px;\n      }\n\n      .hero__title {\n        font-size: clamp(3.3rem, 8vw, 5.5rem);\n      }\n\n      .hero-art {\n        min-height: 330px;\n      }\n\n      .hero-art__sticker {\n        width: 90px;\n        font-size: 0.68rem;\n      }\n\n      .menu__grid {\n        grid-template-columns: repeat(2, minmax(0, 1fr));\n      }\n\n      .story__grid {\n        gap: 35px;\n      }\n\n      .location__grid {\n        gap: 30px;\n      }\n\n      .location__map {\n        min-height: 370px;\n      }\n\n      .final-cta__inner {\n        align-items: flex-start;\n        flex-direction: column;\n      }\n    }\n\n    @media (max-width: 600px) {\n      .container {\n        width: min(calc(100% - 32px), var(--content-width));\n      }\n\n      .nav {\n        min-height: 72px;\n      }\n\n      .brand__mark {\n        width: 39px;\n        height: 39px;\n      }\n\n      .brand__name {\n        font-size: 0.91rem;\n      }\n\n      .nav__cta {\n        min-height: 42px;\n        padding: 9px 14px;\n      }\n\n      .hero {\n        padding-block: 50px 35px;\n      }\n\n      .hero__grid {\n        grid-template-columns: 1fr;\n        gap: 12px;\n      }\n\n      .hero__title {\n        font-size: clamp(3.4rem, 14vw, 5.5rem);\n      }\n\n      .hero__description {\n        margin-block: 22px;\n      }\n\n      .hero__actions {\n        display: grid;\n        grid-template-columns: 1fr;\n      }\n\n      .hero__actions .button {\n        width: 100%;\n      }\n\n      .hero-art {\n        width: min(100%, 390px);\n        min-height: 0;\n        margin: 0 auto;\n      }\n\n      .hero-art__sticker--top {\n        right: 2%;\n      }\n\n      .hero-art__sticker--bottom {\n        left: 1%;\n      }\n\n      .trust {\n        padding-block: 20px;\n      }\n\n      .trust__grid {\n        grid-template-columns: 1fr;\n        gap: 17px;\n      }\n\n      .trust__item {\n        justify-content: flex-start;\n        text-align: left;\n      }\n\n      .menu,\n      .showcase,\n      .location {\n        padding-block: 65px;\n      }\n\n      .section-top {\n        align-items: flex-start;\n        flex-direction: column;\n        gap: 16px;\n        margin-bottom: 28px;\n      }\n\n      .section-top > .button {\n        width: 100%;\n      }\n\n      .section-heading {\n        font-size: clamp(2.6rem, 12vw, 4rem);\n      }\n\n      .menu__grid {\n        grid-template-columns: 1fr;\n        gap: 14px;\n      }\n\n      .menu-card {\n        min-height: 315px;\n        padding: 23px;\n      }\n\n      .story {\n        padding-block: 55px;\n      }\n\n      .story__grid {\n        grid-template-columns: 1fr;\n        gap: 35px;\n      }\n\n      .story__graphic {\n        min-height: 300px;\n      }\n\n      .showcase__grid {\n        grid-template-columns: 1fr;\n        gap: 14px;\n        margin-top: 28px;\n      }\n\n      .showcase-card {\n        min-height: 250px;\n      }\n\n      .reviews {\n        padding-block: 60px;\n      }\n\n      .reviews__grid {\n        grid-template-columns: 1fr;\n        gap: 25px;\n      }\n\n      .reviews__score {\n        font-size: 5.5rem;\n      }\n\n      .location__grid {\n        grid-template-columns: 1fr;\n      }\n\n      .location__map {\n        min-height: 340px;\n      }\n\n      .final-cta {\n        padding-block: 60px;\n      }\n\n      .final-cta__title {\n        font-size: clamp(3rem, 13vw, 4.8rem);\n      }\n\n      .final-cta__button {\n        width: 100%;\n      }\n\n      .footer__top,\n      .footer__bottom {\n        align-items: flex-start;\n        flex-direction: column;\n      }\n\n      .footer__links {\n        gap: 15px 20px;\n      }\n    }\n\n    @media (max-width: 360px) {\n      .container {\n        width: calc(100% - 28px);\n      }\n\n      .hero__title {\n        font-size: 3.1rem;\n      }\n\n      .brand__sub {\n        font-size: 0.57rem;\n      }\n\n      .nav__cta {\n        padding-inline: 11px;\n        font-size: 0.73rem;\n      }\n    }\n\n    @media (prefers-reduced-motion: reduce) {\n      *,\n      *::before,\n      *::after {\n        scroll-behavior: auto !important;\n        animation-duration: 0.01ms !important;\n        animation-iteration-count: 1 !important;\n        transition-duration: 0.01ms !important;\n      }\n\n      .motion-ready [data-reveal] {\n        opacity: 1;\n        transform: none;\n      }\n    }"
+    },
+    "TITLE.": {
+      "text": "Thaisty Crousty | Bowls croustillants à Hydra, Alger"
+    }
+  },
+  "dataKeys": [
+    "$contract",
+    "assets",
+    "business",
+    "content",
+    "gallery",
+    "meta",
+    "missing",
+    "offerings",
+    "reviews",
+    "seo"
+  ]
+}

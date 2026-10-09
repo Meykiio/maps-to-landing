@@ -1,0 +1,2557 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- SEO / METADATA -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#201c1a">
+  <meta name="description" content="Découvrez les bowls Crousty de Thaisty Crousty à Sidi Yahia, Hydra, Alger. Poulet croustillant, riz basmati et sauces gourmandes.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thaisty Crousty — Le croustillant, autrement.">
+  <meta property="og:description" content="Poulet croustillant, riz basmati et sauces généreuses à Sidi Yahia, Hydra, Alger.">
+  <meta property="og:locale" content="fr_DZ">
+  <meta property="og:image" content="">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://example.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Thaisty Crousty | Bowls croustillants à Hydra, Alger</title>
+
+  <!-- DATA: Structured business information -->
+  <script type="application/ld+json" id="business-schema"></script>
+
+  <style>
+    /* =========================================================
+       TOKENS
+    ========================================================= */
+    :root {
+      color-scheme: light;
+      --color-ink: #201c1a;
+      --color-cream: #fff3df;
+      --color-paper: #fffaf2;
+      --color-red: #e63932;
+      --color-gold: #ffbe3d;
+      --color-muted: #796f66;
+      --color-white: #ffffff;
+      --color-line: #e9ddca;
+
+      --font-display: "Archivo Black", Impact, sans-serif;
+      --font-body: "DM Sans", sans-serif;
+
+      --space-1: 0.25rem;
+      --space-2: 0.5rem;
+      --space-3: 0.75rem;
+      --space-4: 1rem;
+      --space-5: 1.5rem;
+      --space-6: 2rem;
+      --space-7: 3rem;
+      --space-8: 4rem;
+      --space-9: 6rem;
+      --space-10: 8rem;
+
+      --radius-sm: 0.5rem;
+      --radius-md: 1.25rem;
+      --radius-lg: 2rem;
+      --radius-pill: 999px;
+
+      --shadow-card: 0 16px 50px rgb(32 28 26 / 8%);
+      --ease-out: cubic-bezier(.2, .75, .25, 1);
+      --duration-fast: 180ms;
+      --duration-base: 400ms;
+      --content-width: 1240px;
+    }
+
+    /* =========================================================
+       BASE
+    ========================================================= */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--color-paper);
+      color: var(--color-ink);
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body,
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    a {
+      touch-action: manipulation;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--color-red);
+      outline-offset: 4px;
+    }
+
+    ::selection {
+      color: var(--color-ink);
+      background: var(--color-gold);
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--content-width));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 var(--space-4);
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      width: 24px;
+      height: 3px;
+      background: var(--color-red);
+      content: "";
+    }
+
+    .display {
+      margin: 0;
+      font-family: var(--font-display);
+      font-weight: 400;
+      letter-spacing: -0.055em;
+      line-height: 0.97;
+      text-transform: uppercase;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 5.3rem);
+      font-weight: 400;
+      letter-spacing: -0.06em;
+      line-height: 0.99;
+      text-transform: uppercase;
+    }
+
+    .section-intro {
+      max-width: 540px;
+      color: var(--color-muted);
+      font-size: 1rem;
+    }
+
+    .text-accent {
+      color: var(--color-red);
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 52px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 14px 23px;
+      border: 1px solid transparent;
+      border-radius: var(--radius-pill);
+      font-size: 0.88rem;
+      font-weight: 800;
+      transition:
+        transform var(--duration-fast) var(--ease-out),
+        background var(--duration-fast) ease,
+        color var(--duration-fast) ease;
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+    }
+
+    .button--dark {
+      background: var(--color-ink);
+      color: var(--color-white);
+    }
+
+    .button--dark:hover {
+      background: var(--color-red);
+    }
+
+    .button--light {
+      border-color: var(--color-line);
+      background: transparent;
+      color: var(--color-ink);
+    }
+
+    .button--light:hover {
+      border-color: var(--color-ink);
+    }
+
+    .button--gold {
+      background: var(--color-gold);
+      color: var(--color-ink);
+    }
+
+    .arrow {
+      display: inline-block;
+      transition: transform var(--duration-fast) ease;
+    }
+
+    .button:hover .arrow {
+      transform: translateX(4px);
+    }
+
+    /* =========================================================
+       COMPONENTS: Navigation
+    ========================================================= */
+    .header {
+      position: relative;
+      z-index: 10;
+      background: var(--color-paper);
+      border-bottom: 1px solid var(--color-line);
+    }
+
+    .nav {
+      display: flex;
+      min-height: 82px;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      flex-shrink: 0;
+    }
+
+    .brand__mark {
+      display: grid;
+      width: 44px;
+      height: 44px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--color-red);
+      color: var(--color-white);
+      font-family: var(--font-display);
+      font-size: 1rem;
+      transform: rotate(-8deg);
+    }
+
+    .brand__name {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1rem;
+      letter-spacing: -0.05em;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .brand__sub {
+      display: block;
+      margin-top: 4px;
+      color: var(--color-muted);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: clamp(16px, 3vw, 38px);
+    }
+
+    .nav__link {
+      font-size: 0.82rem;
+      font-weight: 700;
+      transition: color var(--duration-fast) ease;
+    }
+
+    .nav__link:hover {
+      color: var(--color-red);
+    }
+
+    .nav__cta {
+      min-height: 44px;
+      padding: 10px 18px;
+      font-size: 0.8rem;
+    }
+
+    /* =========================================================
+       SECTIONS: Hero
+    ========================================================= */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding-block: clamp(54px, 9vw, 118px) clamp(62px, 8vw, 105px);
+      background: var(--color-cream);
+      isolation: isolate;
+    }
+
+    .hero__grid {
+      display: grid;
+      align-items: center;
+      gap: clamp(35px, 6vw, 90px);
+      grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+    }
+
+    .hero__content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero__label {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: var(--space-5);
+      padding: 8px 13px;
+      border: 1px solid rgb(32 28 26 / 16%);
+      border-radius: var(--radius-pill);
+      font-size: 0.73rem;
+      font-weight: 800;
+    }
+
+    .hero__label-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-red);
+    }
+
+    .hero__title {
+      max-width: 740px;
+      font-size: clamp(3.5rem, 8vw, 7.5rem);
+    }
+
+    .hero__title .hero__line {
+      display: block;
+    }
+
+    .hero__title .hero__highlight {
+      position: relative;
+      display: inline-block;
+      color: var(--color-red);
+    }
+
+    .hero__title .hero__highlight::after {
+      position: absolute;
+      right: 0;
+      bottom: -5px;
+      left: 0;
+      height: 7px;
+      border-radius: var(--radius-pill);
+      background: var(--color-gold);
+      content: "";
+      transform: rotate(-2deg);
+    }
+
+    .hero__description {
+      max-width: 430px;
+      margin-block: var(--space-6);
+      color: #5c5147;
+      font-size: clamp(1rem, 1.5vw, 1.1rem);
+    }
+
+    .hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero__note {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: var(--space-6);
+      color: var(--color-muted);
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .hero__note svg {
+      width: 19px;
+      flex: 0 0 19px;
+    }
+
+    /* Original CSS illustration, not a real food photograph. */
+    .hero-art {
+      position: relative;
+      display: grid;
+      min-height: 430px;
+      aspect-ratio: 1 / 1;
+      place-items: center;
+    }
+
+    .hero-art__orbit {
+      position: absolute;
+      width: 94%;
+      aspect-ratio: 1;
+      border: 1px solid rgb(32 28 26 / 15%);
+      border-radius: 50%;
+    }
+
+    .hero-art__orbit::before,
+    .hero-art__orbit::after {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--color-red);
+      content: "";
+    }
+
+    .hero-art__orbit::before {
+      top: 15%;
+      right: 12%;
+    }
+
+    .hero-art__orbit::after {
+      bottom: 15%;
+      left: 9%;
+      background: var(--color-gold);
+    }
+
+    .hero-art__burst {
+      position: absolute;
+      width: 76%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: var(--color-red);
+      transform: rotate(-9deg);
+    }
+
+    .hero-art__bowl {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      width: 76%;
+      aspect-ratio: 1;
+      place-items: center;
+      border: 12px solid #f4e5ce;
+      border-radius: 50%;
+      background:
+        radial-gradient(ellipse at 45% 48%, #fff5df 0 36%, #e8d1ac 37% 43%, #fff8eb 44% 53%, #c6a982 54% 57%, #fff8eb 58%);
+      box-shadow: 0 28px 0 rgb(32 28 26 / 12%);
+      transform: rotate(8deg);
+    }
+
+    .hero-art__rice {
+      position: absolute;
+      width: 68%;
+      height: 40%;
+      top: 29%;
+      left: 16%;
+      overflow: hidden;
+      border-radius: 50%;
+      background:
+        radial-gradient(ellipse at 18% 35%, #fff8e7 0 2%, transparent 3%),
+        radial-gradient(ellipse at 30% 55%, #fff8e7 0 2%, transparent 3%),
+        radial-gradient(ellipse at 65% 27%, #fff8e7 0 2%, transparent 3%),
+        radial-gradient(ellipse at 74% 59%, #fff8e7 0 2%, transparent 3%),
+        repeating-radial-gradient(ellipse at 50% 50%, #fff6df 0 5px, #ead7b4 6px 8px);
+      transform: rotate(-5deg);
+    }
+
+    .hero-art__chicken {
+      position: absolute;
+      z-index: 2;
+      display: flex;
+      width: 64%;
+      height: 40%;
+      align-items: center;
+      justify-content: center;
+      gap: 4%;
+      top: 24%;
+      left: 18%;
+      transform: rotate(-8deg);
+    }
+
+    .hero-art__piece {
+      position: relative;
+      width: 28%;
+      height: 65%;
+      border: 3px solid #b65b21;
+      border-radius: 45% 55% 46% 54%;
+      background:
+        radial-gradient(circle at 28% 28%, #ffd77c 0 5%, transparent 6%),
+        radial-gradient(circle at 62% 58%, #b75c20 0 4%, transparent 5%),
+        repeating-linear-gradient(135deg, #f4b44f 0 6px, #d9822e 7px 10px);
+      box-shadow: 0 5px 0 #b96b29;
+      transform: rotate(18deg);
+    }
+
+    .hero-art__piece:nth-child(2) {
+      height: 78%;
+      transform: rotate(-19deg);
+    }
+
+    .hero-art__piece:nth-child(3) {
+      height: 57%;
+      transform: rotate(29deg);
+    }
+
+    .hero-art__sauce {
+      position: absolute;
+      z-index: 3;
+      width: 28%;
+      height: 10%;
+      top: 37%;
+      left: 37%;
+      border-radius: 50%;
+      background: #fff9eb;
+      opacity: 0.9;
+      transform: rotate(-25deg);
+    }
+
+    .hero-art__sprinkle {
+      position: absolute;
+      z-index: 3;
+      width: 6px;
+      height: 23px;
+      border-radius: var(--radius-pill);
+      background: var(--color-red);
+    }
+
+    .hero-art__sprinkle--one {
+      top: 22%;
+      left: 29%;
+      transform: rotate(32deg);
+    }
+
+    .hero-art__sprinkle--two {
+      right: 27%;
+      bottom: 27%;
+      height: 17px;
+      background: #47845c;
+      transform: rotate(48deg);
+    }
+
+    .hero-art__sticker {
+      position: absolute;
+      z-index: 4;
+      display: grid;
+      width: 112px;
+      aspect-ratio: 1;
+      place-items: center;
+      border: 4px solid var(--color-cream);
+      border-radius: 50%;
+      background: var(--color-gold);
+      color: var(--color-ink);
+      font-family: var(--font-display);
+      font-size: 0.8rem;
+      line-height: 1.2;
+      text-align: center;
+      text-transform: uppercase;
+      transform: rotate(12deg);
+    }
+
+    .hero-art__sticker--top {
+      top: 3%;
+      right: 0;
+    }
+
+    .hero-art__sticker--bottom {
+      bottom: 6%;
+      left: 0;
+      width: 95px;
+      background: var(--color-ink);
+      color: var(--color-white);
+      transform: rotate(-12deg);
+    }
+
+    /* =========================================================
+       SECTIONS: Trust strip
+    ========================================================= */
+    .trust {
+      padding-block: 25px;
+      background: var(--color-ink);
+      color: var(--color-white);
+    }
+
+    .trust__grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .trust__item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      text-align: center;
+    }
+
+    .trust__icon {
+      display: grid;
+      width: 39px;
+      height: 39px;
+      flex: 0 0 39px;
+      place-items: center;
+      border-radius: 50%;
+      background: rgb(255 255 255 / 10%);
+      color: var(--color-gold);
+    }
+
+    .trust__icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .trust__label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .trust__detail {
+      display: block;
+      color: #c8bfb5;
+      font-size: 0.7rem;
+    }
+
+    /* =========================================================
+       SECTIONS: Menu
+    ========================================================= */
+    .menu {
+      padding-block: var(--space-10);
+    }
+
+    .section-top {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 35px;
+      margin-bottom: var(--space-7);
+    }
+
+    .section-top__copy {
+      max-width: 650px;
+    }
+
+    .menu__grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .menu-card {
+      position: relative;
+      display: flex;
+      min-height: 345px;
+      flex-direction: column;
+      overflow: hidden;
+      padding: 26px;
+      border: 1px solid var(--color-line);
+      border-radius: var(--radius-md);
+      background: var(--color-white);
+      transition:
+        transform var(--duration-base) var(--ease-out),
+        box-shadow var(--duration-base) var(--ease-out);
+    }
+
+    .menu-card:hover {
+      box-shadow: var(--shadow-card);
+      transform: translateY(-6px);
+    }
+
+    .menu-card--featured {
+      border-color: var(--color-red);
+      background: var(--color-red);
+      color: var(--color-white);
+    }
+
+    .menu-card__top {
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .menu-card__tag {
+      display: inline-flex;
+      padding: 6px 10px;
+      border-radius: var(--radius-pill);
+      background: var(--color-cream);
+      color: var(--color-ink);
+      font-size: 0.65rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .menu-card--featured .menu-card__tag {
+      background: var(--color-gold);
+    }
+
+    .menu-card__price {
+      font-size: 0.95rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .menu-card__art {
+      position: relative;
+      display: grid;
+      width: 120px;
+      height: 105px;
+      place-items: center;
+      align-self: center;
+      margin-block: 20px 18px;
+    }
+
+    .menu-card__art::before {
+      position: absolute;
+      width: 94px;
+      height: 94px;
+      border: 8px solid #e9d8bc;
+      border-radius: 50%;
+      background: #fff3dd;
+      box-shadow: 0 7px 0 rgb(32 28 26 / 10%);
+      content: "";
+    }
+
+    .menu-card--featured .menu-card__art::before {
+      border-color: #ffd2ac;
+      background: #fff2d7;
+    }
+
+    .menu-card__food {
+      position: relative;
+      z-index: 1;
+      width: 78px;
+      height: 54px;
+      border-radius: 50%;
+      background:
+        radial-gradient(ellipse at 30% 40%, #fff5dc 0 3%, transparent 4%),
+        radial-gradient(ellipse at 60% 70%, #fff5dc 0 3%, transparent 4%),
+        repeating-linear-gradient(130deg, #edb04e 0 8px, #c97029 9px 13px);
+      transform: rotate(-12deg);
+    }
+
+    .menu-card__food::after {
+      position: absolute;
+      top: 40%;
+      left: 20%;
+      width: 60%;
+      height: 12%;
+      border-radius: 50%;
+      background: #fff9eb;
+      content: "";
+      transform: rotate(15deg);
+    }
+
+    .menu-card__name {
+      margin: 0 0 8px;
+      font-family: var(--font-display);
+      font-size: 1.45rem;
+      letter-spacing: -0.05em;
+      line-height: 1.1;
+      text-transform: uppercase;
+    }
+
+    .menu-card__description {
+      margin: 0;
+      color: var(--color-muted);
+      font-size: 0.87rem;
+    }
+
+    .menu-card--featured .menu-card__description {
+      color: #fff0e5;
+    }
+
+    .menu-card__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: auto;
+      padding-top: 22px;
+    }
+
+    .menu-card__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.77rem;
+      font-weight: 800;
+    }
+
+    .menu-card__link:hover {
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .menu__disclaimer {
+      margin-top: 18px;
+      color: var(--color-muted);
+      font-size: 0.75rem;
+    }
+
+    /* =========================================================
+       SECTIONS: Brand story
+    ========================================================= */
+    .story {
+      overflow: hidden;
+      padding-block: var(--space-9);
+      background: var(--color-gold);
+    }
+
+    .story__grid {
+      display: grid;
+      align-items: center;
+      gap: clamp(40px, 8vw, 110px);
+      grid-template-columns: 0.95fr 1.05fr;
+    }
+
+    .story__graphic {
+      position: relative;
+      display: grid;
+      min-height: 360px;
+      place-items: center;
+      border-radius: var(--radius-lg);
+      background: var(--color-ink);
+      color: var(--color-cream);
+    }
+
+    .story__graphic::before {
+      position: absolute;
+      width: 78%;
+      aspect-ratio: 1;
+      border: 1px solid rgb(255 243 223 / 24%);
+      border-radius: 50%;
+      content: "";
+    }
+
+    .story__graphic::after {
+      position: absolute;
+      width: 60%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: var(--color-red);
+      content: "";
+    }
+
+    .story__graphic-text {
+      position: relative;
+      z-index: 1;
+      max-width: 270px;
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      letter-spacing: -0.06em;
+      line-height: 0.93;
+      text-align: center;
+      text-transform: uppercase;
+      transform: rotate(-5deg);
+    }
+
+    .story__copy .section-heading {
+      font-size: clamp(2.6rem, 5vw, 4.8rem);
+    }
+
+    .story__copy p:not(.eyebrow) {
+      max-width: 520px;
+      color: #51402b;
+    }
+
+    .story__note {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 10px;
+      font-size: 0.8rem;
+      font-weight: 800;
+    }
+
+    /* =========================================================
+       SECTIONS: Visual showcase
+    ========================================================= */
+    .showcase {
+      padding-block: var(--space-10);
+    }
+
+    .showcase__grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 18px;
+      margin-top: var(--space-7);
+    }
+
+    .showcase-card {
+      position: relative;
+      display: flex;
+      min-height: 260px;
+      overflow: hidden;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: clamp(24px, 4vw, 42px);
+      border-radius: var(--radius-md);
+      background: var(--color-cream);
+    }
+
+    .showcase-card--red {
+      background: var(--color-red);
+      color: var(--color-white);
+    }
+
+    .showcase-card--dark {
+      background: var(--color-ink);
+      color: var(--color-white);
+    }
+
+    .showcase-card__shape {
+      position: absolute;
+      right: -50px;
+      bottom: -90px;
+      width: 240px;
+      height: 240px;
+      border: 25px solid rgb(32 28 26 / 9%);
+      border-radius: 50%;
+    }
+
+    .showcase-card--red .showcase-card__shape {
+      border-color: rgb(255 255 255 / 14%);
+    }
+
+    .showcase-card--dark .showcase-card__shape {
+      border-color: rgb(255 243 223 / 12%);
+    }
+
+    .showcase-card__label {
+      position: relative;
+      z-index: 1;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .showcase-card__title {
+      position: relative;
+      z-index: 1;
+      max-width: 470px;
+      margin: 35px 0 0;
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4.6vw, 4.1rem);
+      letter-spacing: -0.06em;
+      line-height: 0.98;
+      text-transform: uppercase;
+    }
+
+    .showcase__footnote {
+      margin-top: 16px;
+      color: var(--color-muted);
+      font-size: 0.76rem;
+    }
+
+    /* =========================================================
+       SECTIONS: Reviews
+    ========================================================= */
+    .reviews {
+      padding-block: var(--space-9);
+      background: var(--color-cream);
+    }
+
+    .reviews__grid {
+      display: grid;
+      align-items: center;
+      gap: 50px;
+      grid-template-columns: 0.8fr 1.2fr;
+    }
+
+    .reviews__score {
+      margin: 20px 0 0;
+      font-family: var(--font-display);
+      font-size: clamp(4.5rem, 10vw, 7.5rem);
+      letter-spacing: -0.08em;
+      line-height: 1;
+    }
+
+    .reviews__stars {
+      margin-top: 8px;
+      color: #9c6100;
+      font-size: 1.3rem;
+      letter-spacing: 0.1em;
+    }
+
+    .reviews__meta {
+      color: var(--color-muted);
+      font-size: 0.85rem;
+    }
+
+    .reviews__quote {
+      margin: 0;
+      padding: clamp(25px, 5vw, 48px);
+      border: 1px solid var(--color-line);
+      border-radius: var(--radius-md);
+      background: var(--color-paper);
+    }
+
+    .reviews__quote-mark {
+      color: var(--color-red);
+      font-family: Georgia, serif;
+      font-size: 4rem;
+      line-height: 0.8;
+    }
+
+    .reviews__quote-text {
+      margin: 20px 0;
+      font-family: var(--font-display);
+      font-size: clamp(1.3rem, 2.5vw, 2rem);
+      letter-spacing: -0.04em;
+      line-height: 1.25;
+    }
+
+    .reviews__quote-source {
+      margin-bottom: 20px;
+      color: var(--color-muted);
+      font-size: 0.8rem;
+    }
+
+    /* =========================================================
+       SECTIONS: Location
+    ========================================================= */
+    .location {
+      padding-block: var(--space-10);
+    }
+
+    .location__grid {
+      display: grid;
+      gap: 50px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .location__details {
+      display: grid;
+      gap: 0;
+      margin-top: 28px;
+    }
+
+    .location__row {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 34px 1fr;
+      padding-block: 18px;
+      border-bottom: 1px solid var(--color-line);
+    }
+
+    .location__icon {
+      color: var(--color-red);
+    }
+
+    .location__icon svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    .location__label {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--color-muted);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .location__value {
+      font-size: 0.94rem;
+      font-weight: 700;
+    }
+
+    .location__hours {
+      display: grid;
+      gap: 5px;
+      margin-top: 8px;
+      color: var(--color-muted);
+      font-size: 0.8rem;
+    }
+
+    .location__hours-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .location__hours-row.is-today {
+      color: var(--color-ink);
+      font-weight: 800;
+    }
+
+    .location__map {
+      position: relative;
+      display: flex;
+      min-height: 420px;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      padding: 30px;
+      border-radius: var(--radius-lg);
+      background-color: #eae0ce;
+      background-image:
+        linear-gradient(25deg, transparent 48%, #d1c4ac 49%, #d1c4ac 51%, transparent 52%),
+        linear-gradient(115deg, transparent 45%, #f9f0df 46%, #f9f0df 53%, transparent 54%),
+        linear-gradient(165deg, transparent 60%, #d6c9b1 61%, #d6c9b1 63%, transparent 64%);
+      background-size: 180px 150px, 220px 180px, 200px 220px;
+    }
+
+    .location__map::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        transparent 0 40px,
+        rgb(255 255 255 / 24%) 41px 44px,
+        transparent 45px 80px
+      );
+      content: "";
+    }
+
+    .location__map-label {
+      position: relative;
+      z-index: 1;
+      align-self: flex-start;
+      padding: 8px 12px;
+      border-radius: var(--radius-pill);
+      background: var(--color-white);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .location__pin {
+      position: absolute;
+      top: 43%;
+      left: 50%;
+      z-index: 1;
+      display: grid;
+      width: 72px;
+      height: 72px;
+      place-items: center;
+      border: 7px solid rgb(255 255 255 / 80%);
+      border-radius: 50%;
+      background: var(--color-red);
+      color: var(--color-white);
+      box-shadow: 0 10px 30px rgb(32 28 26 / 20%);
+      transform: translate(-50%, -50%) rotate(-8deg);
+    }
+
+    .location__pin svg {
+      width: 29px;
+      height: 29px;
+    }
+
+    .location__map-card {
+      position: relative;
+      z-index: 1;
+      padding: 20px;
+      border-radius: var(--radius-md);
+      background: var(--color-white);
+      box-shadow: var(--shadow-card);
+    }
+
+    .location__map-card strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      text-transform: uppercase;
+    }
+
+    .location__map-card p {
+      margin: 5px 0 15px;
+      color: var(--color-muted);
+      font-size: 0.8rem;
+    }
+
+    /* =========================================================
+       SECTIONS: Final CTA and footer
+    ========================================================= */
+    .final-cta {
+      overflow: hidden;
+      padding-block: var(--space-9);
+      background: var(--color-red);
+      color: var(--color-white);
+    }
+
+    .final-cta__inner {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .final-cta__copy {
+      position: relative;
+      z-index: 1;
+      max-width: 750px;
+    }
+
+    .final-cta .eyebrow::before {
+      background: var(--color-gold);
+    }
+
+    .final-cta__title {
+      font-size: clamp(3rem, 7vw, 6.5rem);
+    }
+
+    .final-cta__text {
+      max-width: 480px;
+      color: #ffe2d8;
+    }
+
+    .final-cta__button {
+      position: relative;
+      z-index: 1;
+      flex-shrink: 0;
+    }
+
+    .footer {
+      padding-block: 35px;
+      background: var(--color-ink);
+      color: var(--color-white);
+    }
+
+    .footer__top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgb(255 255 255 / 15%);
+    }
+
+    .footer .brand__sub {
+      color: #c8bfb5;
+    }
+
+    .footer__links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+    }
+
+    .footer__link {
+      color: #e2d8cc;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .footer__link:hover {
+      color: var(--color-gold);
+    }
+
+    .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-top: 20px;
+      color: #c8bfb5;
+      font-size: 0.73rem;
+    }
+
+    /* =========================================================
+       MOTION
+    ========================================================= */
+    [data-reveal] {
+      opacity: 1;
+      transform: none;
+    }
+
+    .motion-ready [data-reveal] {
+      opacity: 0;
+      transform: translateY(18px);
+      transition:
+        opacity 650ms var(--ease-out),
+        transform 650ms var(--ease-out);
+    }
+
+    .motion-ready [data-reveal].is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .motion-ready .hero__content [data-reveal] {
+      transition-delay: 100ms;
+    }
+
+    .motion-ready .menu-card[data-reveal]:nth-child(2) {
+      transition-delay: 80ms;
+    }
+
+    .motion-ready .menu-card[data-reveal]:nth-child(3) {
+      transition-delay: 160ms;
+    }
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================= */
+    @media (min-width: 1600px) {
+      .hero__title {
+        font-size: 8rem;
+      }
+
+      .hero-art {
+        max-width: 650px;
+        justify-self: end;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .nav__links {
+        gap: 16px;
+      }
+
+      .nav__links .nav__link {
+        display: none;
+      }
+
+      .hero__grid {
+        grid-template-columns: 1fr 0.85fr;
+        gap: 25px;
+      }
+
+      .hero__title {
+        font-size: clamp(3.3rem, 8vw, 5.5rem);
+      }
+
+      .hero-art {
+        min-height: 330px;
+      }
+
+      .hero-art__sticker {
+        width: 90px;
+        font-size: 0.68rem;
+      }
+
+      .menu__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .story__grid {
+        gap: 35px;
+      }
+
+      .location__grid {
+        gap: 30px;
+      }
+
+      .location__map {
+        min-height: 370px;
+      }
+
+      .final-cta__inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: min(calc(100% - 32px), var(--content-width));
+      }
+
+      .nav {
+        min-height: 72px;
+      }
+
+      .brand__mark {
+        width: 39px;
+        height: 39px;
+      }
+
+      .brand__name {
+        font-size: 0.91rem;
+      }
+
+      .nav__cta {
+        min-height: 42px;
+        padding: 9px 14px;
+      }
+
+      .hero {
+        padding-block: 50px 35px;
+      }
+
+      .hero__grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .hero__title {
+        font-size: clamp(3.4rem, 14vw, 5.5rem);
+      }
+
+      .hero__description {
+        margin-block: 22px;
+      }
+
+      .hero__actions {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .hero__actions .button {
+        width: 100%;
+      }
+
+      .hero-art {
+        width: min(100%, 390px);
+        min-height: 0;
+        margin: 0 auto;
+      }
+
+      .hero-art__sticker--top {
+        right: 2%;
+      }
+
+      .hero-art__sticker--bottom {
+        left: 1%;
+      }
+
+      .trust {
+        padding-block: 20px;
+      }
+
+      .trust__grid {
+        grid-template-columns: 1fr;
+        gap: 17px;
+      }
+
+      .trust__item {
+        justify-content: flex-start;
+        text-align: left;
+      }
+
+      .menu,
+      .showcase,
+      .location {
+        padding-block: 65px;
+      }
+
+      .section-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+        margin-bottom: 28px;
+      }
+
+      .section-top > .button {
+        width: 100%;
+      }
+
+      .section-heading {
+        font-size: clamp(2.6rem, 12vw, 4rem);
+      }
+
+      .menu__grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .menu-card {
+        min-height: 315px;
+        padding: 23px;
+      }
+
+      .story {
+        padding-block: 55px;
+      }
+
+      .story__grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+
+      .story__graphic {
+        min-height: 300px;
+      }
+
+      .showcase__grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .showcase-card {
+        min-height: 250px;
+      }
+
+      .reviews {
+        padding-block: 60px;
+      }
+
+      .reviews__grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+
+      .reviews__score {
+        font-size: 5.5rem;
+      }
+
+      .location__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .location__map {
+        min-height: 340px;
+      }
+
+      .final-cta {
+        padding-block: 60px;
+      }
+
+      .final-cta__title {
+        font-size: clamp(3rem, 13vw, 4.8rem);
+      }
+
+      .final-cta__button {
+        width: 100%;
+      }
+
+      .footer__top,
+      .footer__bottom {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .footer__links {
+        gap: 15px 20px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .container {
+        width: calc(100% - 28px);
+      }
+
+      .hero__title {
+        font-size: 3.1rem;
+      }
+
+      .brand__sub {
+        font-size: 0.57rem;
+      }
+
+      .nav__cta {
+        padding-inline: 11px;
+        font-size: 0.73rem;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+
+      .motion-ready [data-reveal] {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =======================================================
+       SECTIONS: Header
+  ======================================================== -->
+  <header class="header" id="top" data-section="header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a class="brand" href="#top" aria-label="Thaisty Crousty, accueil">
+        <span class="brand__mark" aria-hidden="true">TC.</span>
+        <span>
+          <span class="brand__name" data-bind="content.brand.name">Thaisty Crousty</span>
+          <span class="brand__sub" data-bind="content.brand.sub">Sidi Yahia · Hydra</span>
+        </span>
+      </a>
+
+      <div class="nav__links">
+        <a class="nav__link" href="#menu">La carte</a>
+        <a class="nav__link" href="#concept">Le concept</a>
+        <a class="nav__link" href="#location">Nous trouver</a>
+        <a class="button button--dark nav__cta"
+           data-link="order"
+           href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra">
+          Commander <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- =====================================================
+         SECTIONS: Hero
+    ====================================================== -->
+    <section class="hero" data-section="hero" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <div class="hero__label" data-reveal>
+            <span class="hero__label-dot" aria-hidden="true"></span>
+            <span>Le spot Crousty · Sidi Yahia</span>
+          </div>
+
+          <h1 class="display hero__title" id="hero-title" data-reveal>
+            <span class="hero__line">Du</span>
+            <span class="hero__line hero__highlight">croustillant.</span>
+            <span class="hero__line">Du goût.</span>
+          </h1>
+
+          <p class="hero__description" data-reveal>
+            Du poulet croustillant, du riz basmati et des sauces
+            pour composer ton prochain bowl préféré.
+          </p>
+
+          <div class="hero__actions" data-reveal>
+            <a class="button button--dark"
+               data-link="order"
+               href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra">
+              Voir la carte <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a class="button button--light"
+               data-link="directions"
+               href="https://www.google.com/maps/dir/?api=1&amp;destination=Thaisty+Crousty%2C+62+Chemin+de+Sidi+Yahia%2C+Hydra%2C+Alger">
+              Trouver le spot <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="hero__note" data-reveal>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.8" aria-hidden="true">
+              <path d="M12 22s8-4.5 8-12V5l-8-3-8 3v5c0 7.5 8 12 8 12Z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+            <span>À emporter ou en livraison</span>
+          </div>
+        </div>
+
+        <div class="hero-art" role="img"
+             aria-label="Illustration graphique originale d'un bowl de riz et de poulet croustillant">
+          <div class="hero-art__orbit" aria-hidden="true"></div>
+          <div class="hero-art__burst" aria-hidden="true"></div>
+          <div class="hero-art__bowl" aria-hidden="true">
+            <div class="hero-art__rice"></div>
+            <div class="hero-art__chicken">
+              <span class="hero-art__piece"></span>
+              <span class="hero-art__piece"></span>
+              <span class="hero-art__piece"></span>
+            </div>
+            <span class="hero-art__sauce"></span>
+            <span class="hero-art__sprinkle hero-art__sprinkle--one"></span>
+            <span class="hero-art__sprinkle hero-art__sprinkle--two"></span>
+          </div>
+          <div class="hero-art__sticker hero-art__sticker--top">
+            Crispy<br>mood
+          </div>
+          <div class="hero-art__sticker hero-art__sticker--bottom">
+            Sauce<br>game
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTIONS: Trust strip
+    ====================================================== -->
+    <section class="trust" data-section="trust" aria-label="Informations clés">
+      <div class="container trust__grid">
+        <a class="trust__item"
+           href="https://www.google.com/maps/search/?api=1&amp;query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger"
+           target="_blank" rel="noopener noreferrer">
+          <span class="trust__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.8">
+              <path d="M12 2 15 8l7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-6Z"/>
+            </svg>
+          </span>
+          <span>
+            <span class="trust__label" data-bind="content.trust.ratingLabel">4,3 / 5 sur Google*</span>
+            <span class="trust__detail" data-bind="content.trust.reviewsLabel">312 avis répertoriés</span>
+          </span>
+        </a>
+
+        <div class="trust__item">
+          <span class="trust__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.8">
+              <path d="M3 7h13v11H3zM16 11h3l3 3v4h-6"/>
+              <circle cx="7.5" cy="18" r="2"/>
+              <circle cx="18.5" cy="18" r="2"/>
+            </svg>
+          </span>
+          <span>
+            <span class="trust__label">Livraison disponible</span>
+            <span class="trust__detail">Commande via Yassir</span>
+          </span>
+        </div>
+
+        <div class="trust__item">
+          <span class="trust__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.8">
+              <path d="M4 3v7a4 4 0 0 0 8 0V3M8 3v18M18 3v18M18 3c-4 4-4 9 0 10"/>
+            </svg>
+          </span>
+          <span>
+            <span class="trust__label">Le bowl Crousty</span>
+            <span class="trust__detail">Poulet, riz et sauces</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTIONS: Menu
+    ====================================================== -->
+    <section class="menu container" id="menu"
+             data-section="menu" aria-labelledby="menu-title">
+      <div class="section-top">
+        <div class="section-top__copy">
+          <p class="eyebrow">La carte</p>
+          <h2 class="section-heading" id="menu-title">
+            Choisis ta <span class="text-accent">sauce.</span>
+          </h2>
+          <p class="section-intro">
+            Une base de riz basmati, du poulet croustillant,
+            puis la sauce qui change tout.
+          </p>
+        </div>
+        <a class="button button--light"
+           data-link="order"
+           href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra">
+          Toute la carte <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="menu__grid" id="menu-grid">
+        <!-- Cards are rendered from site-data. -->
+      </div>
+
+      <p class="menu__disclaimer">
+        Prix indicatifs issus d'une carte de livraison consultée.
+        Vérifie les prix et la disponibilité sur la plateforme avant de commander.
+      </p>
+    </section>
+
+    <!-- =====================================================
+         SECTIONS: Concept / story
+    ====================================================== -->
+    <section class="story" id="concept"
+             data-section="story" aria-labelledby="story-title">
+      <div class="container story__grid">
+        <div class="story__graphic" aria-hidden="true">
+          <div class="story__graphic-text">
+            Riz.<br>Poulet.<br>Sauce.
+          </div>
+        </div>
+
+        <div class="story__copy">
+          <p class="eyebrow">Le concept</p>
+          <h2 class="section-heading" id="story-title">
+            Trois éléments.<br>
+            <span>Une envie.</span>
+          </h2>
+          <p>
+            Chez Thaisty Crousty, le bowl met le poulet croustillant
+            au centre du jeu : riz basmati, oignons frits et
+            différentes sauces pour varier les saveurs.
+          </p>
+          <p>
+            Le principe est simple. Tu choisis ton Crousty,
+            tu choisis ton envie, et tu passes commande.
+          </p>
+          <span class="story__note">
+            <span aria-hidden="true">✳</span>
+            Direction Sidi Yahia, Hydra.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTIONS: Visual showcase
+    ====================================================== -->
+    <section class="showcase container" data-section="showcase"
+             aria-labelledby="showcase-title">
+      <p class="eyebrow">Le mood</p>
+      <h2 class="section-heading" id="showcase-title">
+        Simple dans le bowl.<br>
+        <span class="text-accent">Sérieux sur la sauce.</span>
+      </h2>
+
+      <div class="showcase__grid">
+        <article class="showcase-card showcase-card--red">
+          <span class="showcase-card__label">01 / Le croustillant</span>
+          <h3 class="showcase-card__title">
+            Le poulet<br>fait le show.
+          </h3>
+          <span class="showcase-card__shape" aria-hidden="true"></span>
+        </article>
+
+        <article class="showcase-card showcase-card--dark">
+          <span class="showcase-card__label">02 / Le choix de sauce</span>
+          <h3 class="showcase-card__title">
+            Classic.<br>Sweet.<br>Spicy.
+          </h3>
+          <span class="showcase-card__shape" aria-hidden="true"></span>
+        </article>
+      </div>
+
+      <p class="showcase__footnote">
+        Visuels typographiques conceptuels. Les photographies réelles
+        des plats et du restaurant restent à intégrer.
+      </p>
+    </section>
+
+    <!-- =====================================================
+         SECTIONS: Social proof
+    ====================================================== -->
+    <section class="reviews" data-section="reviews"
+             aria-labelledby="reviews-title">
+      <div class="container reviews__grid">
+        <div>
+          <p class="eyebrow">Ils en parlent</p>
+          <h2 class="section-heading" id="reviews-title">
+            À toi de <span class="text-accent">juger.</span>
+          </h2>
+          <p class="section-intro">
+            Consulte les avis des clients sur Google avant de te faire
+            ton propre avis.
+          </p>
+
+          <p class="reviews__score" id="review-score">4,3</p>
+          <div class="reviews__stars" aria-label="Note de 4,3 sur 5">
+            ★★★★★
+          </div>
+          <p class="reviews__meta" id="review-count">
+            Sur la base de 312 avis répertoriés.
+          </p>
+
+          <a class="button button--dark"
+             data-link="reviews"
+             href="https://www.google.com/maps/search/?api=1&amp;query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger"
+             target="_blank" rel="noopener noreferrer">
+            Lire les avis Google <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <blockquote class="reviews__quote">
+          <div class="reviews__quote-mark" aria-hidden="true">“</div>
+          <p class="reviews__quote-text" data-bind="content.reviews.quote">
+            Excellent bol et dessert !
+          </p>
+          <p class="reviews__quote-source" data-bind="content.reviews.attribution">
+            Extrait d'un avis public attribué à RAD BOU,
+            consulté sur Restaurant Guru.
+          </p>
+          <a class="button button--light"
+             href="https://restaurantguru.com/Thaisty-Crousty-Sidi-Yahia-Hydra"
+             target="_blank" rel="noopener noreferrer">
+            Voir la source <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTIONS: Practical information / location
+    ====================================================== -->
+    <section class="location container" id="location"
+             data-section="location" aria-labelledby="location-title">
+      <div class="location__grid">
+        <div>
+          <p class="eyebrow">Le point de rendez-vous</p>
+          <h2 class="section-heading" id="location-title">
+            On se retrouve à <span class="text-accent">Hydra.</span>
+          </h2>
+          <p class="section-intro">
+            Retrouvez Thaisty Crousty sur le chemin de Sidi Yahia,
+            à Hydra, Alger.
+          </p>
+
+          <div class="location__details">
+            <div class="location__row">
+              <span class="location__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8">
+                  <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+              </span>
+              <div>
+                <span class="location__label">Adresse</span>
+                <span class="location__value" data-bind="content.location.address">
+                  62 Chemin de Sidi Yahia, Hydra, 16000 Alger
+                </span>
+              </div>
+            </div>
+
+            <div class="location__row">
+              <span class="location__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8">
+                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19a19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.8 2.1Z"/>
+                </svg>
+              </span>
+              <div>
+                <span class="location__label">Téléphone</span>
+                <a class="location__value" data-link="phone" data-bind="business.phone.display"
+                   href="tel:+213793755788">0793 75 57 88</a>
+              </div>
+            </div>
+
+            <div class="location__row">
+              <span class="location__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                     stroke-width="1.8">
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M12 7v5l3 2"/>
+                </svg>
+              </span>
+              <div>
+                <span class="location__label">Horaires communiqués en ligne</span>
+                <div class="location__value" id="open-status" aria-live="polite">
+                  Consulter les horaires
+                </div>
+                <div class="location__hours" id="opening-hours">
+                  <!-- Rendered from site-data. -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="menu__disclaimer">
+            Les horaires proviennent d'une source tierce et peuvent changer.
+            Confirme-les sur la fiche du restaurant avant de te déplacer.
+          </p>
+        </div>
+
+        <div class="location__map" aria-label="Localisation schématique du restaurant">
+          <span class="location__map-label" data-bind="business.address.short">Sidi Yahia · Hydra</span>
+
+          <div class="location__pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                 stroke-width="1.8">
+              <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+              <circle cx="12" cy="10" r="2.5"/>
+            </svg>
+          </div>
+
+          <div class="location__map-card">
+            <strong data-bind="business.name">Thaisty Crousty</strong>
+            <p data-bind="content.location.shortAddress">62 Chemin de Sidi Yahia, Hydra, Alger</p>
+            <a class="button button--dark"
+               data-link="directions"
+               href="https://www.google.com/maps/dir/?api=1&amp;destination=Thaisty+Crousty%2C+62+Chemin+de+Sidi+Yahia%2C+Hydra%2C+Alger"
+               target="_blank" rel="noopener noreferrer">
+              Itinéraire Google Maps <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECTIONS: Final CTA
+    ====================================================== -->
+    <section class="final-cta" data-section="final-cta"
+             aria-labelledby="final-title">
+      <div class="container final-cta__inner">
+        <div class="final-cta__copy">
+          <p class="eyebrow">Ta prochaine commande</p>
+          <h2 class="display final-cta__title" id="final-title">
+            Alors,<br>quelle sauce ?
+          </h2>
+          <p class="final-cta__text">
+            Explore les bowls et choisis ton prochain Crousty.
+          </p>
+        </div>
+
+        <a class="button button--gold final-cta__button"
+           data-link="order"
+           href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra">
+          Commander sur Yassir <span class="arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================
+       SECTIONS: Footer
+  ======================================================== -->
+  <footer class="footer" data-section="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a class="brand" href="#top" aria-label="Retour en haut">
+          <span class="brand__mark" aria-hidden="true">TC.</span>
+          <span>
+            <span class="brand__name" data-bind="content.footer.name">Thaisty Crousty</span>
+            <span class="brand__sub" data-bind="content.footer.sub">Sidi Yahia · Hydra · Alger</span>
+          </span>
+        </a>
+
+        <nav class="footer__links" aria-label="Liens complémentaires">
+          <a class="footer__link" href="#menu">La carte</a>
+          <a class="footer__link" href="#concept">Le concept</a>
+          <a class="footer__link"
+             data-link="reviews"
+             href="https://www.google.com/maps/search/?api=1&amp;query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger">
+            Avis Google
+          </a>
+          <a class="footer__link"
+             data-link="order"
+             href="https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra">
+            Commander
+          </a>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© <span id="current-year"></span> <span data-bind="business.name">Thaisty Crousty</span>.</span>
+        <span data-bind="content.footer.address">62 Chemin de Sidi Yahia, Hydra, Alger.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================
+       DATA: All editable site content
+  ======================================================== -->
+  <script type="application/json" id="site-data">
+  {
+    "$contract": "maps-to-landing/site-data@1",
+
+    "meta": {
+      "generatedAt": "2026-06-12",
+      "source": "website",
+      "sourceUrl": "https://restaurantguru.com/Thaisty-Crousty-Sidi-Yahia-Hydra",
+      "language": "fr"
+    },
+
+    "business": {
+      "name": "Thaisty Crousty",
+      "branch": null,
+      "category": "Restaurant",
+      "cuisine": ["Chicken", "Asian-inspired street food"],
+      "languages": ["fr"],
+      "phone": {
+        "e164": "+213793755788",
+        "display": "0793 75 57 88",
+        "whatsapp": null
+      },
+      "address": {
+        "line1": "62 Chemin de Sidi Yahia",
+        "neighborhood": "Sidi Yahia",
+        "locality": "Hydra",
+        "city": "Alger",
+        "region": "Algiers",
+        "postalCode": "16000",
+        "country": "Algérie",
+        "countryCode": "DZ",
+        "short": "Sidi Yahia · Hydra",
+        "full": "62 Chemin de Sidi Yahia, Hydra, 16000 Alger, Algérie"
+      },
+      "coordinates": null,
+      "rating": {
+        "value": 4.3,
+        "reviewCount": 312,
+        "url": "https://www.google.com/maps/search/?api=1&query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger",
+        "source": "google-maps"
+      },
+      "hours": {
+        "timezone": "Africa/Algiers",
+        "source": "Restaurant Guru, fiche consultée en 2026",
+        "schedule": [
+          { "day": "Sunday",    "label": "Dimanche", "open": "11:00", "close": "03:00" },
+          { "day": "Monday",    "label": "Lundi",     "open": "11:00", "close": "03:00" },
+          { "day": "Tuesday",   "label": "Mardi",     "open": "11:00", "close": "03:00" },
+          { "day": "Wednesday", "label": "Mercredi", "open": "11:30", "close": "03:00" },
+          { "day": "Thursday",  "label": "Jeudi",     "open": "11:00", "close": "03:00" },
+          { "day": "Friday",    "label": "Vendredi",  "open": "17:00", "close": "03:00" },
+          { "day": "Saturday",  "label": "Samedi",    "open": "11:00", "close": "03:00" }
+        ]
+      },
+      "socials": {
+        "instagram": null,
+        "facebook": null,
+        "tiktok": null
+      },
+      "links": {
+        "maps": "https://www.google.com/maps/search/?api=1&query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger",
+        "place": "https://www.google.com/maps/search/?api=1&query=Thaisty+Crousty+Sidi+Yahia+Hydra+Alger",
+        "directions": "https://www.google.com/maps/dir/?api=1&destination=Thaisty+Crousty%2C+62+Chemin+de+Sidi+Yahia%2C+Hydra%2C+Alger",
+        "website": null,
+        "menu": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+        "order": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+        "booking": null
+      }
+    },
+
+    "content": {
+      "brand": {
+        "name": "Thaisty Crousty",
+        "sub": "Sidi Yahia · Hydra"
+      },
+      "trust": {
+        "ratingLabel": "{rating} / 5 sur Google*",
+        "reviewsLabel": "{reviewCount} avis répertoriés"
+      },
+      "reviews": {
+        "quote": "Excellent bol et dessert !",
+        "attribution": "Extrait d'un avis public attribué à RAD BOU, consulté sur Restaurant Guru.",
+        "sourceLabel": "Voir la source"
+      },
+      "location": {
+        "address": "{address}",
+        "shortAddress": "{addressShort}"
+      },
+      "footer": {
+        "name": "Thaisty Crousty",
+        "sub": "Sidi Yahia · Hydra · Alger",
+        "address": "{addressShort}."
+      }
+    },
+
+    "offerings": [
+      {
+        "id": "crousty-classic",
+        "name": "Crousty Classic",
+        "description": "Riz basmati, poulet croustillant, sauce blanche maison, oignons frits et persil.",
+        "price": 600,
+        "priceDisplay": null,
+        "currency": "DZD",
+        "tag": "L'essentiel",
+        "category": "Bowls",
+        "featured": false,
+        "order": 1,
+        "url": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+        "cta": "Commander",
+        "visual": "bowl",
+        "icon": "✳"
+      },
+      {
+        "id": "crousty-sweet",
+        "name": "Crousty Sweet",
+        "description": "Riz basmati, poulet croustillant, sauce blanche maison, sauce sucrée, oignons frits et persil.",
+        "price": 700,
+        "priceDisplay": null,
+        "currency": "DZD",
+        "tag": "Sucré-salé",
+        "category": "Bowls",
+        "featured": true,
+        "order": 2,
+        "url": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+        "cta": "Commander",
+        "visual": "bowl",
+        "icon": "✳"
+      },
+      {
+        "id": "crousty-spicy",
+        "name": "Crousty Spicy",
+        "description": "Riz basmati, poulet croustillant, sauce blanche maison, sauce piquante, oignons frits et persil.",
+        "price": 700,
+        "priceDisplay": null,
+        "currency": "DZD",
+        "tag": "Relevé",
+        "category": "Bowls",
+        "featured": false,
+        "order": 3,
+        "url": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+        "cta": "Commander",
+        "visual": "bowl",
+        "icon": "✳"
+      },
+      {
+        "id": "crousty-mix",
+        "name": "Crousty Mix",
+        "description": "Riz basmati, poulet croustillant, sauce blanche maison, sauce sucrée et sauce piquante.",
+        "price": 800,
+        "priceDisplay": null,
+        "currency": "DZD",
+        "tag": "Deux sauces",
+        "category": "Bowls",
+        "featured": false,
+        "order": 4,
+        "url": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+        "cta": "Commander",
+        "visual": "bowl",
+        "icon": "✳"
+      },
+      {
+        "id": "crousty-curry-thai",
+        "name": "Crousty Curry Thai",
+        "description": "Riz basmati, poulet croustillant, sauce curry et oignons crispy.",
+        "price": 800,
+        "priceDisplay": null,
+        "currency": "DZD",
+        "tag": "Curry",
+        "category": "Bowls",
+        "featured": false,
+        "order": 5,
+        "url": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+        "cta": "Commander",
+        "visual": "bowl",
+        "icon": "✳"
+      },
+      {
+        "id": "crousty-curry-mix",
+        "name": "Crousty Curry Mix",
+        "description": "Riz basmati, double dose de sauce curry, poulet croustillant et oignons crispy.",
+        "price": 950,
+        "priceDisplay": null,
+        "currency": "DZD",
+        "tag": "Gourmand",
+        "category": "Bowls",
+        "featured": false,
+        "order": 6,
+        "url": "https://delivery.yassir.com/fr/restaurant/alger-centre/6a395f7ca262f1ff3d59df0e/Thaisty-Crousty-Hydra",
+        "cta": "Commander",
+        "visual": "bowl",
+        "icon": "✳"
+      }
+    ],
+
+    "reviews": [
+      {
+        "id": "r1",
+        "quote": "Excellent bol et dessert !",
+        "author": "RAD BOU",
+        "source": "Restaurant Guru",
+        "url": "https://restaurantguru.com/Thaisty-Crousty-Sidi-Yahia-Hydra",
+        "rating": null,
+        "featured": true
+      }
+    ],
+
+    "gallery": [],
+
+    "assets": { "logo": null, "hero": null, "ogImage": null },
+
+    "seo": {
+      "title": "Thaisty Crousty | Bowls croustillants à Hydra, Alger",
+      "description": "Découvrez les bowls Crousty de Thaisty Crousty à Sidi Yahia, Hydra, Alger. Poulet croustillant, riz basmati et sauces maison.",
+      "canonical": "https://example.com/",
+      "ogImage": null
+    },
+
+    "missing": [
+      "Coordonnées GPS non reprises : le point de localisation affiché est un schéma décoratif, pas un vrai plan.",
+      "Aucun lien WhatsApp, Facebook ou TikTok trouvé — à confirmer avec le gérant.",
+      "Note Google et nombre d'avis repris de la fiche publique au moment de la rédaction : à vérifier avant mise en ligne.",
+      "Tarifs issus d'une carte de livraison consultée : prix à reconfirmer au restaurant.",
+      "Aucune photographie réelle du restaurant ou des plats : les visuels sont des compositions CSS et typographiques."
+    ]
+  }
+  </script>
+
+  <!-- =======================================================
+       SCRIPT
+  ======================================================== -->
+  <script>
+    (() => {
+      "use strict";
+
+      const dataElement = document.getElementById("site-data");
+      const data = JSON.parse(dataElement.textContent);
+      const business = data.business;
+      const content = data.content;
+
+      /*
+       * Bind every business fact that appears more than once. Content strings
+       * may use these tokens so a fact is never typed twice:
+       *   {rating} {reviewCount} {phone} {address} {addressShort}
+       */
+      const ratingDisplay = business.rating.value.toLocaleString("fr-FR", {
+        minimumFractionDigits: 1,
+        maximumFractionDigits: 1
+      });
+
+      const tokens = {
+        "{rating}": ratingDisplay,
+        "{reviewCount}": String(business.rating.reviewCount),
+        "{phone}": business.phone.display,
+        "{address}": [business.address.line1, business.address.locality].join(", ")
+          + ", " + business.address.postalCode + " " + business.address.city,
+        "{addressShort}": [
+          business.address.line1,
+          business.address.locality,
+          business.address.city
+        ].join(", ")
+      };
+
+      const readPath = (path) =>
+        path.split(".").reduce((value, key) => (value == null ? value : value[key]), data);
+
+      document.querySelectorAll("[data-bind]").forEach((element) => {
+        const value = readPath(element.dataset.bind);
+
+        if (typeof value !== "string") return;
+
+        element.textContent = value.replace(
+          /\{(?:rating|reviewCount|phone|address|addressShort)\}/g,
+          (token) => tokens[token]
+        );
+      });
+
+      /*
+       * Structured data is derived from the same block, so it can never drift
+       * from what the page shows or from what the database will hold.
+       */
+      const priced = data.offerings
+        .map((item) => item.price)
+        .filter((value) => typeof value === "number");
+
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "Restaurant",
+        "name": business.name,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": business.address.line1,
+          "addressLocality": business.address.locality,
+          "addressRegion": business.address.region,
+          "postalCode": business.address.postalCode,
+          "addressCountry": business.address.countryCode
+        },
+        "telephone": business.phone.e164,
+        "servesCuisine": business.cuisine,
+        "priceRange": priced.length
+          ? `${Math.min(...priced)}\u2013${Math.max(...priced)} ${data.offerings[0].currency}`
+          : null,
+        "hasMenu": business.links.menu
+      };
+
+      document.getElementById("business-schema").textContent =
+        JSON.stringify(schema, null, 2);
+      const escapeHTML = (value) =>
+        String(value).replace(/[&<>"']/g, (character) => ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;"
+        })[character]);
+
+      const formatPrice = (price) =>
+        new Intl.NumberFormat("fr-DZ", {
+          maximumFractionDigits: 0
+        }).format(price) + " DA";
+
+      /* Render menu cards exclusively from the JSON data. */
+      const menuGrid = document.getElementById("menu-grid");
+
+      menuGrid.innerHTML = data.offerings.map((item) => `
+        <article class="menu-card${item.featured ? " menu-card--featured" : ""}"
+                 data-reveal>
+          <div class="menu-card__top">
+            <span class="menu-card__tag">${escapeHTML(item.tag)}</span>
+            <span class="menu-card__price">${formatPrice(item.price)}</span>
+          </div>
+          <div class="menu-card__art" aria-hidden="true">
+            <div class="menu-card__food"></div>
+          </div>
+          <h3 class="menu-card__name">${escapeHTML(item.name)}</h3>
+          <p class="menu-card__description">${escapeHTML(item.description)}</p>
+          <div class="menu-card__footer">
+            <a class="menu-card__link"
+               href="${escapeHTML(business.links.order)}"
+               target="_blank" rel="noopener noreferrer">
+              Commander <span aria-hidden="true">↗</span>
+            </a>
+            <span aria-hidden="true">✳</span>
+          </div>
+        </article>
+      `).join("");
+
+      /* Populate repeated contact and navigation URLs from data. */
+      const linkMap = {
+        order: business.links.order,
+        directions: business.links.directions,
+        reviews: business.rating.url,
+        phone: "tel:" + business.phone.e164
+      };
+
+      document.querySelectorAll("[data-link]").forEach((element) => {
+        const key = element.dataset.link;
+        if (linkMap[key]) {
+          element.setAttribute("href", linkMap[key]);
+        }
+      });
+
+      /* Rating and count come from the same editable data block. */
+      document.getElementById("review-score").textContent =
+        business.rating.value.toLocaleString("fr-FR", {
+          minimumFractionDigits: 1,
+          maximumFractionDigits: 1
+        });
+
+      document.getElementById("review-count").textContent =
+        "Sur la base de " + business.rating.reviewCount +
+        " avis répertoriés. Vérifier la fiche Google pour la note actuelle.";
+
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+
+      /* Opening hours: account for closing after midnight. */
+      const dayNames = [
+        "Sunday", "Monday", "Tuesday", "Wednesday",
+        "Thursday", "Friday", "Saturday"
+      ];
+
+      const timeToMinutes = (time) => {
+        const [hours, minutes] = time.split(":").map(Number);
+        return hours * 60 + minutes;
+      };
+
+      const getOpenState = (entry, nowMinutes) => {
+        const open = timeToMinutes(entry.open);
+        const close = timeToMinutes(entry.close);
+
+        if (close <= open) {
+          return nowMinutes >= open || nowMinutes < close;
+        }
+
+        return nowMinutes >= open && nowMinutes < close;
+      };
+
+      const renderHours = () => {
+        const now = new Date();
+        const today = dayNames[now.getDay()];
+        const nowMinutes = now.getHours() * 60 + now.getMinutes();
+
+        const todayEntry = business.hours.schedule.find(
+          (entry) => entry.day === today
+        );
+
+        const currentlyOpen = todayEntry
+          ? getOpenState(todayEntry, nowMinutes)
+          : false;
+
+        const status = document.getElementById("open-status");
+
+        if (todayEntry) {
+          const closingMinutes = timeToMinutes(todayEntry.close);
+          const openMinutes = timeToMinutes(todayEntry.open);
+          let closesToday = currentlyOpen && closingMinutes > openMinutes;
+
+          status.textContent = currentlyOpen
+            ? "Probablement ouvert selon les horaires publiés"
+            : "Probablement fermé selon les horaires publiés";
+
+          status.setAttribute("aria-label", status.textContent);
+
+          if (currentlyOpen && !closesToday) {
+            status.textContent += " · fermeture après minuit";
+          }
+        }
+
+        const hoursContainer = document.getElementById("opening-hours");
+
+        hoursContainer.innerHTML = business.hours.schedule.map((entry) => {
+          const isToday = entry.day === today;
+          const closeLabel = entry.close === "03:00"
+            ? "03:00"
+            : entry.close;
+
+          return `
+            <div class="location__hours-row${isToday ? " is-today" : ""}">
+              <span>${escapeHTML(entry.label)}${isToday ? " · Aujourd'hui" : ""}</span>
+              <span>${escapeHTML(entry.open)} – ${escapeHTML(closeLabel)}</span>
+            </div>
+          `;
+        }).join("");
+      };
+
+      renderHours();
+
+      /*
+       * The displayed hours are third-party data, not a live connection
+       * to Google. This calculation uses the visitor's device clock.
+       */
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      /* Scroll reveal with a graceful fallback. */
+      if (!reduceMotion && "IntersectionObserver" in window) {
+        document.documentElement.classList.add("motion-ready");
+
+        const observer = new IntersectionObserver((entries, currentObserver) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              currentObserver.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.12,
+          rootMargin: "0px 0px -30px 0px"
+        });
+
+        document.querySelectorAll("[data-reveal]").forEach((element) => {
+          observer.observe(element);
+        });
+      }
+
+      /*
+       * Backend integration hook.
+       * Add a real form and connect this function to a validated,
+       * server-side endpoint before accepting customer submissions.
+       */
+      window.submitForm = async function submitForm(form) {
+        if (!(form instanceof HTMLFormElement)) {
+          throw new TypeError("A valid form element is required.");
+        }
+
+        if (!form.reportValidity()) {
+          return false;
+        }
+
+        throw new Error(
+          "No backend is configured. Connect a secure endpoint before submission."
+        );
+      };
+    })();
+  </script>
+</body>
+</html>

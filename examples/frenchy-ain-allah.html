@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <!-- SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#20112B">
+  <meta name="description" content="Envie d'une pause gourmande ? Découvrez les crêpes, sundae, cheesecakes, tiramisus et boissons de FRENCHY Ain Allah, à Dély Ibrahim, Alger.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FRENCHY Ain Allah — Une envie de douceur ?">
+  <meta property="og:description" content="Sundae, crêpes, cheesecakes et frappés. Votre prochaine pause gourmande vous attend à Ain Allah.">
+  <meta property="og:locale" content="fr_DZ">
+  <meta property="og:site_name" content="FRENCHY Ain Allah">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://example.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <title>FRENCHY Ain Allah — Une envie de douceur ?</title>
+
+  <!-- TOKENS -->
+  <style>
+    :root {
+      --color-ink: #20112B;
+      --color-ink-soft: #392546;
+      --color-pistachio: #C9F27A;
+      --color-raspberry: #F45C83;
+      --color-cream: #FFF9F0;
+      --color-white: #FFFFFF;
+      --color-text: #28232B;
+      --color-muted: #766B79;
+      --color-border: rgba(32, 17, 43, .14);
+
+      --font-display: "DM Serif Display", Georgia, serif;
+      --font-body: "DM Sans", Arial, sans-serif;
+
+      --space-1: .5rem;
+      --space-2: .75rem;
+      --space-3: 1rem;
+      --space-4: 1.5rem;
+      --space-5: 2rem;
+      --space-6: 3rem;
+      --space-7: 4.5rem;
+      --space-8: 7rem;
+
+      --radius-sm: 12px;
+      --radius-md: 24px;
+      --radius-lg: 36px;
+      --radius-pill: 999px;
+
+      --shadow-card: 0 18px 55px rgba(32, 17, 43, .09);
+      --ease-out: cubic-bezier(.2, .75, .25, 1);
+      --duration-fast: 180ms;
+      --duration-normal: 450ms;
+
+      --container: 1240px;
+      --gutter: 6%;
+    }
+
+    /* BASE */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      margin: 0;
+      background: var(--color-cream);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: clip;
+    }
+
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--color-raspberry);
+      outline-offset: 4px;
+    }
+
+    ::selection {
+      background: var(--color-pistachio);
+      color: var(--color-ink);
+    }
+
+    .site-shell { overflow: clip; }
+    .container {
+      width: min(var(--container), 100% - 2 * var(--gutter));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background: var(--color-raspberry);
+      border-radius: 50%;
+    }
+
+    .section-heading {
+      max-width: 760px;
+      margin: 0;
+      font-family: var(--font-display);
+      font-size: clamp(2.8rem, 6vw, 5.5rem);
+      font-weight: 400;
+      letter-spacing: -.045em;
+      line-height: .99;
+    }
+
+    .section-heading em {
+      color: var(--color-raspberry);
+      font-weight: 400;
+    }
+
+    .section-intro {
+      max-width: 490px;
+      color: var(--color-muted);
+      font-size: 1rem;
+    }
+
+    .button {
+      min-height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .65rem;
+      padding: .85rem 1.35rem;
+      border: 1px solid transparent;
+      border-radius: var(--radius-pill);
+      font-size: .88rem;
+      font-weight: 800;
+      text-decoration: none;
+      transition:
+        transform var(--duration-fast) var(--ease-out),
+        background var(--duration-fast),
+        color var(--duration-fast);
+    }
+
+    .button:hover { transform: translateY(-3px); }
+
+    .button--dark {
+      background: var(--color-ink);
+      color: var(--color-white);
+    }
+
+    .button--dark:hover { background: var(--color-ink-soft); }
+
+    .button--light {
+      border-color: var(--color-border);
+      color: var(--color-ink);
+    }
+
+    .button--light:hover { background: var(--color-white); }
+
+    .button--pink {
+      background: var(--color-raspberry);
+      color: var(--color-ink);
+    }
+
+    .button--pink:hover { background: #FF7A9A; }
+
+    .icon-arrow { font-size: 1.15rem; }
+
+    /* LAYOUT */
+    .site-header {
+      position: relative;
+      z-index: 10;
+      background: var(--color-cream);
+    }
+
+    .header__inner {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .brand {
+      display: inline-flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: var(--color-ink);
+      line-height: 1;
+    }
+
+    .brand__name {
+      font-size: 1.45rem;
+      font-weight: 800;
+      letter-spacing: -.075em;
+    }
+
+    .brand__location {
+      margin-top: .35rem;
+      font-size: .58rem;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .header__nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(1rem, 2.5vw, 2rem);
+    }
+
+    .header__nav a {
+      font-size: .82rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .header__nav a:hover { color: #9C3152; }
+
+    .header__action { white-space: nowrap; }
+
+    /* COMPONENTS */
+    .flavor-marquee {
+      overflow: hidden;
+      padding-block: .8rem;
+      background: var(--color-pistachio);
+      color: var(--color-ink);
+    }
+
+    .flavor-marquee__track {
+      display: flex;
+      width: max-content;
+      animation: marquee 32s linear infinite;
+    }
+
+    .flavor-marquee__group {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      padding-inline: .8rem;
+      white-space: nowrap;
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .flavor-marquee__star {
+      font-size: 1.1rem;
+      color: #80502A;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition:
+        opacity 700ms var(--ease-out),
+        transform 700ms var(--ease-out);
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* SECTIONS: HERO */
+    .hero {
+      position: relative;
+      padding-block: clamp(3.5rem, 8vw, 7rem) clamp(4rem, 8vw, 7rem);
+      background: var(--color-cream);
+    }
+
+    .hero__grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      align-items: center;
+      gap: clamp(2rem, 5vw, 5rem);
+    }
+
+    .hero__copy { position: relative; z-index: 2; }
+
+    .hero__title {
+      max-width: 740px;
+      margin: 1.5rem 0;
+      color: var(--color-ink);
+      font-family: var(--font-display);
+      font-size: clamp(4rem, 8vw, 7.5rem);
+      font-weight: 400;
+      letter-spacing: -.065em;
+      line-height: .88;
+    }
+
+    .hero__title em {
+      color: var(--color-raspberry);
+      font-weight: 400;
+    }
+
+    .hero__description {
+      max-width: 430px;
+      margin-bottom: 1.8rem;
+      color: var(--color-muted);
+      font-size: clamp(1rem, 1.5vw, 1.12rem);
+    }
+
+    .hero__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .8rem;
+    }
+
+    .hero__note {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      margin-top: 2rem;
+      font-size: .77rem;
+      font-weight: 700;
+    }
+
+    .hero__note span {
+      display: inline-grid;
+      width: 30px;
+      height: 30px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--color-pistachio);
+    }
+
+    .hero__art {
+      position: relative;
+      min-width: 0;
+      min-height: 470px;
+      display: grid;
+      place-items: center;
+      isolation: isolate;
+    }
+
+    .hero__art::before {
+      position: absolute;
+      z-index: -2;
+      content: "";
+      width: min(100%, 500px);
+      aspect-ratio: 1;
+      border-radius: 48% 52% 43% 57% / 55% 43% 57% 45%;
+      background: var(--color-pistachio);
+      transform: rotate(-9deg);
+    }
+
+    .hero__art::after {
+      position: absolute;
+      z-index: -1;
+      content: "";
+      width: 72%;
+      aspect-ratio: 1;
+      border: 1px solid rgba(32,17,43,.2);
+      border-radius: 50%;
+      transform: rotate(28deg) scale(1.12, .84);
+    }
+
+    .dessert {
+      position: relative;
+      width: min(78%, 340px);
+      aspect-ratio: .78;
+      filter: drop-shadow(0 28px 22px rgba(32,17,43,.14));
+      animation: dessert-float 5s ease-in-out infinite;
+    }
+
+    .dessert__cream {
+      position: absolute;
+      z-index: 3;
+      top: 5%;
+      left: 12%;
+      width: 76%;
+      height: 43%;
+      border-radius: 48% 48% 34% 34%;
+      background:
+        radial-gradient(ellipse at 30% 25%, #FFF 0 9%, transparent 10%),
+        radial-gradient(ellipse at 70% 34%, #FFF8E9 0 8%, transparent 9%),
+        linear-gradient(145deg, #F5DAB0, #FFF9E8 50%, #EBCBA0);
+      clip-path: polygon(0 36%, 12% 12%, 30% 17%, 42% 0, 60% 12%, 77% 8%, 100% 38%, 90% 100%, 12% 100%);
+    }
+
+    .dessert__sauce {
+      position: absolute;
+      z-index: 4;
+      top: 24%;
+      left: 12%;
+      width: 76%;
+      height: 24%;
+      border-radius: 40%;
+      background:
+        radial-gradient(ellipse at 50% 0%, #8B5637 0 10%, transparent 11%),
+        linear-gradient(115deg, #77432F, #C08A5B 40%, #76442E 75%, #A66E4B);
+      clip-path: polygon(0 14%, 10% 3%, 22% 15%, 34% 0, 46% 12%, 60% 0, 74% 13%, 89% 0, 100% 17%, 93% 68%, 81% 52%, 73% 100%, 59% 61%, 44% 88%, 32% 58%, 19% 78%, 8% 55%);
+    }
+
+    .dessert__cup {
+      position: absolute;
+      z-index: 2;
+      top: 39%;
+      left: 15%;
+      width: 70%;
+      height: 44%;
+      border-radius: 8% 8% 24% 24%;
+      background: linear-gradient(90deg, #7DA33D, #C9F27A 32%, #D9F7A4 66%, #83A93C);
+      clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+    }
+
+    .dessert__cup::after {
+      position: absolute;
+      content: "F";
+      inset: 15% 0;
+      display: grid;
+      place-items: center;
+      color: var(--color-ink);
+      font-family: var(--font-display);
+      font-size: 6rem;
+      font-style: italic;
+      opacity: .8;
+    }
+
+    .dessert__base {
+      position: absolute;
+      z-index: 1;
+      bottom: 7%;
+      left: 23%;
+      width: 54%;
+      height: 13%;
+      border-radius: 50%;
+      background: #8AA946;
+    }
+
+    .dessert__berry {
+      position: absolute;
+      z-index: 5;
+      top: 10%;
+      right: 21%;
+      width: 19%;
+      aspect-ratio: .8;
+      border-radius: 65% 35% 60% 40%;
+      background: linear-gradient(135deg, #FF91A7, #E82E62 70%);
+      transform: rotate(38deg);
+    }
+
+    .dessert__berry::before,
+    .dessert__berry::after {
+      position: absolute;
+      content: "";
+      top: -10%;
+      left: 37%;
+      width: 27%;
+      height: 34%;
+      border-radius: 100% 0;
+      background: #5C8637;
+      transform: rotate(-45deg);
+    }
+
+    .dessert__berry::after {
+      left: 57%;
+      transform: rotate(35deg);
+    }
+
+    .hero__sticker {
+      position: absolute;
+      top: 12%;
+      right: 0;
+      display: grid;
+      width: 105px;
+      aspect-ratio: 1;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--color-raspberry);
+      color: var(--color-ink);
+      font-size: .73rem;
+      font-weight: 800;
+      line-height: 1.35;
+      text-align: center;
+      transform: rotate(12deg);
+    }
+
+    .hero__caption {
+      position: absolute;
+      bottom: 4%;
+      left: 0;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-style: italic;
+      transform: rotate(-8deg);
+    }
+
+    /* SECTIONS: INTRO */
+    .intro {
+      padding-block: 2rem;
+      background: var(--color-ink);
+      color: var(--color-white);
+    }
+
+    .intro__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .intro__label {
+      color: var(--color-pistachio);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .intro__text {
+      margin: .3rem 0 0;
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+    }
+
+    .intro__text em { color: var(--color-pistachio); }
+
+    .intro__link {
+      flex-shrink: 0;
+      color: var(--color-pistachio);
+      font-size: .85rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    /* SECTIONS: MENU */
+    .menu-section { padding-block: var(--space-8); }
+
+    .section-top {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .section-top__copy { max-width: 720px; }
+
+    .section-top .section-intro { margin-bottom: 0; }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .menu-card {
+      position: relative;
+      min-width: 0;
+      min-height: 335px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      padding: 1.5rem;
+      border-radius: var(--radius-md);
+      background: var(--color-white);
+      box-shadow: var(--shadow-card);
+      transition: transform var(--duration-normal) var(--ease-out);
+    }
+
+    .menu-card:hover { transform: translateY(-6px); }
+
+    .menu-card:nth-child(2) { background: #F9D8E1; }
+    .menu-card:nth-child(3) { background: #E6EDCE; }
+    .menu-card:nth-child(4) { background: #E8E1F1; }
+    .menu-card:nth-child(5) { background: #F5E5C8; }
+    .menu-card:nth-child(6) { background: #E2ECF4; }
+
+    .menu-card__number {
+      position: relative;
+      z-index: 1;
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+    }
+
+    .menu-card__visual {
+      position: absolute;
+      top: 20%;
+      right: -5%;
+      width: 65%;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      font-size: clamp(4rem, 8vw, 7rem);
+      transform: rotate(-12deg);
+      transition: transform var(--duration-normal) var(--ease-out);
+    }
+
+    .menu-card:hover .menu-card__visual {
+      transform: rotate(0) scale(1.1);
+    }
+
+    .menu-card__visual--sundae {
+      border-radius: 48% 52% 45% 55%;
+      background: radial-gradient(circle at 45% 30%, #FFF8E9 0 15%, #C9F27A 16% 35%, #6C893B 36% 39%, transparent 40%);
+    }
+
+    .menu-card__visual--crepe {
+      border-radius: 50%;
+      background: radial-gradient(circle at 50% 50%, #9D5B39 0 12%, #F4CF8A 13% 57%, #D5A765 58% 63%, transparent 64%);
+    }
+
+    .menu-card__visual--cake {
+      border-radius: 50%;
+      background: radial-gradient(circle, #F3E4CB 0 43%, #A45C45 44% 50%, transparent 51%);
+    }
+
+    .menu-card__visual--drink {
+      width: 45%;
+      border: 8px solid rgba(32,17,43,.15);
+      border-radius: 24% 24% 35% 35%;
+      background: linear-gradient(180deg, #F9C4D0, #B74E78);
+      font-size: 4rem;
+    }
+
+    .menu-card__visual--coffee {
+      width: 57%;
+      border: 15px solid #D7B58A;
+      border-radius: 50%;
+      background: radial-gradient(circle, #754A37 0 46%, #E9D1B1 47% 62%, transparent 63%);
+      font-size: 3rem;
+    }
+
+    .menu-card__visual--tiramisu {
+      width: 60%;
+      border-radius: 15px 15px 35px 35px;
+      background: repeating-linear-gradient(0deg, #8D573F 0 13px, #EAD1AD 13px 26px);
+      font-size: 4rem;
+    }
+
+    .menu-card__body { position: relative; z-index: 1; margin-top: auto; }
+
+    .menu-card__title {
+      max-width: 260px;
+      margin: 0 0 .45rem;
+      color: var(--color-ink);
+      font-family: var(--font-display);
+      font-size: clamp(1.9rem, 3vw, 2.7rem);
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .menu-card__description {
+      max-width: 260px;
+      margin: 0;
+      font-size: .85rem;
+    }
+
+    .menu-card__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 1.3rem;
+    }
+
+    .menu-card__price {
+      color: var(--color-ink);
+      font-size: .78rem;
+      font-weight: 800;
+    }
+
+    .menu-card__link {
+      display: grid;
+      width: 40px;
+      height: 40px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--color-ink);
+      color: var(--color-white);
+      text-decoration: none;
+    }
+
+    .menu-note {
+      margin-top: 1.4rem;
+      color: var(--color-muted);
+      font-size: .75rem;
+    }
+
+    /* SECTIONS: SIGNATURE */
+    .signature {
+      position: relative;
+      padding-block: var(--space-8);
+      overflow: hidden;
+      background: var(--color-raspberry);
+    }
+
+    .signature__grid {
+      display: grid;
+      grid-template-columns: 1fr .8fr;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .signature__copy { position: relative; z-index: 1; }
+
+    .signature__title {
+      max-width: 650px;
+      margin: 1rem 0;
+      color: var(--color-ink);
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 7vw, 6.7rem);
+      font-weight: 400;
+      letter-spacing: -.055em;
+      line-height: .91;
+    }
+
+    .signature__title em { color: var(--color-white); }
+
+    .signature__description {
+      max-width: 420px;
+      margin-bottom: 1.6rem;
+    }
+
+    .signature__art {
+      position: relative;
+      min-height: 360px;
+      display: grid;
+      place-items: center;
+    }
+
+    .signature__circle {
+      width: min(100%, 340px);
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--color-pistachio);
+      font-size: clamp(7rem, 14vw, 12rem);
+      transform: rotate(-10deg);
+    }
+
+    .signature__badge {
+      position: absolute;
+      right: 0;
+      bottom: 12%;
+      max-width: 155px;
+      padding: 1rem;
+      border-radius: var(--radius-md);
+      background: var(--color-ink);
+      color: var(--color-white);
+      font-size: .8rem;
+      font-weight: 700;
+      transform: rotate(5deg);
+    }
+
+    /* SECTIONS: EXPERIENCE */
+    .experience { padding-block: var(--space-8); }
+
+    .experience__grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: center;
+    }
+
+    .experience__copy .section-heading { margin-top: 1.1rem; }
+
+    .experience__copy p {
+      max-width: 440px;
+      color: var(--color-muted);
+    }
+
+    .experience__visual {
+      position: relative;
+      min-height: 400px;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      background: #F0E4D4;
+    }
+
+    .experience__visual::before {
+      position: absolute;
+      content: "";
+      width: 76%;
+      aspect-ratio: 1;
+      border: 1px solid rgba(32,17,43,.2);
+      border-radius: 50%;
+    }
+
+    .experience__visual::after {
+      position: absolute;
+      content: "";
+      width: 56%;
+      aspect-ratio: 1;
+      border: 1px solid rgba(32,17,43,.2);
+      border-radius: 50%;
+    }
+
+    .experience__illustration {
+      position: relative;
+      z-index: 1;
+      font-size: clamp(8rem, 16vw, 14rem);
+      transform: rotate(-12deg);
+    }
+
+    .experience__label {
+      position: absolute;
+      right: 7%;
+      bottom: 7%;
+      z-index: 2;
+      padding: .9rem 1.1rem;
+      border-radius: var(--radius-pill);
+      background: var(--color-white);
+      color: var(--color-ink);
+      font-size: .75rem;
+      font-weight: 800;
+    }
+
+    /* SECTIONS: VISIT */
+    .visit {
+      padding-block: var(--space-8);
+      background: var(--color-ink);
+      color: var(--color-white);
+    }
+
+    .visit__heading { max-width: 650px; }
+    .visit__heading em { color: var(--color-pistachio); }
+
+    .visit__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
+      margin-top: 3rem;
+    }
+
+    .visit-card {
+      padding: clamp(1.5rem, 4vw, 2.5rem);
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: var(--radius-md);
+      background: rgba(255,255,255,.045);
+    }
+
+    .visit-card__label {
+      color: var(--color-pistachio);
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .visit-card__title {
+      margin: 1rem 0 .5rem;
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 400;
+    }
+
+    .visit-card p { color: rgba(255,255,255,.75); }
+
+    .visit-card a:not(.button) { color: var(--color-pistachio); }
+
+    .hours-list {
+      display: grid;
+      gap: .7rem;
+      margin: 1.4rem 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .hours-list__row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: .6rem;
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      font-size: .82rem;
+    }
+
+    .hours-list__row span:last-child {
+      text-align: end;
+      font-weight: 700;
+    }
+
+    .hours-status {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      margin-top: 1.1rem;
+      font-size: .8rem;
+      font-weight: 800;
+    }
+
+    .hours-status__dot {
+      width: 9px;
+      height: 9px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--color-pistachio);
+    }
+
+    .hours-status.is-closed .hours-status__dot {
+      background: var(--color-raspberry);
+    }
+
+    .visit__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .7rem;
+      margin-top: 1.4rem;
+    }
+
+    .visit .button--light {
+      border-color: rgba(255,255,255,.25);
+      color: var(--color-white);
+    }
+
+    .visit .button--light:hover {
+      background: rgba(255,255,255,.1);
+    }
+
+    /* SECTIONS: FINAL CTA */
+    .final-cta {
+      padding-block: var(--space-8);
+      text-align: center;
+    }
+
+    .final-cta__inner { max-width: 760px; margin-inline: auto; }
+
+    .final-cta__title {
+      margin: 1.2rem 0;
+      color: var(--color-ink);
+      font-family: var(--font-display);
+      font-size: clamp(3.3rem, 8vw, 7rem);
+      font-weight: 400;
+      letter-spacing: -.06em;
+      line-height: .94;
+    }
+
+    .final-cta__title em { color: var(--color-raspberry); }
+
+    .final-cta__text {
+      max-width: 470px;
+      margin: 0 auto 1.8rem;
+      color: var(--color-muted);
+    }
+
+    /* SECTIONS: FOOTER */
+    .site-footer {
+      padding-block: 2rem;
+      background: var(--color-pistachio);
+      color: var(--color-ink);
+    }
+
+    .footer__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .footer__brand {
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: -.06em;
+    }
+
+    .footer__meta {
+      margin-top: .25rem;
+      font-size: .75rem;
+    }
+
+    .footer__links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+
+    .footer__links a {
+      font-size: .78rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    /* MOTION */
+    @keyframes marquee {
+      to { transform: translateX(-50%); }
+    }
+
+    @keyframes dessert-float {
+      0%, 100% { transform: translateY(0) rotate(-2deg); }
+      50% { transform: translateY(-12px) rotate(2deg); }
+    }
+
+    /* RESPONSIVE */
+    @media (min-width: 1500px) {
+      :root { --gutter: 8%; }
+    }
+
+    @media (max-width: 900px) {
+      .hero__grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+      .hero__title { font-size: clamp(3.6rem, 8vw, 5.5rem); }
+      .hero__art { min-height: 380px; }
+      .hero__sticker { width: 82px; font-size: .65rem; }
+      .menu-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .signature__grid { gap: 1.5rem; }
+      .experience__grid { gap: 2rem; }
+      .experience__visual { min-height: 330px; }
+    }
+
+    @media (max-width: 650px) {
+      :root {
+        --gutter: 5%;
+        --space-8: 4.5rem;
+      }
+
+      .header__inner { min-height: 72px; }
+      .header__nav { display: none; }
+      .header__action { min-height: 43px; padding-inline: 1rem; font-size: .78rem; }
+
+      .hero { padding-block: 3.3rem 4rem; }
+      .hero__grid { grid-template-columns: 1fr; gap: .5rem; }
+      .hero__title { font-size: clamp(4rem, 15vw, 6rem); }
+      .hero__description { max-width: 370px; }
+      .hero__art { min-height: 360px; margin-top: .5rem; }
+      .dessert { width: min(72%, 275px); }
+      .hero__sticker { right: 5%; }
+      .hero__caption { left: 5%; bottom: 1%; }
+
+      .intro__inner { align-items: flex-start; flex-direction: column; gap: 1rem; }
+      .intro__link { padding-block: .3rem; }
+
+      .section-top { align-items: flex-start; flex-direction: column; gap: 1rem; margin-bottom: 2rem; }
+      .menu-grid { grid-template-columns: 1fr; gap: .9rem; }
+      .menu-card { min-height: 300px; }
+      .menu-card__visual { width: 55%; right: 1%; }
+      .menu-card__title { font-size: 2.6rem; }
+
+      .signature__grid { grid-template-columns: 1fr; }
+      .signature__art { min-height: 300px; }
+      .signature__circle { width: min(75%, 290px); }
+
+      .experience__grid { grid-template-columns: 1fr; }
+      .experience__visual { min-height: 310px; }
+
+      .visit__grid { grid-template-columns: 1fr; gap: 1rem; }
+      .visit-card { padding: 1.5rem; }
+
+      .footer__inner { align-items: flex-start; flex-direction: column; }
+      .footer__links { gap: 1rem; }
+    }
+
+    @media (max-width: 380px) {
+      .hero__title { font-size: 3.7rem; }
+      .hero__actions { align-items: stretch; flex-direction: column; }
+      .hero__actions .button { width: 100%; }
+      .hero__art { min-height: 310px; }
+      .hours-list__row { font-size: .74rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+
+  <!-- JSON-LD is populated from verified site data by the script below. -->
+  <script type="application/ld+json" id="business-schema"></script>
+</head>
+
+<body>
+  <div class="site-shell">
+
+    <!-- SECTIONS: HEADER -->
+    <header class="site-header" data-section="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="FRENCHY Ain Allah, accueil">
+          <span class="brand__name" data-bind="name">FRENCHY</span>
+          <span class="brand__location" data-bind="neighborhood">AIN ALLAH · ALGER</span>
+        </a>
+
+        <nav class="header__nav" aria-label="Navigation principale" id="main-navigation"></nav>
+
+        <a class="button button--dark header__action" href="#visiter">
+          Nous trouver <span class="icon-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- SECTIONS: FLAVOR MARQUEE -->
+    <div class="flavor-marquee" aria-label="Sundae, crêpes, cheesecake, tiramisu et frappés">
+      <div class="flavor-marquee__track" id="flavor-track" aria-hidden="true"></div>
+    </div>
+
+    <!-- SECTIONS: HERO -->
+    <main>
+      <section class="hero" data-section="hero" id="accueil">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <span class="eyebrow" data-bind="hero.eyebrow"></span>
+            <h1 class="hero__title" id="hero-title"></h1>
+            <p class="hero__description" data-bind="hero.description"></p>
+
+            <div class="hero__actions">
+              <a class="button button--dark" href="#carte">
+                Découvrir la carte <span class="icon-arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="button button--light" id="hero-directions" target="_blank" rel="noopener noreferrer">
+                Nous trouver
+              </a>
+            </div>
+
+            <div class="hero__note">
+              <span aria-hidden="true">✳</span>
+              <span data-bind="hero.note"></span>
+            </div>
+          </div>
+
+          <div class="hero__art" role="img" aria-label="Illustration décorative d'un sundae pistache et fruits rouges">
+            <div class="dessert" aria-hidden="true">
+              <div class="dessert__base"></div>
+              <div class="dessert__cup"></div>
+              <div class="dessert__cream"></div>
+              <div class="dessert__sauce"></div>
+              <div class="dessert__berry"></div>
+            </div>
+            <div class="hero__sticker" data-bind="hero.sticker"></div>
+            <div class="hero__caption" data-bind="hero.caption"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTIONS: INTRO -->
+      <section class="intro" data-section="intro" aria-label="Présentation">
+        <div class="container intro__inner">
+          <div>
+            <div class="intro__label" data-bind="intro.label"></div>
+            <p class="intro__text" id="intro-text"></p>
+          </div>
+          <a class="intro__link" href="#carte">
+            Explorer les envies <span aria-hidden="true">↘</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- SECTIONS: MENU -->
+      <section class="menu-section" data-section="menu" id="carte">
+        <div class="container">
+          <div class="section-top reveal">
+            <div class="section-top__copy">
+              <span class="eyebrow" data-bind="menu.eyebrow"></span>
+              <h2 class="section-heading" id="menu-title"></h2>
+            </div>
+            <p class="section-intro" data-bind="menu.description"></p>
+          </div>
+
+          <div class="menu-grid" id="menu-grid"></div>
+          <p class="menu-note" data-bind="menu.note"></p>
+        </div>
+      </section>
+
+      <!-- SECTIONS: SIGNATURE -->
+      <section class="signature" data-section="signature" id="signature">
+        <div class="container signature__grid">
+          <div class="signature__copy reveal">
+            <span class="eyebrow" data-bind="signature.eyebrow"></span>
+            <h2 class="signature__title" id="signature-title"></h2>
+            <p class="signature__description" data-bind="signature.description"></p>
+            <a class="button button--dark" href="#visiter">
+              <span data-bind="signature.cta"></span>
+              <span class="icon-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="signature__art" aria-hidden="true">
+            <div class="signature__circle">✳</div>
+            <div class="signature__badge" data-bind="signature.badge"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTIONS: EXPERIENCE -->
+      <section class="experience" data-section="experience" id="experience">
+        <div class="container experience__grid">
+          <div class="experience__copy reveal">
+            <span class="eyebrow" data-bind="experience.eyebrow"></span>
+            <h2 class="section-heading" id="experience-title"></h2>
+            <p data-bind="experience.description"></p>
+            <a class="button button--light" href="#visiter">
+              Préparer ma visite <span class="icon-arrow" aria-hidden="true">↗</span>
+            </a>
+          </div>
+
+          <div class="experience__visual" role="img" aria-label="Illustration décorative de pâtisseries">
+            <div class="experience__illustration" aria-hidden="true">🍰</div>
+            <div class="experience__label" data-bind="experience.label"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTIONS: VISIT -->
+      <section class="visit" data-section="visit" id="visiter">
+        <div class="container">
+          <span class="eyebrow" data-bind="visit.eyebrow"></span>
+          <h2 class="section-heading visit__heading" id="visit-title"></h2>
+
+          <div class="visit__grid">
+            <article class="visit-card reveal">
+              <div class="visit-card__label">01 / Adresse</div>
+              <h3 class="visit-card__title">On se retrouve où ?</h3>
+              <p data-bind="address.full"></p>
+              <p>Dély Ibrahim, Alger, Algérie</p>
+
+              <div class="visit__actions">
+                <a class="button button--pink" id="visit-directions" target="_blank" rel="noopener noreferrer">
+                  Itinéraire <span aria-hidden="true">↗</span>
+                </a>
+                <a class="button button--light" id="visit-call">Appeler</a>
+              </div>
+            </article>
+
+            <article class="visit-card reveal">
+              <div class="visit-card__label">02 / Horaires</div>
+              <h3 class="visit-card__title">Quand passer ?</h3>
+              <p data-bind="visit.hoursIntro"></p>
+              <ul class="hours-list" id="hours-list"></ul>
+              <div class="hours-status" id="hours-status" role="status" aria-live="polite">
+                <span class="hours-status__dot" aria-hidden="true"></span>
+                <span id="hours-status-text">Horaires à confirmer</span>
+              </div>
+              <p data-bind="visit.hoursDisclaimer"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTIONS: FINAL CTA -->
+      <section class="final-cta" data-section="final-cta">
+        <div class="container final-cta__inner reveal">
+          <span class="eyebrow" data-bind="final.eyebrow"></span>
+          <h2 class="final-cta__title" id="final-title"></h2>
+          <p class="final-cta__text" data-bind="final.description"></p>
+          <a class="button button--dark" id="final-directions" target="_blank" rel="noopener noreferrer">
+            <span data-bind="final.cta"></span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- SECTIONS: FOOTER -->
+    <footer class="site-footer" data-section="footer">
+      <div class="container footer__inner">
+        <div>
+          <div class="footer__brand" data-bind="name"></div>
+          <div class="footer__meta" data-bind="footer.description"></div>
+        </div>
+        <nav class="footer__links" id="footer-links" aria-label="Liens complémentaires"></nav>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- DATA: SINGLE SOURCE OF TRUTH -->
+  <script type="application/json" id="site-data">
+  {
+    "$contract": "maps-to-landing/site-data@1",
+
+    "meta": {
+      "generatedAt": "2026-06-12",
+      "source": "google-maps",
+      "sourceUrl": "https://www.google.com/maps/search/?api=1&query=FRENCHY+Ain+Allah+Alger",
+      "language": "fr"
+    },
+
+    "business": {
+      "name": "FRENCHY",
+      "branch": "Ain Allah",
+      "category": "Dessert café",
+      "cuisine": null,
+      "languages": ["fr"],
+      "phone": {
+        "e164": "+213556508142",
+        "display": "0556 50 81 42",
+        "whatsapp": null
+      },
+      "address": {
+        "line1": "Coopérative El Moustakbel, n° 286, Route Ain Allah",
+        "neighborhood": "Ain Allah",
+        "locality": "Dély Ibrahim",
+        "city": "Alger",
+        "region": null,
+        "postalCode": "16302",
+        "country": "Algérie",
+        "countryCode": "DZ",
+        "short": "Ain Allah · Alger",
+        "full": "Coopérative El Moustakbel, n° 286, Route Ain Allah, Dély Ibrahim 16302"
+      },
+      "coordinates": { "lat": 36.7501648, "lng": 2.9951359 },
+      "rating": {
+        "value": null,
+        "reviewCount": null,
+        "url": "https://www.google.com/maps/search/?api=1&query=FRENCHY+Ain+Allah+Alger",
+        "source": "google-maps"
+      },
+      "hours": {
+        "timezone": "Africa/Algiers",
+        "source": "Horaires publiés en ligne, à confirmer auprès de l'établissement.",
+        "schedule": [
+          { "day": "Sunday",   "label": "Dimanche",   "open": "11:30", "close": "23:00" },
+          { "day": "Monday",   "label": "Lundi",       "open": "11:30", "close": "23:00" },
+          { "day": "Tuesday",  "label": "Mardi",       "open": "11:30", "close": "23:00" },
+          { "day": "Wednesday", "label": "Mercredi",  "open": "11:30", "close": "23:00" },
+          { "day": "Thursday", "label": "Jeudi",       "open": "11:30", "close": "23:00" },
+          { "day": "Friday",   "label": "Vendredi",    "open": "16:00", "close": "23:00" },
+          { "day": "Saturday", "label": "Samedi",      "open": "11:30", "close": "23:00" }
+        ]
+      },
+      "socials": {
+        "instagram": "https://www.instagram.com/Frenchy_dz/",
+        "facebook": null,
+        "tiktok": null
+      },
+      "links": {
+        "maps": "https://www.google.com/maps/dir/?api=1&destination=36.7501648%2C2.9951359",
+        "place": "https://www.google.com/maps/search/?api=1&query=FRENCHY+Ain+Allah+Alger",
+        "directions": "https://www.google.com/maps/dir/?api=1&destination=36.7501648%2C2.9951359",
+        "website": "https://www.frenchy-dz.com/",
+        "menu": "https://hbconnect.marcadz.com/frenchyainallah",
+        "order": null,
+        "booking": null
+      }
+    },
+
+    "content": {
+      "hero": {
+        "eyebrow": "Une adresse gourmande à Ain Allah",
+        "titleStart": "Une envie",
+        "titleAccent": "de douceur ?",
+        "description": "Sundae généreux, crêpes gourmandes, cheesecakes et boissons fraîches. À chacun son petit plaisir.",
+        "note": "Une carte entre desserts, boissons et café",
+        "sticker": "PETIT PLAISIR\nGRAND SOURIRE",
+        "caption": "La pause qui fait du bien."
+      },
+      "intro": {
+        "label": "Le programme",
+        "textStart": "Un peu de",
+        "textAccent": "douceur, beaucoup de plaisir."
+      },
+      "menu": {
+        "eyebrow": "À chacun son péché mignon",
+        "titleStart": "Tes envies,",
+        "titleAccent": "tes règles.",
+        "description": "Du premier café au dessert qui fait craquer, explore quelques incontournables de la carte.",
+        "note": "Sélection indicative. Consultez la carte complète ou contactez l'établissement pour confirmer la disponibilité et les tarifs."
+      },
+      "signature": {
+        "eyebrow": "Le plaisir en version généreuse",
+        "titleStart": "Un petit creux ?",
+        "titleAccent": "Fais-toi plaisir.",
+        "description": "Sundae, yaourt glacé, toppings et associations gourmandes : compose ta prochaine envie parmi les choix proposés sur la carte.",
+        "cta": "Trouver l'adresse",
+        "badge": "Ta prochaine pause gourmande commence ici."
+      },
+      "experience": {
+        "eyebrow": "Une carte pour toutes les envies",
+        "titleStart": "Du frais, du fondant,",
+        "titleAccent": "du gourmand.",
+        "description": "Envie d'un dessert fruité, d'une crêpe chocolatée ou d'un café ? Explore les différentes familles de la carte et choisis ce qui te fait envie.",
+        "label": "À découvrir sur place"
+      },
+      "visit": {
+        "eyebrow": "Passe nous voir",
+        "titleStart": "Rendez-vous à",
+        "titleAccent": "Ain Allah.",
+        "hoursIntro": "Horaires publiés en ligne, à confirmer auprès de l'établissement.",
+        "hoursDisclaimer": "Les horaires peuvent changer. Un appel avant le déplacement est conseillé."
+      },
+      "final": {
+        "eyebrow": "Ta prochaine pause",
+        "titleStart": "On se retrouve",
+        "titleAccent": "chez Frenchy ?",
+        "description": "Retrouve l'adresse, consulte l'itinéraire et choisis le bon moment pour passer.",
+        "cta": "Calculer mon itinéraire"
+      },
+      "footer": {
+        "description": "Ain Allah · Dély Ibrahim · Alger",
+        "links": [
+          { "label": "Instagram", "urlKey": "instagram" },
+          { "label": "Google Maps", "urlKey": "place" },
+          { "label": "Appeler", "urlKey": "phone" }
+        ]
+      },
+      "navigation": [
+        { "label": "La carte", "href": "#carte" },
+        { "label": "Le concept", "href": "#signature" },
+        { "label": "Nous trouver", "href": "#visiter" }
+      ],
+      "marquee": ["Sundae", "Crêpes", "Cheesecake", "Tiramisu", "Frappés", "Café glacé"],
+      "socialProof": { "headline": null, "body": null, "cta": null }
+    },
+
+    "offerings": [
+      {
+        "id": "glaces",
+        "name": "Sundae",
+        "description": "Nutella, Oreo, Kinder Bueno et autres toppings.",
+        "price": 250,
+        "priceDisplay": "Dès 250 DA",
+        "currency": "DZD",
+        "tag": "01 / GLACES",
+        "category": "Glaces",
+        "featured": false,
+        "order": 1,
+        "url": "https://hbconnect.marcadz.com/frenchyainallah",
+        "cta": "Voir la carte des glaces",
+        "visual": "sundae",
+        "icon": "✳"
+      },
+      {
+        "id": "crepes",
+        "name": "Crêpes",
+        "description": "Chocolat-noisette, pistache et crêpe Frenchy.",
+        "price": 400,
+        "priceDisplay": "Dès 400 DA",
+        "currency": "DZD",
+        "tag": "02 / CRÊPES",
+        "category": "Crêpes",
+        "featured": false,
+        "order": 2,
+        "url": "https://hbconnect.marcadz.com/frenchyainallah",
+        "cta": "Voir les crêpes",
+        "visual": "crepe",
+        "icon": "◉"
+      },
+      {
+        "id": "patisseries",
+        "name": "Cheesecakes",
+        "description": "New Yorkais, citron, framboise, Oreo et spéculoos.",
+        "price": 450,
+        "priceDisplay": "Dès 450 DA",
+        "currency": "DZD",
+        "tag": "03 / PÂTISSERIES",
+        "category": "Pâtisseries",
+        "featured": false,
+        "order": 3,
+        "url": "https://hbconnect.marcadz.com/frenchyainallah",
+        "cta": "Voir les pâtisseries",
+        "visual": "cake",
+        "icon": "✳"
+      },
+      {
+        "id": "boissons",
+        "name": "Frappés",
+        "description": "Oreo, pistache, chocolat-noisette et caramel spéculoos.",
+        "price": 500,
+        "priceDisplay": "Dès 500 DA",
+        "currency": "DZD",
+        "tag": "04 / BOISSONS",
+        "category": "Boissons",
+        "featured": false,
+        "order": 4,
+        "url": "https://hbconnect.marcadz.com/frenchyainallah",
+        "cta": "Voir les frappés",
+        "visual": "drink",
+        "icon": "↗"
+      },
+      {
+        "id": "cafe",
+        "name": "Café & thé",
+        "description": "Espresso, cappuccino, café glacé et thé.",
+        "price": 250,
+        "priceDisplay": "Dès 250 DA",
+        "currency": "DZD",
+        "tag": "05 / CAFÉ",
+        "category": "Café",
+        "featured": false,
+        "order": 5,
+        "url": "https://hbconnect.marcadz.com/frenchyainallah",
+        "cta": "Voir les boissons chaudes",
+        "visual": "coffee",
+        "icon": "◉"
+      },
+      {
+        "id": "desserts",
+        "name": "Tiramisu",
+        "description": "Une sélection de desserts et de douceurs à découvrir.",
+        "price": 450,
+        "priceDisplay": "Dès 450 DA",
+        "currency": "DZD",
+        "tag": "06 / DESSERTS",
+        "category": "Desserts",
+        "featured": false,
+        "order": 6,
+        "url": "https://hbconnect.marcadz.com/frenchyainallah",
+        "cta": "Voir les desserts",
+        "visual": "tiramisu",
+        "icon": "✳"
+      }
+    ],
+
+    "reviews": [],
+
+    "gallery": [],
+
+    "assets": { "logo": null, "hero": null, "ogImage": null },
+
+    "seo": {
+      "title": "FRENCHY Ain Allah — Sundae, crêpes et desserts à Alger",
+      "description": "Découvrez la carte de FRENCHY Ain Allah à Dély Ibrahim : sundae, crêpes, cheesecakes, tiramisu, frappés et café.",
+      "canonical": "https://example.com/",
+      "ogImage": null
+    },
+
+    "missing": [
+      "Note Google et nombre d'avis non vérifiables sur la fiche publique — à confirmer avec le gérant.",
+      "Aucun visuel fourni par le client : logo, photos de la vitrine et photos de la carte restent à ajouter.",
+      "Horaires repris de la publication en ligne : à reconfirmer, notamment la journée du vendredi.",
+      "Aucun avis client attribuable à une source vérifiable : la section preuve sociale reste volontairement vide."
+    ]
+  }
+  </script>
+
+  <!-- SCRIPT -->
+  <script>
+    (() => {
+      "use strict";
+
+      const data = JSON.parse(
+        document.getElementById("site-data").textContent
+      );
+
+      const business = data.business;
+      const content = data.content;
+
+      const $ = (selector, root = document) =>
+        root.querySelector(selector);
+
+      const $$ = (selector, root = document) =>
+        [...root.querySelectorAll(selector)];
+
+      const escapeHTML = value =>
+        String(value ?? "").replace(/[&<>"']/g, char => ({
+          "&": "&amp;",
+          "<": "&lt;",
+          ">": "&gt;",
+          '"': "&quot;",
+          "'": "&#39;"
+        })[char]);
+
+      const bindText = (key, value) => {
+        const element = $(`[data-bind="${key}"]`);
+        if (element) element.textContent = value ?? "";
+      };
+
+      const setLink = (selector, url, label) => {
+        const element = $(selector);
+        if (!element) return;
+        element.href = url;
+        if (label) element.textContent = label;
+      };
+
+      // Generic nested-content renderer.
+      const renderHeadline = (selector, start, accent) => {
+        const element = $(selector);
+        element.replaceChildren(
+          document.createTextNode(start + " "),
+          Object.assign(document.createElement("em"), {
+            textContent: accent
+          })
+        );
+      };
+
+      // Navigation.
+      $("#main-navigation").innerHTML = content.navigation.map(item => `
+        <a href="${escapeHTML(item.href)}">${escapeHTML(item.label)}</a>
+      `).join("");
+
+      // Flavor marquee.
+      const marqueeGroup = `
+        <div class="flavor-marquee__group">
+          ${content.marquee.map(flavor => `
+            <span>${escapeHTML(flavor)}</span>
+            <span class="flavor-marquee__star" aria-hidden="true">✳</span>
+          `).join("")}
+        </div>
+      `;
+
+      $("#flavor-track").innerHTML = marqueeGroup + marqueeGroup;
+
+      // Hero.
+      bindText("name", business.name);
+      bindText("neighborhood", business.address.short);
+      bindText("hero.eyebrow", content.hero.eyebrow);
+      bindText("hero.description", content.hero.description);
+      bindText("hero.note", content.hero.note);
+      bindText("hero.sticker", content.hero.sticker);
+      bindText("hero.caption", content.hero.caption);
+
+      renderHeadline(
+        "#hero-title",
+        content.hero.titleStart,
+        content.hero.titleAccent
+      );
+
+      setLink("#hero-directions", business.links.maps);
+
+      // Intro.
+      bindText("intro.label", content.intro.label);
+
+      renderHeadline(
+        "#intro-text",
+        content.intro.textStart,
+        content.intro.textAccent
+      );
+
+      // Menu.
+      bindText("menu.eyebrow", content.menu.eyebrow);
+      bindText("menu.description", content.menu.description);
+      bindText("menu.note", content.menu.note);
+
+      renderHeadline(
+        "#menu-title",
+        content.menu.titleStart,
+        content.menu.titleAccent
+      );
+
+      $("#menu-grid").innerHTML = data.offerings.map(item => `
+        <article class="menu-card reveal">
+          <div class="menu-card__number">${escapeHTML(item.tag)}</div>
+          <div class="menu-card__visual menu-card__visual--${escapeHTML(item.visual)}"
+               aria-hidden="true">${escapeHTML(item.icon)}</div>
+          <div class="menu-card__body">
+            <h3 class="menu-card__title">${escapeHTML(item.name)}</h3>
+            <p class="menu-card__description">${escapeHTML(item.description)}</p>
+            <div class="menu-card__footer">
+              <span class="menu-card__price">${escapeHTML(item.priceDisplay)}</span>
+              <a class="menu-card__link"
+                 href="${escapeHTML(item.url)}"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="${escapeHTML(item.cta)}">↗</a>
+            </div>
+          </div>
+        </article>
+      `).join("");
+
+      // Signature.
+      bindText("signature.eyebrow", content.signature.eyebrow);
+      bindText("signature.description", content.signature.description);
+      bindText("signature.cta", content.signature.cta);
+      bindText("signature.badge", content.signature.badge);
+
+      renderHeadline(
+        "#signature-title",
+        content.signature.titleStart,
+        content.signature.titleAccent
+      );
+
+      // Experience.
+      bindText("experience.eyebrow", content.experience.eyebrow);
+      bindText("experience.description", content.experience.description);
+      bindText("experience.label", content.experience.label);
+
+      renderHeadline(
+        "#experience-title",
+        content.experience.titleStart,
+        content.experience.titleAccent
+      );
+
+      // Visit.
+      bindText("visit.eyebrow", content.visit.eyebrow);
+      bindText("visit.hoursIntro", content.visit.hoursIntro);
+      bindText("visit.hoursDisclaimer", content.visit.hoursDisclaimer);
+      bindText("address.full", business.address.full);
+
+      renderHeadline(
+        "#visit-title",
+        content.visit.titleStart,
+        content.visit.titleAccent
+      );
+
+      setLink("#visit-directions", business.links.maps);
+      setLink("#visit-call", `tel:${business.phone.e164}`, "Appeler");
+      setLink("#final-directions", business.links.maps);
+
+      // Final CTA.
+      bindText("final.eyebrow", content.final.eyebrow);
+      bindText("final.description", content.final.description);
+      bindText("final.cta", content.final.cta);
+
+      renderHeadline(
+        "#final-title",
+        content.final.titleStart,
+        content.final.titleAccent
+      );
+
+      // Footer.
+      bindText("footer.description", content.footer.description);
+
+      const footerUrlByKey = {
+        instagram: business.socials.instagram,
+        place: business.links.place,
+        phone: `tel:${business.phone.e164}`
+      };
+
+      $("#footer-links").innerHTML = content.footer.links.map(item => {
+        const url = footerUrlByKey[item.urlKey];
+
+        const external = item.urlKey !== "phone";
+
+        return `
+          <a href="${escapeHTML(url)}"
+             ${external ? 'target="_blank" rel="noopener noreferrer"' : ""}>
+            ${escapeHTML(item.label)}
+          </a>
+        `;
+      }).join("");
+
+      // Opening hours, using the business's local timezone.
+      const timezone = business.hours.timezone;
+      const dayKeys = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ];
+
+      const schedule = business.hours.schedule;
+
+      const parts = new Intl.DateTimeFormat("en-GB", {
+        timeZone: timezone,
+        weekday: "long",
+        hour: "2-digit",
+        minute: "2-digit",
+        hourCycle: "h23"
+      }).formatToParts(new Date());
+
+      const currentParts = Object.fromEntries(
+        parts.map(part => [part.type, part.value])
+      );
+
+      const dayIndex = {
+        Sunday: 0,
+        Monday: 1,
+        Tuesday: 2,
+        Wednesday: 3,
+        Thursday: 4,
+        Friday: 5,
+        Saturday: 6
+      }[currentParts.weekday];
+
+      const currentMinutes =
+        Number(currentParts.hour) * 60 +
+        Number(currentParts.minute);
+
+      const toMinutes = time => {
+        const [hours, minutes] = time.split(":").map(Number);
+        return hours * 60 + minutes;
+      };
+
+      $("#hours-list").innerHTML = schedule.map(item => {
+        const today = dayKeys[dayIndex] === item.day;
+
+        return `
+          <li class="hours-list__row">
+            <span>${escapeHTML(item.label)}${today ? " · Aujourd'hui" : ""}</span>
+            <span>${escapeHTML(item.open)} – ${escapeHTML(item.close)}</span>
+          </li>
+        `;
+      }).join("");
+
+      const todayHours = schedule.find(
+        item => item.day === dayKeys[dayIndex]
+      );
+
+      const isOpen = todayHours &&
+        currentMinutes >= toMinutes(todayHours.open) &&
+        currentMinutes < toMinutes(todayHours.close);
+
+      const status = $("#hours-status");
+
+      if (todayHours) {
+        $("#hours-status-text").textContent = isOpen
+          ? `Ouverture indiquée : ouvert jusqu'à ${todayHours.close}`
+          : `Ouverture indiquée : ${todayHours.open} – ${todayHours.close}`;
+
+        if (!isOpen) status.classList.add("is-closed");
+      } else {
+        $("#hours-status-text").textContent =
+          "Horaires à confirmer auprès de l'établissement.";
+        status.classList.add("is-closed");
+      }
+
+      // SEO structured data: use real business details, omit unverified ratings.
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "IceCreamShop",
+        "name": `${business.name} ${business.branch}`,
+        "telephone": business.phone.e164,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": business.address.line1,
+          "addressLocality": business.address.locality,
+          "postalCode": business.address.postalCode,
+          "addressRegion": business.address.city,
+          "addressCountry": business.address.countryCode
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": business.coordinates.lat,
+          "longitude": business.coordinates.lng
+        },
+        "hasMenu": business.links.menu,
+        "sameAs": [business.socials.instagram]
+      };
+
+      $("#business-schema").textContent = JSON.stringify(schema);
+
+      // Scroll reveals with a reduced-motion fallback.
+      const revealElements = $$(".reveal");
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      if ("IntersectionObserver" in window && !reducedMotion) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+
+        revealElements.forEach(element => observer.observe(element));
+      } else {
+        revealElements.forEach(element =>
+          element.classList.add("is-visible")
+        );
+      }
+
+      // Keep the page's identity consistent with its data.
+      document.title = data.seo.title;
+      $('meta[name="description"]').content = data.seo.description;
+      $('link[rel="canonical"]').href = data.seo.canonical;
+      $('meta[property="og:title"]').content = data.seo.title;
+      $('meta[property="og:description"]').content = data.seo.description;
+    })();
+  </script>
+</body>
+</html>
